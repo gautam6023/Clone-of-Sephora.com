@@ -148,6 +148,11 @@ body {
   font-size: 3.2vh;
   color: #9f9f9f;
   margin-right: 1.2vw;
+  /* border: 1px solid black; */
+}
+.iconUser {
+  width: 3.3vh;
+  color: #9f9f9f;
 }
 .hoverMe {
   opacity: 0;
