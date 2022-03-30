@@ -102,7 +102,8 @@ body {
 /* First 3 buttons store to sign in */
 #buttons > div {
   display: flex;
-  /* gap: 1rem; */
+  margin-right: 1vw;
+  gap: 1rem;
 }
 
 /* Icons inside that options */
@@ -123,10 +124,10 @@ body {
   width: auto;
 }
 #buttons > div > a {
-  margin-right: 1vw;
+  border: 1px solid black;
 }
 #buttons > div > a:last-child {
-  margin-left: 0.5vw;
+  padding-left: 0.5vw;
 }
 /* P element  */
 .inText {
@@ -144,7 +145,6 @@ body {
   /* justify-content: space-around; */
 }
 #icon2 > a > span {
-  /* border: 1px solid black; */
   font-size: 3.2vh;
   color: #9f9f9f;
   margin-right: 1.2vw;
@@ -219,9 +219,6 @@ body {
 #navThirdList > li > a {
   text-decoration: none;
   color: white;
-
-  /* padding: 0; */
-  /* margin-top: 1rem; */
 }
 .cat1 {
   font-weight: bold;
@@ -303,4 +300,26 @@ h1 {
 .iconHover:hover .color {
   color: #000000;
   fill: black;
+}
+/* NavCSS ENDS HERE */
+#signIn {
+  position: relative;
+}
+#popup {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  height: 250px;
+
+  width: 250px;
+  background-color: wheat;
+  top: 3.5vh;
+  left: -2.5vw;
+  display: grid;
+  border-radius: 10px;
+}
+#signIn:hover #popup {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
 }
