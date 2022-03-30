@@ -321,5 +321,5 @@ h1 {
 #signIn:hover #popup {
   opacity: 1;
   visibility: visible;
-  z-index: 1;
+  z-index: 0;
 }
