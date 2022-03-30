@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #product_main{
+        display: flex;
+        gap: 2rem;
+    }
+    #vertical_imgs{
+        width: 15%;
+    }
+    #middle_img{
+        border: 1px solid black;
+        width: 30%;
+    }
+    #middle_img>img{
+        width: 100%;
+    }
+    #right{
+        width: 50%;
+    }
+    #flexed{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+    }
+    </style>
+</head>
+<body>
+    <div id="product_main">
+        <div id="vertical_imgs">
+
+        </div>
+        <div id="middle_img">
+
+        </div>
+        <div id="right" >
+            <div id="right_info">
+
+            </div>
+            <div>
+                <div id="flexed"><h3>Get It Shipped</h3><p>Shipping &Returns</p></div>
+                <div id="flexed"><div id="flexed"><i>A</i><h4>Standard</h4><p>You now qualify for free shipping.</p></div><div><i>B</i></div></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+<script >
+    let middle_img1 = document.querySelector('#middle_img');
+    let right_info1 = document.querySelector('#right_info');
+    let product1 = JSON.parse(localStorage.getItem('product'))
+    console.log('product1: ', product1);
+  
+    const appendproduct = ()=>{
+        product1.map((elem)=>{
+            let div = document.createElement('div');
+
+            let img1 = document.createElement('img');
+            img1.src= elem.image ;
+            middle_img1.append(img1);
+
+            let brand1 = document.createElement('h5');
+            brand1.innerText = elem.brand ;
+
+            let title1 = document.createElement('p');
+            title1.innerText = elem.title ;
+
+            let price1 = document.createElement('h4');
+            price1.innerText = elem.price ;
+
+            right_info1.append(brand1,title1,price1);
+        })
+
+    }
+    appendproduct();
+</script>
