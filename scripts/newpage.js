@@ -19,15 +19,23 @@ const appendData = (data,main) => {
         let div = document.createElement('div');
         let quicklook = document.createElement('div');
         quicklook.id ="quicklook";
-        quicklook.style ="background-color:grey;opacity:0.5;margin:auto"
+        let newdiv = document.createElement('div');
+        newdiv.id="newdiv1"
+        newdiv.innerHTML = "NEW"
+        
+  
         div.addEventListener("mouseover", ()=>{
             quicklook.innerHTML =null ;
-            quicklook.innerHTML = "QuickLook";        
+            quicklook.innerHTML = `<div id='quicklookdiv'>QuickLook  </div>`;        
             div.append(quicklook);
+            title1.style="text-decoration: underline"
+
         })
         div.addEventListener("mouseout", ()=>{
             quicklook.innerHTML = null ;
+            title1.style="text-decoration: none"
         })
+        
 
         let image1 = document.createElement('img');
         image1.src = elem.image ;
@@ -37,7 +45,7 @@ const appendData = (data,main) => {
 
         let title1 = document.createElement('p');
         title1.innerText = elem.title ;
-        title1.addEventListener('click',function(){
+        div.addEventListener('click',function(){
             let productArr = [];
             productArr.push(elem);
             localStorage.setItem('product',JSON.stringify(productArr));
@@ -48,7 +56,8 @@ const appendData = (data,main) => {
         let price1 = document.createElement('h5');
         price1.innerText = elem.price ;
         let span = document.createElement('span');
-        span.style="display:flex;justify-content:space-between;width:20%;margin:auto"
+        span.id="span1"
+        
         let star1 = document.createElement('img');
         star1.style = "height:6px; width:6px"
         star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
@@ -65,7 +74,7 @@ const appendData = (data,main) => {
         star5.style = "height:6px; width:6px"
         star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         span.append(star1,star2,star3,star4,star5)
-        div.append(image1,brand1,title1,price1,span)
+        div.append(newdiv,image1,brand1,title1,price1,span)
 
         main.append(div);
 
@@ -73,3 +82,13 @@ const appendData = (data,main) => {
 }
 
 export {getData,appendData} ;
+
+
+
+
+
+//   document.getElementById('quicklook').addEventListener("onclick",()=>{
+//       console.log("1")
+//     // let resp = await getData("newpage.json");
+//       appendData(resp,main);
+//   })

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
         #container{
             display: flex;   
             justify-content: center;       
@@ -23,23 +27,52 @@
         #main{
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            border-left: 1px solid grey;
+            border-left: 2px solid grey;
             width: 100%;
+            gap: 3vh;
+            padding-left: 5vh;
+            box-sizing: border-box;
 
         }
         #main div{
             text-align: center;
             font-size: 1.8264vh ;
+            box-sizing: border-box;
+            /* margin-top: 1vh; */
 
         }
+        
         #newtitle{
             text-align: center;
             padding: 1rem;
+            font-size: 4.87064vh ;
         }
         #products{
             width: 70%;
         }
-
+        #quicklookdiv{
+           
+            margin: auto;
+            padding: 1vh;
+            color: white;
+            
+        }
+        #quicklook{
+            border-radius: 0.5vh;
+            /* padding: 1vh; */
+            background-color:black;opacity:0.7;width:20vh;position:absolute;z-index:1;margin-top:-22vh;margin-left:7.5vh;
+            font-size:3.4358vw;
+            
+        }
+        #newdiv1{
+            background-color:black ;
+            color: white;width: 19%;
+        }
+        #span1{
+            display:flex;justify-content:space-between;width:25%;margin:auto ;
+            padding-bottom:1vh;
+            
+        }
     </style>
 </head>
 <body>
@@ -77,6 +110,8 @@
     console.log('resp: ', resp);
 
     appendData(resp,main);
+    
 
-
+  
 </script>
+
