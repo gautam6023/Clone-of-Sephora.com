@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/cd8f1662fe.js" crossorigin="anonymous"></script>
     <style>
     #product_main{
         display: flex;
@@ -14,7 +15,7 @@
         width: 15%;
     }
     #middle_img{
-        border: 1px solid black;
+        /* border: 1px solid black; */
         width: 30%;
     }
     #middle_img>img{
@@ -23,10 +24,42 @@
     #right{
         width: 50%;
     }
+    #shipping{
+        /* border: 1px solid black; */
+        border-radius: 0.3rem;
+        background-color:whitesmoke ;
+        padding: 0.8rem;
+        margin-top: 1rem;
+    }
     #flexed{
         display: flex;
         justify-content: space-between;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+    }
+    #flexed1{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
+    #flexed1 input{
+        margin: auto;
+        padding-top: 3rem;
+    }
+    #flexed1 i{
+        margin: auto;
+        padding-top: 0.4rem;
+    }
+    #icons{
+        font-size: 20px;
+        font-weight: bold ;
+        
+    }
+    #icons i{
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+    }
+    #iconlast{
+        padding-top: 1.5rem;
     }
     </style>
 </head>
@@ -42,9 +75,60 @@
             <div id="right_info">
 
             </div>
-            <div>
+            <div id="shipping">
                 <div id="flexed"><h3>Get It Shipped</h3><p>Shipping &Returns</p></div>
-                <div id="flexed"><div id="flexed"><i>A</i><h4>Standard</h4><p>You now qualify for free shipping.</p></div><div><i>B</i></div></div>
+
+                <div id="flexed">                  
+                    <div id="flexed1">
+                        <input type="radio" checked>
+                        <p>Standard</p>
+                        <p>You now qualify for free shipping.</p>
+                    </div>
+                    <div id="icons"><i class="fa-solid fa-truck"></i>
+                    </div>
+                </div>
+
+                <div id="flexed">                  
+                    <div id="flexed1">
+                        <input type="radio" >
+                        <p>Same-Day Delivery</p>
+                        <p>Select to see availability for your location</p>
+                    </div>
+                    <div id="icons">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="shipping">
+                <div id="flexed">
+                    <div id="flexed1"><h3>Buy Online & Pick Up</h3> <i class="fa-solid fa-circle-exclamation">
+                    </i>
+                     </div>
+                     <i id="iconlast" class="fa-solid fa-store"></i>
+                    </div>
+
+                <div id="flexed">                  
+                    <div id="flexed1">
+                        <input type="radio" checked>
+                        <p>Select to see availability at </p> 
+
+                        <p>stores near you</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- <div id="flexed">                  
+                    <div id="flexed1">
+                        <input type="radio" >
+                        <p>Same-Day Delivery</p>
+                        <p>Select to see availability for your location</p>
+                    </div>
+                    <div id="icons">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                </div> -->
             </div>
 
         </div>
