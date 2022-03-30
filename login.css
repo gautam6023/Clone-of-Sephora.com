@@ -3,8 +3,8 @@ body {font-family: "helvetica neue", sans-serif;}
 /* Full-width input fields */
 input[type="email"], input[type="password"] {
   width: 100%;
-  padding: 15px;
-  margin: 8px 0;
+  padding: 2.46vh 1.17vw;
+  margin: 1.31vh 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -12,13 +12,13 @@ input[type="email"], input[type="password"] {
 }
 
 .check{
-    width: 20px;
-    height: 20px;
-    margin-top: -2px;
+    width: 1.56vw;
+    height: 3.28vh;
+    margin-top: -0.32vh;
 }
 #chkflex{
     display: flex;
-    gap: 5px;
+    gap: 0.39vw;
 }
 #clsRight{
     display: flex;
@@ -31,8 +31,8 @@ input[type="email"], input[type="password"] {
 button {
   background-color:black;
   color: white;
-  padding: 14px 20px;
-  margin-top: 20px;
+  padding: 2.29vh 1.56vw;
+  margin-top: 3.28vh;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -54,7 +54,7 @@ button:hover {
 }
 /* Extra styles for the cancel button */
 .container{
-    padding: 16px;
+    padding: 2.62vh 1.25vw;
 }
 
 
@@ -108,7 +108,7 @@ button:hover {
     border-top-color: rgba(0, 0, 0, 0.063);
     border-right-color: rgba(0, 0, 0, 0.063);
     border-left-color: rgba(0, 0, 0, 0.063);
-    margin: 24px -16px;
+    margin: 3.94vh -1.25vw;
 }
 #ac-btn{
     background: white;
@@ -118,17 +118,17 @@ button:hover {
     font-weight: bold;
 }
 .formBottom{
-    margin-top: 30px;
+    margin-top: 4.92vh;
     width: 40%;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 4.92vh;
 }
 .formBottom > a{
     color: rgb(19, 107, 234);
-    font-size: 12px;
+    font-size: 1.97vh;
 }
 #togglePassword{
-    margin: -30px;
+    margin: -4.92vh -2.34vw;
 }
 #nwSph{
     font-weight: bold;
