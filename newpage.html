@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #container{
-            display: flex;   
-            justify-content: center;       
-        }
-        #sidebar{
-            padding: 0.4rem;
-        }
-        #sidebar div p{
-            padding-right: 4rem;
-            font-size: 12px;
-        }
-        #sidebar div p:hover{
-            text-decoration: underline;
-        }
-        #main{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            border-left: 1px solid grey;
-            width: 100%;
-
-        }
-        #main div{
-            text-align: center;
-            font-size: 12px;
-
-        }
-        #newtitle{
-            text-align: center;
-            padding: 1rem;
-        }
-        #products{
-            width: 70%;
-        }
-
+      #container {
+        display: flex;
+        justify-content: center;
+      }
+      #sidebar {
+        padding: 0.4rem;
+      }
+      #sidebar div p {
+        padding-right: 4rem;
+        font-size: 12px;
+      }
+      #sidebar div p:hover {
+        text-decoration: underline;
+      }
+      #main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-left: 1px solid grey;
+        width: 100%;
+      }
+      #main div {
+        text-align: center;
+        font-size: 12px;
+      }
+      #newtitle {
+        text-align: center;
+        padding: 1rem;
+      }
+      #products {
+        width: 70%;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div id="sidebar">
-            
-        </div>
-        <div id="products">
-            <div id="newtitle">NEW</div>
-            <div id="main">
-
-            </div>
-        </div>
-
+      <div id="sidebar"></div>
+      <div id="products">
+        <div id="newtitle">NEW</div>
+        <div id="main"></div>
+      </div>
     </div>
-    
-    
-
-
-
-
-
-</body>
+  </body>
 </html>
 <!-- <script src="./scripts/newpage.js">
 
 </script> -->
 <script type="module">
-    
-    import sidebar from "./fetchAppend/fetch.js"
+  import sidebar from "./fetchappend/fetch.js";
 
-    let sidebar1 = document.querySelector("#sidebar");
-    sidebar1.innerHTML = sidebar();
+  let sidebar1 = document.querySelector("#sidebar");
+  sidebar1.innerHTML = sidebar();
 
-    let main = document.getElementById('main');
-    import {getData,appendData} from "./scripts/newpage.js";
-    
+  let main = document.getElementById("main");
+  import { getData, appendData } from "./scripts/newpage.js";
 
-    let resp = await getData("newpage.json");
-    console.log('resp: ', resp);
+  let resp = await getData("newpage.json");
+  console.log("resp: ", resp);
 
-    appendData(resp,main);
-
-
+  appendData(resp, main);
 </script>
