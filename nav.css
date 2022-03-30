@@ -10,7 +10,6 @@ body {
 #navFirst {
   height: 7.2vh;
   width: 100%;
-
   background-color: rgb(224, 5, 133);
   font-size: 0.875rem;
   display: flex;
@@ -147,6 +146,7 @@ body {
 #navThirdList {
   display: flex;
   height: 100%;
+  border: 1px solid red;
   /* gap: 0.5rem; */
 }
 #navThirdList > li {
@@ -177,13 +177,14 @@ body {
   text-decoration: none;
   color: white;
 
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .cat1 {
   font-weight: bold;
 }
 
 .nav-item .sub-items {
+  border: 1px solid red;
   pointer-events: none;
   transform: translateY(2.2rem);
   display: flex;
@@ -193,15 +194,15 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   position: absolute;
   /* gap: 5rem; */
-  width: 100%;
-  left: 0;
-  top: 11rem;
-  opacity: 0;
+  width: 98.5%;
+  /* left: 0; */
+  /* top: 11rem; */
+  opacity: 1;
   /* width: 80%; */
   /* padding-left: 22rem; */
-  padding-left: 10rem;
-  padding-right: 8rem;
-  visibility: hidden;
+  /* padding-left: 10rem;
+  padding-right: 8rem; */
+  /* visibility: hidden; */
 }
 
 .nav-item:hover .sub-items {
