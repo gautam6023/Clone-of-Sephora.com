@@ -1,0 +1,135 @@
+body {font-family: "helvetica neue", sans-serif;}
+
+/* Full-width input fields */
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.check{
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+}
+#chkflex{
+    display: flex;
+    gap: 5px;
+}
+#clsRight{
+    display: flex;
+    justify-content: space-between;
+}
+.formHead{
+  font-weight: bold;
+}
+/* Set a style for all buttons */
+button {
+  background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#formRight{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 10px; */
+}
+#formRight a{
+    text-decoration: none;
+    color: rgb(19, 107, 234);
+}
+/* Extra styles for the cancel button */
+.container{
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 1; 
+  width: 80%;
+  height: 100vh;
+  left: 30%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  width: 50%;
+
+}
+
+/* The Close Button (x) */
+.close {
+  /* padding-bottom: 20px; */
+  color: black;
+  cursor: pointer;
+}
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+#hr1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+    border-top-color: rgba(0, 0, 0, 0.063);
+    border-right-color: rgba(0, 0, 0, 0.063);
+    border-left-color: rgba(0, 0, 0, 0.063);
+    margin: 24px -16px;
+}
+#ac-btn{
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.formBottom{
+    margin-top: 30px;
+    width: 40%;
+    margin: auto;
+    padding-top: 30px;
+}
+.formBottom > a{
+    color: rgb(19, 107, 234);
+    font-size: 12px;
+}
+#togglePassword{
+    margin: -30px;
+}
+#nwSph{
+    font-weight: bold;
+}
