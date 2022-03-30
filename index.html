@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: georgia,times,serif;
+        }
+        #container1{
+            margin-bottom: 24px;
+        }
+        #container1>img{
+            display: block;
+            margin: auto;
+            width: 80vw;
+            height: 32vw;
+        }
+        #container2{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        .firstdiv{
+            display: flex;
+            align-items: flex-end;
+      
+        }
+        .firstdiv>p{
+            font-size: 32px;
+            text-align: center;
+            display: block;
+            margin: auto;
+        }
+        .firstdiv>a{
+            padding: 8px;
+            margin: 8px;
+            font-size: 18px;
+        }
+        #datacontainer2{
+            display: flex;
+            overflow: hidden;
+            height: 29vh;
+            margin: 0 4vh;
+            margin-top: -5vh;         
+        }
+        #datacontainer2>div{
+            display: block;
+            text-align: center;
+            width: 255px;
+            /* border: 1px solid red; */
+            padding: 0px 12px;
+            line-height: 0.4;
+            transition: all 0.5s;
+            position: relative;
+           
+        }
+      
+        #datacontainer2>div>img{
+            width: 97px;
+            height: 97px;
+        }
+        #datacontainer2>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer2>div>p:nth-child(2)
+        {
+            text-transform: lowercase;
+            font-size: 11px;
+        }
+
+        #datacontainer2>div>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer2>div>div>p:first-child
+        {
+            line-height: normal;
+        }
+        #datacontainer2>div>div>p:last-child{
+            font-weight: normal;
+            width: 130px;
+            line-height: normal;
+        }
+        .arrows{
+            display: flex;
+            margin: auto;
+            z-index: 2;
+            justify-content: space-between;
+        }
+        .arrows>button{
+            display: block;
+            font-weight:lighter;
+            position: relative;
+            top: 12vh;
+            background-color: transparent;
+            border: 0px;
+        }
+        .arrows>button>svg:hover{
+            fill:lightgray;
+        }
+        .arrows>button>svg{
+            height: 5vh;
+        }
+        #container3{
+            display: flex;
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+            justify-content: space-between;
+        }
+        #container3>img{
+            width: 32vw;
+        }
+        #container4{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        #datacontainer4{
+            display: flex;
+            overflow: hidden;
+            height: 29vh;
+            margin: 0 4vh;
+            margin-top: -5vh   
+        }
+        #datacontainer4>div{
+            display: block;
+            text-align: center;
+            width: 135px;
+            /* border: 1px solid red; */
+            padding: 0px 12px;
+            line-height: 0.4;
+            transition: all 0.5s;
+            position: relative;
+           
+        }
+        #datacontainer4>div>img{
+            width: 97px;
+            height: 97px;
+        }
+        #datacontainer4>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer4>div>p:nth-child(2)
+        {
+            text-transform: lowercase;
+            font-size: 11px;
+        }
+
+        #datacontainer4>div>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer4>div>div>p:first-child
+        {
+            line-height: normal;
+        }
+        #datacontainer4>div>div>p:last-child{
+            font-weight: normal;
+            width: 130px;
+            line-height: normal;
+        }
+        #container5{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        #datacontainer5{
+            display: flex;
+            overflow: hidden;
+            height: 29vh;
+            margin: 0 4vh;
+            margin-top: -5vh;
+            
+        }
+        #datacontainer5>div{
+            display: block;
+            text-align: center;
+            width: 255px;
+            /* border: 1px solid red; */
+            padding: 0px 12px;
+            line-height: 0.4;
+            transition: all 0.5s;
+            position: relative;
+           
+        }
+        #datacontainer5>div>img{
+            width: 97px;
+            height: 97px;
+        }
+        #datacontainer5>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer5>div>p:nth-child(2)
+        {
+            text-transform: lowercase;
+            font-size: 11px;
+        }
+
+        #datacontainer5>div>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer5>div>div>p:first-child
+        {
+            line-height: normal;
+        }
+        #datacontainer5>div>div>p:last-child{
+            font-weight: normal;
+            width: 130px;
+            line-height: normal;
+        }
+        #container6{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        #datacontainer6{
+            display: flex;
+            overflow: hidden;
+            height: 29vh;
+            margin: 0 4vh;
+            margin-top: -5vh;
+            
+        }
+        #datacontainer6>div{
+            display: block;
+            text-align: center;
+            width: 255px;
+            /* border: 1px solid red; */
+            padding: 0px 12px;
+            line-height: 0.4;
+            transition: all 0.5s;
+            position: relative;
+           
+        }
+        #datacontainer6>div>img{
+            width: 97px;
+            height: 97px;
+        }
+        #datacontainer6>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer6>div>p:nth-child(2)
+        {
+            text-transform: lowercase;
+            font-size: 11px;
+        }
+
+        #datacontainer6>div>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer6>div>div>p:first-child
+        {
+            line-height: normal;
+        }
+        #datacontainer6>div>div>p:last-child{
+            font-weight: normal;
+            width: 130px;
+            line-height: normal;
+        }
+        #container7{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        #datacontainer7{
+            display: flex;
+            overflow: hidden;
+            height: 32vh;
+            margin: 0 4vh;
+            margin-top: -5vh;       
+        }
+        #datacontainer7>div{
+            display: block;
+            text-align: center;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            width: 25vw;
+            padding: 0px 25px;
+            line-height: 0.4;
+            transition: all 0.5s;
+            position: relative;
+           
+        }
+        #datacontainer7>div>img{
+            width: 12vw;
+            height: 12vh;
+        }
+        #datacontainer7>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer7>div>div>p{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #datacontainer7>div>div>p:last-child
+        {
+            font-size: 12px;
+            line-height: normal;
+            font-weight: normal;
+            line-height: normal;
+        }
+        #datacontainer7>div>button{
+        line-height: 0.1;
+        border-radius: 25px;
+        padding: 5px;
+        font-size: 11px;
+        width: 160px;
+        background-color: lightgray;
+        border: 0ch;
+        margin-bottom: 0vh;
+        }
+        #datacontainer7>div>button>p:first-child{
+            font-weight: bold;
+        }
+        .quickclass{
+            width: 80px;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: absolute;
+           bottom: 50%;
+           left: 25%;
+           border-radius: 10%;
+           cursor: pointer;
+        }
+        .newClass{
+            display: flex;
+            align-items: center;
+            width: 30px;
+            height: 15px;
+            font-size: 10px;
+            padding: 1%;
+            background: black;
+            color: white;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+           border-radius: 10%;
+
+        }
+        .sequenceOfNum{
+            height: 15px;
+            font-size: 18px;
+            padding: 2%;
+            padding-right: 3%;
+            border: 1px solid black;
+            position: absolute;
+           left: 0;
+           top: 2px;
+           border-radius: 10%;
+           border-bottom-right-radius: 50%;
+
+        }
+        #container8{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+        }
+        #datacontainer8{
+            display: flex;
+            margin-top: 3vh;
+            justify-content: space-between;
+            
+        }
+        #container9{
+            width: 65vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+            justify-content: space-between;
+        }
+        #container9>img{
+            width: 100%;
+            height: 100%;
+        }
+        #container10{
+            display: flex;
+            width: 60vw;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-bottom: 48px;
+            justify-content: space-between;
+            
+        }
+        #container10>div>p{
+            font-size: 12px;
+        }
+        #main{
+            position: relative;
+        }
+        #showImage{
+            display: none;
+            margin: auto;
+            height: 60vh;
+            width: 50vw;
+            position: absolute;
+            top: 60vh;
+            left: 25vw;
+            border: 1px solid red;
+            background: white;
+        }
+        #showImage img{
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id = "main">
+        <div id = "container1">
+            <img src="https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-03-25-hp-slide-slotting-bestsellers-desktop-us-slice.jpeg?imwidth=1200" alt="Skincare MakeUp Fragrance">
+        </div>
+        <div id = "container2">
+            <div class = firstdiv>
+                <p>Just Dropped</p>
+                <a href="#">Show more</a>
+            </div>
+            <div class="arrows">
+                <!-- <button>
+                    <svg viewBox="0 0 16 32">
+                        <path d="M2.2 16.052l13.5-14.33c.1-.098.3-.397.3-.695 0-.498-.4-.995-.9-.995-.3 0-.5.2-.6.298L.4 15.256c-.2.298-.4.497-.4.796 0 .298.1.398.2.497l.1.1L14.5 31.67c.1.1.3.3.6.3.5 0 .9-.5.9-.996 0-.3-.2-.498-.3-.697L2.2 16.05z"></path>>
+                        </svg>
+                </button>
+                <button>
+                    <svg viewBox="0 0 16 32">
+                    <path d="M13.8 15.952L.3 30.28c-.1.1-.3.398-.3.697 0 .497.4.995.9.995.3 0 .5-.2.6-.3L15.6 16.75c.2-.298.4-.497.4-.796 0-.298-.1-.398-.2-.497l-.1-.1L1.5.33C1.4.23 1.2.032.9.032c-.5 0-.9.497-.9.995 0 .298.2.497.3.696l13.5 14.23z"></path>>
+                    </svg>
+                </button>         -->
+            </div>
+            <div id = "datacontainer2"></div>
+        </div>
+        <div id = "container3">
+            <img src="https://www.sephora.com/contentimages/homepage/012120/Homepage/DesktopMweb/2020-01-27-hp-beauty-offer-generic-urgency-us-ca-d-slice.jpg?imwidth=482" alt="Beauty Offers">
+            <img src="https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-3-26-hp-marketing-banner-isle-of-paradise-dry-oil-spray-desktop-us-ca-slice.jpeg?imwidth=482" alt="Tanners">
+        </div>
+        <div id = "container4">
+            <div class = firstdiv>
+                <p>Selling Fast</p>
+            </div>
+            <div class = "arrows"></div>
+            <div id = "datacontainer4"></div>
+        </div>
+        <div id = "container5">
+            <div class = firstdiv>
+                <p>Value Sets</p>
+                <a href="#">Show more</a>
+            </div>
+            <div class = "arrows"></div>
+            <div id = "datacontainer5"></div>
+        </div>
+        <div id = "container6">
+            <div class = firstdiv>
+                <p>Chosen For You</p>
+            </div>
+            <div class = "arrows"></div>
+            <div id = "datacontainer6"></div>
+        </div>
+        <div id = "container7">
+            <div class = firstdiv>
+                <p>Beauty Insider Rewards</p>
+            </div>
+            <div class = "arrows"></div>
+            <div id = "datacontainer7"></div>
+        </div>
+        <div id = "container8">
+            <div class = firstdiv>
+                <p>More Beauty For You</p>
+            </div>
+            <div id = "datacontainer8">
+                <img src="https://www.sephora.com/contentimages/homepage/080321/Homepage/DesktopMweb/2021-08-13-hp-bot-nav-q3-fragrance-quiz-d-us-slice.jpeg?imwidth=221" alt="Fragrance">
+                <img src="https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-3-28-hp-bot-nav-highlighters-sc-sku-launches-us-desktop-slice.jpeg?imwidth=221" alt="Highlighters">
+                <img src="https://www.sephora.com/contentimages/homepage/022222/Homepage/DesktopMweb/2022-02-22-hp-bot-nav-feb-lip-story-us-slice.jpeg?imwidth=221" alt="lipstory">
+                <img src="https://www.sephora.com/contentimages/homepage/020221/Homepage/DesktopMweb/2021-02-01-hp-botnav-bi-rewards-generic-refresh-us-ca-d-slice.jpeg?imwidth=221" alt="Rewards">
+            </div>
+        </div>
+        <div id = "container9">
+            <img src="https://www.sephora.com/contentimages/homepage/101221/Homepage/DesktopMweb/2021-10-13-hp-bottom-evergreen-banner-conv-hub-same-day-desktop-us-ca-slice.jpeg?imwidth=980" alt="Beauty on Demand">
+        </div>
+        <hr style="height:0.1px;border-width:0;color:lightgray;background-color:lightgray; width: 60vw; margin-bottom: 30px;">
+        <div id = "container10">
+            <div>
+            <p>Advertising</p>
+            <img src="https://tpc.googlesyndication.com/simgad/14703215163836305737" alt="advt1">
+            </div>
+            <div>
+                <p>Advertising</p>
+                <img src="https://tpc.googlesyndication.com/simgad/12227111328498362794" alt="advt2">
+            </div>
+            <div>
+                <p>Advertising</p>
+                <img src="https://tpc.googlesyndication.com/simgad/8882396802943877837" alt="advt3">
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div id="showImage"></div>
+    
+</body>
+</html>
+<script src= "data/LandingData.js" ></script>
+<script type = "module">
+
+    import {arrowsFun} from "./components/arrows.js";
+
+    let arrowsData= arrowsFun();
+    var arrowsclasses= document.querySelectorAll(".arrows");
+    for(var j=0; j<arrowsclasses.length; j++)
+    {
+        arrowsclasses[j].innerHTML= arrowsData;
+    }
+     let justdroppedArr = JSON.parse(localStorage.getItem("justDropped"));
+    console.log(justdroppedArr);
+
+    let datacontainer2= document.getElementById("datacontainer2");
+
+    import {appendJustFun,slidersFun} from "./scripts/appendsliderFun.js";
+
+    appendJustFun(justdroppedArr,datacontainer2);
+    let container2= document.getElementById("container2");
+    let count2=6;
+    var x2 = document.querySelectorAll("#datacontainer2>div");
+    count2 = slidersFun(count2,x2,"#container2",6);
+
+    let sellingFastArr = JSON.parse(localStorage.getItem("sellingFast"));
+    let datacontainer4= document.getElementById("datacontainer4");
+    appendJustFun(sellingFastArr,datacontainer4);
+    let count4=6;
+    var x4 = document.querySelectorAll("#datacontainer4>div");
+    count4 = slidersFun(count4,x4,"#container4",6);
+
+    let valueSetsArr = JSON.parse(localStorage.getItem("valueSets"));
+    let datacontainer5= document.getElementById("datacontainer5");
+    appendJustFun(valueSetsArr,datacontainer5);
+    let count5=6;
+    var x5 = document.querySelectorAll("#datacontainer5>div");
+    count5 = slidersFun(count5,x5,"#container5",6);
+
+
+    let chosenArr = JSON.parse(localStorage.getItem("chosen"));
+    let datacontainer6= document.getElementById("datacontainer6");
+    appendJustFun(chosenArr,datacontainer6);
+    let count6=6;
+    var x6 = document.querySelectorAll("#datacontainer6>div");
+    count6 = slidersFun(count6,x6,"#container6",6);
+
+
+    let beautyArr = JSON.parse(localStorage.getItem("beautyinsider"));
+    let datacontainer7= document.getElementById("datacontainer7");
+
+    const append7Fun= ()=>{
+        beautyArr.forEach((el,index)=>{
+        let divTag = document.createElement("div");
+
+        let imgTag = document.createElement("img");
+        imgTag.src= el.image;
+
+        let limitedTag = document.createElement("p");
+        if(el.points===undefined)
+        {
+            limitedTag.innerText= "";
+        }
+        else
+        {
+            limitedTag.innerText= el.points;
+        }
+
+        let titleTag = document.createElement("p");
+        titleTag.innerText= el.title;
+
+        let descriptionTag = document.createElement("p");
+        descriptionTag.innerText= el.description;
+
+        let infoTag= document.createElement("div");
+        infoTag.append(titleTag,descriptionTag)
+
+
+        infoTag.addEventListener("mouseover", ()=>{
+            infoTag.style.textDecoration= "underline";
+        })
+
+        infoTag.addEventListener("mouseout", ()=>{
+            infoTag.style.textDecoration= "none";
+        })
+
+        let buttonTag = document.createElement("button");
+        let buttonptag1 =  document.createElement("p");
+        buttonptag1.innerText= "Add to Basket";
+        let buttonptag2 =  document.createElement("p");
+        buttonptag2.innerText= "for Standard Shopping";
+        buttonTag.append(buttonptag1,buttonptag2)
+
+        divTag.append(imgTag,infoTag,limitedTag,buttonTag);
+
+        divTag.addEventListener("mouseover", ()=>{
+            divTag.innerHTML= "";
+            divTag.style.zIndex=1;
+            let quickPTag=  document.createElement("button");
+            quickPTag.innerText= "QuickLook";
+            quickPTag.setAttribute("class","quickclass")
+            quickPTag.style.background= "rgba(0, 0, 0, 0.5)"
+            divTag.append(imgTag,infoTag,limitedTag,buttonTag,quickPTag);
+        })
+        divTag.addEventListener("mouseout", ()=>{
+            divTag.innerHTML= "";
+            divTag.append(imgTag,infoTag,limitedTag,buttonTag);
+        })
+
+        document.getElementById("datacontainer7").append(divTag);
+
+    })
+    } 
+    append7Fun();
+
+    let count7=4;
+    var x7 = document.querySelectorAll("#datacontainer7>div");
+    count7 = slidersFun(count7,x7,"#container7",4);
+
+   var showImagedisplay= document.getElementById("showImage")
+</script>
