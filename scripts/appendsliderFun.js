@@ -86,21 +86,43 @@ const appendJustFun= (data,appendTag)=>{
         document.getElementById("showImage").innerHTML= "";
         //console.log(el);
         let qdivTag = document.createElement("div");
+        let qdivTagim = document.createElement("div");
         let qimgTag= document.createElement("img");
         qimgTag.src= el.image;
-        qdivTag.append(qimgTag);
+        qdivTagim.append(qimgTag);
+
+        let qtitleTag = document.createElement("p");
+        qtitleTag.innerText= el.title;
+
+        let qdescriptionTag = document.createElement("p");
+        qdescriptionTag.innerText= el.description;
+
+        let buyTag=  document.createElement("button");
+        buyTag.innerText= "Add to Basket";
+        let cartTag = document.createElement("button");
+        cartTag.innerText= "Add to Loves"
+
+        let qinfoTag= document.createElement("div");
+        qinfoTag.append(qtitleTag,qdescriptionTag,buyTag,cartTag);
+
+        qdivTag.append(qdivTagim,qinfoTag)
+
         document.getElementById("showImage").append(qdivTag);
         console.log( document.getElementById("showImage"));
         document.getElementById("showImage").style.display= "block";
-        
+
             document.getElementById("main").addEventListener("click",()=>{
-                setTimeout(showImageFun,2000)
+                
+                showImageFun(event)
             })
         
     }
     
-    const showImageFun= ()=>{
-        document.getElementById("showImage").style.display= "none";
+    const showImageFun= (ev)=>{
+        if(ev.target.innerText !== "Quicklook")
+        {
+            document.getElementById("showImage").style.display= "none";
+        }
     }
 } 
 
@@ -155,7 +177,13 @@ const slideFun= (n)=>{
             for(i=count;i<y+k; i++)
             {
                 x[i].style.opacity= "1";
-                x[i].style.display= "block";
+                if(k===4)
+                {
+                    x[i].style.display= "flex";
+                }
+                else{
+                    x[i].style.display= "block";
+                }
                 count++;
             }
         }
@@ -181,7 +209,14 @@ const slideFun= (n)=>{
             for(i=count-(2*k);i<y-k; i++)
             {
                 x[i].style.opacity= "1";
-                x[i].style.display= "block";
+                if(k===4)
+                {
+                    x[i].style.display= "flex";
+                }
+                else{
+                    x[i].style.display= "block";
+                }
+                
                 count--;
             }
 
