@@ -139,6 +139,18 @@ body {
   color: #9f9f9f;
   margin-right: 1.2vw;
 }
+.hoverMe {
+  opacity: 0;
+  width: auto;
+  margin-left: 2.3vw;
+  bottom: 0;
+  border: 1.5px solid black;
+  background-color: #000000;
+}
+#buttons > div > a:hover .hoverMe {
+  opacity: 1;
+  transition: 200ms;
+}
 /* Third element */
 #navThird {
   height: 5.4vh;
@@ -264,7 +276,7 @@ body {
 }
 .sub-img {
   display: flex;
-  gap: 2rem;
+  gap: 1.66vw;
   max-height: 34.9vh;
 }
 
@@ -278,3 +290,11 @@ body {
   background-color: red;
   margin-top: 1rem;
 } */
+h1 {
+  border: 1px solid black;
+  margin-top: 50px;
+}
+.iconHover:hover .color {
+  color: #000000;
+  fill: black;
+}
