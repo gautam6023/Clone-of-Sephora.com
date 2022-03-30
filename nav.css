@@ -11,7 +11,7 @@ body {
   height: 7.2vh;
   width: 100%;
   background-color: rgb(224, 5, 133);
-  font-size: 0.875rem;
+  font-size: 1.6vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
   width: 34%;
   text-align: center;
   /* height: 4vh; */
-  line-height: 1rem;
+  line-height: 1.81vh;
   box-sizing: border-box;
 }
 #navFirst strong {
@@ -77,18 +77,19 @@ body {
   border: 0;
   background-color: #f6f6f8;
   text-indent: 1.5rem;
+  font-size: 1.6vh;
 }
 #search:focus {
   outline: 1px solid black;
 }
 
 #navOptions {
-  /* border: 1px solid black; */
-  width: 600px;
+  width: auto;
   height: auto;
 }
 #navOptions > div {
   width: auto;
+
   height: 100%;
   display: flex;
   /* border: 1px solid red; */
@@ -99,40 +100,44 @@ body {
   /* gap: 1rem; */
 }
 .icon {
-  margin-right: 1rem;
-  height: 1.8rem;
+  margin-right: 1vw;
+  height: 3.2vh;
 }
 .inText + p {
-  font-size: 0.688rem;
-  line-height: 0.813rem;
+  font-size: 1.2vh;
+  line-height: 1.5vh;
   color: #666666;
 }
 
 #buttons > div > a {
   text-decoration: none;
+
+  width: auto;
 }
 #buttons > div > a {
-  margin-right: 1rem;
+  margin-right: 1vw;
 }
-#buttons > div > a:last-child {
-  margin-left: 1.2rem;
-}
+/* #buttons > div > a:last-child {
+  margin-left: ;
+} */
 .inText {
-  font-size: 0.875rem;
-  line-height: 1.13rem;
+  font-size: 1.6vh;
+  line-height: 1.93vh;
   color: #000000;
+  width: auto;
 }
 #icon2 {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
+
   /* justify-content: space-around; */
 }
 #icon2 > a > span {
   /* border: 1px solid black; */
-  font-size: 1.7rem;
+  font-size: 3.2vh;
   color: #9f9f9f;
-  margin-right: 1.2rem;
+  margin-right: 1.2vw;
 }
 /* Third element */
 #navThird {
@@ -151,7 +156,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   /* padding: 1rem; */
-
+  text-decoration: none;
   /* gap: 0.5rem; */
 }
 #navThirdList > li {
@@ -188,7 +193,7 @@ body {
   transition: 300ms;
 }
 #navThirdList > li > a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: white;
 
   /* padding: 0; */
