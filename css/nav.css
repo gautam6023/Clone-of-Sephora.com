@@ -52,7 +52,7 @@ body {
 
 /* ALl the elements of 2nd nav */
 #navSecondElements {
-  width: 65.625vw;
+  width: 70vw;
   height: 100%;
 
   margin: auto;
@@ -103,7 +103,7 @@ body {
 #buttons > div {
   display: flex;
   margin-right: 1vw;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 /* Icons inside that options */
@@ -125,6 +125,8 @@ body {
 }
 #buttons > div > a {
   border: 1px solid black;
+  width: auto;
+  padding: 2vh 0;
 }
 #buttons > div > a:last-child {
   padding-left: 0.5vw;
@@ -298,10 +300,7 @@ body {
   background-color: red;
   margin-top: 1rem;
 } */
-h1 {
-  border: 1px solid black;
-  margin-top: 50px;
-}
+
 .iconHover:hover .color {
   color: #000000;
   fill: black;
@@ -310,21 +309,24 @@ h1 {
 #signIn {
   position: relative;
 }
-#popup {
+#popupSignIn {
+  width: auto;
   opacity: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
   visibility: hidden;
   position: absolute;
-  height: 250px;
-
-  width: 250px;
-  background-color: wheat;
-  top: 3.5vh;
-  left: -2.5vw;
-  display: grid;
-  border-radius: 10px;
-}
-#signIn:hover #popup {
-  opacity: 1;
-  visibility: visible;
   z-index: 0;
+  transform: translateY(3vh);
+  background-color: white;
+  top: 6vh;
+  left: -2vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#signIn:hover #popupSignIn {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: 500ms;
+  z-index: 5;
 }
