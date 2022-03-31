@@ -411,7 +411,7 @@
         #showImage{
             display: none;
             margin: auto;
-            height: 60vh;
+            height: 50vh;
             width: 60vw;
             position: fixed;
             top: 50vh;
@@ -424,7 +424,7 @@
             padding: 2vh 2vw;
         }
         #showImage>div{
-            height: 60vh;
+            height: 50vh;
             width: 60vw;
             display: flex;
             justify-content: space-around;
@@ -490,12 +490,19 @@
             border-radius: 6vh 3vw;
             margin-bottom: 1vh;
             border: 0px;
+            color: white;
+            font-weight: bold;
         }
         .buttonsclass>button:last-child{
+            display: flex;
             padding: 3vh 2.5vw;
             width: 15vw;
+            height: 8vh;
             border-radius: 6vh 3vw;
             border: 0px;
+            border: 2px solid black;
+            align-items: center;
+            font-weight: bold;          
         }
         .lastinquick{
             display: flex;
@@ -746,7 +753,7 @@
         qdescriptionTag1.innerText= "A Dior foundation with 24h wear, radiant medium-to-full coverage and hydration. With 86% skincare ingredients to visibly improve skin over time."
 
         let qdescriptionTag2= document.createElement("p");
-        qdescriptionTag2.innerText= "Color: 5W Warm - medium skin with warm undertones"
+        qdescriptionTag2.innerText= "Size: 6.7 oz/ 200 mL"
 
           let qdescriptionTag3= document.createElement("a");
         qdescriptionTag3.href= "#";
@@ -758,7 +765,7 @@
         let lastDivTag =document.createElement("div");
 
         let priceTag= document.createElement("p");
-        priceTag.innerText= "$52.00";
+        priceTag.innerText= `$${Math.floor(Math.random() * 90) + 10}`;
 
         let shipTag= document.createElement("p");
         shipTag.innerText= "FREE SHIPPING";
@@ -770,7 +777,14 @@
         let buyTag=  document.createElement("button");
         buyTag.innerText= "Add to Basket";
         let cartTag = document.createElement("button");
-        cartTag.innerText= "Add to Loves"
+        // cartTag.innerText= "Add to Loves"
+        let carttext=document.createElement("span");
+        carttext.innerText= "Add to Loves";
+        let lovessvgTag = document.createElement("div");
+        lovessvgTag.innerHTML= `<svg style = "height:3vh;width: 2vw; fill:white; stroke:black" viewBox="0 0 24 24">
+        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
+        </svg>`
+        cartTag.append(lovessvgTag,carttext);
 
         let buttonTag= document.createElement("div");
         buttonTag.append(buyTag,cartTag)

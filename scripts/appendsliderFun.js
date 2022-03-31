@@ -116,7 +116,7 @@ const appendJustFun= (data,appendTag)=>{
         qdescriptionTag1.innerText= "A Dior foundation with 24h wear, radiant medium-to-full coverage and hydration. With 86% skincare ingredients to visibly improve skin over time."
 
         let qdescriptionTag2= document.createElement("p");
-        qdescriptionTag2.innerText= "Color: 5W Warm - medium skin with warm undertones"
+        qdescriptionTag2.innerText= "Size: 6.7 oz/ 200 mL"
 
           let qdescriptionTag3= document.createElement("a");
         qdescriptionTag3.href= "#";
@@ -128,7 +128,7 @@ const appendJustFun= (data,appendTag)=>{
         let lastDivTag =document.createElement("div");
 
         let priceTag= document.createElement("p");
-        priceTag.innerText= "$52.00";
+        priceTag.innerText= `$${Math.floor(Math.random() * 90) + 10}`
 
         let shipTag= document.createElement("p");
         shipTag.innerText= "FREE SHIPPING";
@@ -140,7 +140,21 @@ const appendJustFun= (data,appendTag)=>{
         let buyTag=  document.createElement("button");
         buyTag.innerText= "Add to Basket";
         let cartTag = document.createElement("button");
-        cartTag.innerText= "Add to Loves"
+        // cartTag.innerText= "Add to Loves"
+
+
+        let carttext=document.createElement("span");
+        carttext.innerText= "Add to Loves";
+
+        let lovessvgTag = document.createElement("div");
+
+        lovessvgTag.innerHTML= `<svg style = "height:3vh;width: 2vw; fill:white; stroke:black" viewBox="0 0 24 24">
+        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
+        </svg>`
+
+        cartTag.append(lovessvgTag,carttext);
+
+        
 
         let buttonTag= document.createElement("div");
         buttonTag.append(buyTag,cartTag)
