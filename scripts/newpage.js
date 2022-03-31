@@ -19,22 +19,32 @@ const appendData = (data,main) => {
         let div = document.createElement('div');
         let quicklook = document.createElement('div');
         quicklook.id ="quicklook";
+        let new_love = document.createElement('div');
+        new_love.id = "new_love"
         let newdiv = document.createElement('div');
         newdiv.id="newdiv1"
         newdiv.innerHTML = "NEW"
+        let lovediv = document.createElement('div');
+        lovediv.id = "lovediv" ;
+        lovediv.innerHTML =`<svg viewBox="0 0 24 24">
+        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
+        </svg>`
+
+
         
   
-        div.addEventListener("mouseover", ()=>{
+        div.addEventListener("mouseenter", ()=>{
             quicklook.innerHTML =null ;
             quicklook.innerHTML = `<div id='quicklookdiv'>QuickLook  </div>`;        
             div.append(quicklook);
             title1.style="text-decoration: underline"
-
+            
         })
-        div.addEventListener("mouseout", ()=>{
+        div.addEventListener("mouseleave", ()=>{
             quicklook.innerHTML = null ;
-            title1.style="text-decoration: none"
+            title1.style="text-decoration: none";
         })
+        new_love.append(newdiv,lovediv);
         
 
         let image1 = document.createElement('img');
@@ -74,7 +84,7 @@ const appendData = (data,main) => {
         star5.style = "height:6px; width:6px"
         star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         span.append(star1,star2,star3,star4,star5)
-        div.append(newdiv,image1,brand1,title1,price1,span)
+        div.append(new_love,image1,brand1,title1,price1,span)
 
         main.append(div);
 
