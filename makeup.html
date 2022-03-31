@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #mainbody{
+            width: 95%;
+        }
+        #container{
+            display: flex;   
+            justify-content: center; 
+              
+        }
+        #sidebar{
+            padding: 0.4rem;
+        }
+        #sidebar div p{
+            padding-right: 4rem;
+            font-size: 2.1308vh;
+        }
+        #sidebar div p:hover{
+            text-decoration: underline;
+        }
+        #main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            /* border-left: 2px solid grey; */
+            width: 115%;
+            gap: 3vh;
+            padding-left: 5vh;
+            box-sizing: border-box;
+
+        }
+        #main div{
+            /* position: relative; */
+            text-align: center;
+            font-size: 1.8264vh ;
+            box-sizing: border-box;
+           
+            /* margin-top: 1vh; */
+
+        }
+        #navvv p{
+            font-size: 1.8264vh ;
+            margin-left: 11vh;
+        }
+        /* #main div img{
+            width: 100%;
+            height: 30vh;
+        } */
+        #newtitle{
+            text-align: center;
+            padding: 1rem;
+            font-size: 4.87064vh ;
+        }
+        #products{
+            width: 70%;
+        }
+        #quicklookdiv{
+           
+            margin: auto;
+            padding: 1vh;
+            color: white;
+            
+        }
+        #quicklook{
+            border-radius: 0.5vh;
+            /* padding: 1vh; */
+            background-color:black;
+            opacity:0.7;width:20vh;
+            position:absolute;z-index:1;
+            margin-top:-22vh;
+            margin-left:6.5vh;
+            font-size:3.4358vw;
+            
+        }
+        #quicklook:hover{
+            opacity: 0.4;
+        }
+        #newdiv1{
+            background-color:white ;
+            color: white;width: 19%;
+        }
+        #span1{
+            display:flex;justify-content:space-between;width:25%;margin:auto ;
+            padding-bottom:1vh;
+            
+        }
+        #lovediv{
+            width: 1.5vw;
+            height: 1.5vh;
+
+            /* border: 1px solid blue; */
+            top:0.5vh;
+            right:1vh;
+        }
+        #lovediv svg{
+            height: 3vh;
+            fill: white;
+            stroke: black;
+            width: 2vw;
+        }
+        #new_heart{
+            padding: 0.3vh;
+            display:flex;
+            justify-content: space-between;
+        }
+        #pageGrids{
+            /* border-left: 2px solid grey; */
+            width: 115%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 1vh;
+            padding: 1vh;
+        }
+        #pageGrids div{
+            background-color: whitesmoke ;
+            padding: 0.3vh;
+            margin-left: 0.9vh;
+            font-size: 2.1308vh;
+        }
+        #newInner{
+            width: 85%;
+            display: flex;justify-content: space-between;
+        }
+        #newInner img{
+            margin-top: 1.3vh;
+            width: 4.2617vh;
+            height: 4.2617vh;
+        }
+    </style>
+</head>
+<body> 
+    <div id="mainbody">
+    <div id="navvv">
+        <p>Makeup</p>
+    </div>
+    <div id="container">
+        
+        <div id="sidebar">
+            <!-- <div><p><a href="newpage.html">New</a></p></div> -->
+    <!-- <div style="border:1px solid black;"></div> -->
+    <div><h2>Makeup</h2></div>
+    <div><p>Face (844)</p></div>
+    <div><p>Eye (886)</p></div>
+    <div><p>Lp (529)</p></div>
+    <div><p>Cheek (234)</p></div>
+    <div><p>Value & Gift Sets (293)</p></div>
+    <div><p>Makeup palettes (196)</p></div>
+    <div><p>Brushes & Applications (263)</p></div>
+    <div><p>Accessories (98)</p></div>
+    <div><p>Nail (61)</p></div>
+    <div><p>Vegan (598)</p></div>
+    <div><p>Mini Size (288)</p></div>
+    <!-- <div style="border:1px solid black;"></div> -->
+        </div>
+        <div id="products">
+            <div id="pageGrids">
+                <div id="newlocation">
+                  <div id="newInner">
+                      <p>New</p>
+                      <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="">
+                  </div>
+                </div>
+
+                <div id="newlocation">
+                    <div id="newInner">
+                        <p>Bestseller</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Clean</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Vegan</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Mini Size</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Lip Quiz</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/lip_quiz.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Foundation Quiz</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/foundation_quiz.svg" alt="">
+                    </div>
+                  </div>
+                
+            </div>
+            <div id="main">
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+</body>
+</html>
+
+<!-- <script src="./scripts/newpage.js">
+
+</script> -->
+<!-- <script type="module">
+    
+    import sidebar from "./fetchAppend/fetch.js"
+
+    let sidebar1 = document.querySelector("#sidebar");
+    sidebar1.innerHTML = sidebar();
+
+    let main = document.getElementById('main');
+    import {getData,appendData} from "./scripts/newpage.js";
+  
+    
+   
+    let resp = await getData("newpage.json");
+    console.log('resp: ', resp);
+
+    appendData(resp,main);
+    
+
+  
+</script> -->
+
+<script src="./scripts/makeup.js">
+
+
+</script>

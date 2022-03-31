@@ -1,10 +1,29 @@
-const getData= async (url)=>{
+
+
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
+		'X-RapidAPI-Key': '9241d20813mshed0ceea1c1c8b71p1de436jsn39d2f064f84e'
+	}
+};
+
+// fetch('https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=1', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response.products))
+// 	.catch(err => console.error(err));
+
+
+
+
+
+const getData= async ()=>{
     try{
-        let response = await fetch(url);
+        let response = await fetch(`https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=1`,options);
         let data =await response.json();
-       data= data.NewData
+        data= data.products
        console.log('data: ', data);
-        return data ;
+        appendData(data) ;
     }catch(error){
         console.log('error: ', error); 
     }
@@ -14,7 +33,7 @@ const getData= async (url)=>{
 
 
 
-const appendData = (data,main) => {
+const appendData = (data) => {
     data.forEach((elem)=>{
         let div = document.createElement('div');
         let quicklook = document.createElement('div');
@@ -23,7 +42,7 @@ const appendData = (data,main) => {
         new_heart.id = "new_heart"
         let newdiv = document.createElement('div');
         newdiv.id="newdiv1"
-        newdiv.innerHTML = "NEW"
+        newdiv.innerHTML = null;
         let lovediv = document.createElement('div');
         lovediv.id = "lovediv" ;
         lovediv.addEventListener("click",()=>{
@@ -55,13 +74,13 @@ const appendData = (data,main) => {
         
 
         let image1 = document.createElement('img');
-        image1.src = elem.image ;
+        image1.src = elem.heroImage ;
 
         let brand1 = document.createElement('h5');
-        brand1.innerText = elem.brand;
+        brand1.innerText = elem.brandName;
 
         let title1 = document.createElement('p');
-        title1.innerText = elem.title ;
+        title1.innerText = elem.displayName ;
         div.addEventListener('click',function(){
             let productArr = [];
             productArr.push(elem);
@@ -71,7 +90,7 @@ const appendData = (data,main) => {
         })
 
         let price1 = document.createElement('h5');
-        price1.innerText = elem.price ;
+        price1.innerText = elem.currentSku.listPrice ;
         let span = document.createElement('span');
         span.id="span1"
         
@@ -98,9 +117,9 @@ const appendData = (data,main) => {
     })
 }
 
-export {getData,appendData} ;
 
 
+getData();
 
 
 
