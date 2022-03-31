@@ -241,27 +241,43 @@
   border: 0;
   margin-top: 1vh;
 }
-/* DOM  */
-#tbody > tr {
-  margin: 1vh 0;
+#row {
+  display: flex;
+  width: 100%;
+  gap: 1vw;
 }
-#tbody > tr > td {
-  border: 1px solid black;
+#row > * {
+  padding: 1.5vh 0;
+}
+#row > div:nth-child(2) {
+  flex-grow: 1;
+}
+.cartImage {
+  width: 5.2vw;
+}
+#secondDiv {
+  font-size: 1.6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#secondDiv > div {
+  line-height: 2vh;
+}
+#cartTitle {
+  font-weight: bold;
+}
+#thirdDiv {
+  font-weight: bold;
 }
 
-/* #tbody > tr > td:first-child {
-
-} */
-#tbody > tr > td > img {
-  border: 1px solid black;
-  width: 5.02vw;
+#btnForCart > button {
+  background-color: white;
+  border: 0;
+  font-size: 1.4vh;
+  color: #136bea;
 }
-
-#tbody > tr > td:nth-child(2) {
-  background-color: wheat;
-  width: 100vw;
-  height: 0vh;
-}
-#tbody > tr > td {
-  height: 1vh;
+#btnForCart > button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
