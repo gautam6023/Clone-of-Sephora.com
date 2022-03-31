@@ -3,7 +3,6 @@ let navData = document.getElementById("nav");
 
 //Function to import export nav data
 const nav = () => {
-  return navData.innerHTML;
   return `
   <div id="navFirst">
     <div style="color: #fff" id="navText">
