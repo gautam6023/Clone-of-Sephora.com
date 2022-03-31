@@ -72,7 +72,7 @@
   width: 7.31vw;
   font-weight: bold;
   height: 3.52vh;
-  font-size: 1.6vh;
+  font-size: 1.4vh;
 }
 .thirdTxt {
   font-size: 1.37vh;
@@ -120,6 +120,10 @@
 }
 #returnsCartItems > span > p {
   margin-bottom: 0.6vh;
+}
+#returnsCartItems > span > p,
+#returnsCartItems > span > p > a {
+  font-size: 1.6vh;
 }
 #redeemDivs {
   margin-top: 1vh;
@@ -245,6 +249,7 @@
   display: flex;
   width: 100%;
   gap: 1vw;
+  border-bottom: 1px solid #dedede;
 }
 #row > * {
   padding: 1.5vh 0;
@@ -267,10 +272,17 @@
 #cartTitle {
   font-weight: bold;
 }
+.cartHover:hover {
+  text-decoration: underline;
+}
 #thirdDiv {
   font-weight: bold;
+  font-size: 1.8vh;
 }
-
+#btnForCart {
+  display: flex;
+  gap: 0.5vw;
+}
 #btnForCart > button {
   background-color: white;
   border: 0;
@@ -280,4 +292,13 @@
 #btnForCart > button:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+#qtyOptions {
+  border: 0;
+  background-color: white;
+  border: 1px solid #dedede;
+  font-size: 1.7vh;
+}
+#qtyOptions:focus {
+  outline: none;
 }

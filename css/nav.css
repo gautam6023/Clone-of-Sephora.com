@@ -327,6 +327,6 @@ body {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
-  transition: 500ms;
+  transition: 300ms;
   z-index: 5;
 }
