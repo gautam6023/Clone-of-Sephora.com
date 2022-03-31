@@ -89,7 +89,21 @@ const appendJustFun= (data,appendTag)=>{
         let qdivTagim = document.createElement("div");
         let qimgTag= document.createElement("img");
         qimgTag.src= el.image;
-        qdivTagim.append(qimgTag);
+
+        let reviewsDivTag = document.createElement("div");
+
+        let starTag =  document.createElement("img");
+        starTag.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2g_CyJEN6QWdQbSd7psuahRnxl2wbp32EA&usqp=CAU"
+       
+        let reviewsTag = document.createElement("p");
+        reviewsTag.innerText= "716 reviews  |  87.4K loves";
+
+
+        reviewsDivTag.append(starTag,reviewsTag)
+        reviewsDivTag.setAttribute("class","reviewsclass")
+        qdivTagim.append(qimgTag,reviewsDivTag);
+
+
 
         let qtitleTag = document.createElement("p");
         qtitleTag.innerText= el.title;
@@ -97,13 +111,46 @@ const appendJustFun= (data,appendTag)=>{
         let qdescriptionTag = document.createElement("p");
         qdescriptionTag.innerText= el.description;
 
+
+        let qdescriptionTag1= document.createElement("p");
+        qdescriptionTag1.innerText= "A Dior foundation with 24h wear, radiant medium-to-full coverage and hydration. With 86% skincare ingredients to visibly improve skin over time."
+
+        let qdescriptionTag2= document.createElement("p");
+        qdescriptionTag2.innerText= "Color: 5W Warm - medium skin with warm undertones"
+
+          let qdescriptionTag3= document.createElement("a");
+        qdescriptionTag3.href= "#";
+        qdescriptionTag3.innerText= "See product details"
+
+        // let qdescriptionTag3= document.createElement("img");
+        // qdescriptionTag3.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AYKF-v3JL8Cqshjat8Qkg_nRBbw3UNCnwQ&usqp=CAU"
+
+        let lastDivTag =document.createElement("div");
+
+        let priceTag= document.createElement("p");
+        priceTag.innerText= "$52.00";
+
+        let shipTag= document.createElement("p");
+        shipTag.innerText= "FREE SHIPPING";
+
+        let priceDetails= document.createElement("div");
+        priceDetails.append(priceTag,shipTag);
+        priceDetails.setAttribute("class","priceclass")
+
         let buyTag=  document.createElement("button");
         buyTag.innerText= "Add to Basket";
         let cartTag = document.createElement("button");
         cartTag.innerText= "Add to Loves"
 
+        let buttonTag= document.createElement("div");
+        buttonTag.append(buyTag,cartTag)
+        buttonTag.setAttribute("class","buttonsclass")
+
+        lastDivTag.append(priceDetails,buttonTag)
+        lastDivTag.setAttribute("class","lastinquick")
+
         let qinfoTag= document.createElement("div");
-        qinfoTag.append(qtitleTag,qdescriptionTag,buyTag,cartTag);
+        qinfoTag.append(qtitleTag,qdescriptionTag,qdescriptionTag1,qdescriptionTag3,qdescriptionTag2,lastDivTag);
 
         qdivTag.append(qdivTagim,qinfoTag)
 
