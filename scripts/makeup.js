@@ -14,12 +14,12 @@ const options = {
 // 	.catch(err => console.error(err));
 
 
-
+let page = 1 ;
 
 
 const getData= async ()=>{
     try{
-        let response = await fetch(`https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=1`,options);
+        let response = await fetch(`https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=${page}`,options);
         let data =await response.json();
         data= data.products
        console.log('data: ', data);
@@ -28,6 +28,13 @@ const getData= async ()=>{
         console.log('error: ', error); 
     }
 }
+
+
+let limitedED = document.querySelector("#limitedED");
+let newArvl = document.querySelector("#newArrival");
+let sephora = document.querySelector("#sephora");
+let organic = document.querySelector("#organic");
+
 
 
 
@@ -43,6 +50,10 @@ const appendData = (data) => {
         let newdiv = document.createElement('div');
         newdiv.id="newdiv1"
         newdiv.innerHTML = null;
+        if(elem.currentSku.isNew===true){
+            newdiv.innerHTML = "New";
+            newdiv.style="background-color:black ;color: white; width: 19%"
+        }
         let lovediv = document.createElement('div');
         lovediv.id = "lovediv" ;
         lovediv.addEventListener("click",()=>{
@@ -50,6 +61,30 @@ const appendData = (data) => {
             // lovediv.style = "fill:red";
         })
         
+
+        limitedED.addEventListener("click",()=>{
+            if(elem.currentSku.isLimitedEdition===false){
+                div.style = "display:none";
+            }
+        })
+
+        newArvl.addEventListener("click",()=>{
+            if(elem.currentSku.isNew===false){
+                div.style = "display:none";
+            }
+        })
+
+        sephora.addEventListener("click",()=>{
+            if(elem.currentSku.isSephoraExclusive===false){
+                div.style = "display:none";
+            }
+        })
+
+        organic.addEventListener("click",()=>{
+            if(elem.currentSku.isOrganic===false){
+                div.style = "display:none";
+            }
+        })
 
 
         
@@ -95,19 +130,19 @@ const appendData = (data) => {
         span.id="span1"
         
         let star1 = document.createElement('img');
-        star1.style = "height:6px; width:6px"
+        star1.style = "height:1.9786vh; width:1.9786vh"
         star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         let star2 = document.createElement('img');
-        star2.style = "height:6px; width:6px"
+        star2.style = "height:1.9786vh; width:1.9786vh"
         star2.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         let star3 = document.createElement('img');
-        star3.style = "height:6px; width:6px"
+        star3.style = "height:1.9786vh; width:1.9786vh"
         star3.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         let star4 = document.createElement('img');
-        star4.style = "height:6px; width:6px"
+        star4.style = "height:1.9786vh; width:1.9786vh"
         star4.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         let star5 = document.createElement('img');
-        star5.style = "height:6px; width:6px"
+        star5.style = "height:1.9786vh; width:1.9786vh"
         star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         span.append(star1,star2,star3,star4,star5)
         div.append(new_heart,image1,brand1,title1,price1,span)
