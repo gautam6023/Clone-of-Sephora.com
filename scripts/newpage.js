@@ -95,7 +95,12 @@ const appendData = (data,main) => {
         let star5 = document.createElement('img');
         star5.style = "height:1.9786vh; width:1.9786vh"
         star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        span.append(star1,star2,star3,star4,star5)
+        // span.append(star1,star2,star3,star4,star5)
+        span.innerHTML = `<span class="css-1be0bml"></span>
+        <span class="css-1be0bml"></span>
+        <span class="css-1be0bml"></span>
+        <span class="css-1be0bml"></span>
+        <span class="css-m88no0"></span>`
         div.append(new_heart,image1,brand1,title1,price1,span)
 
         main.append(div);
