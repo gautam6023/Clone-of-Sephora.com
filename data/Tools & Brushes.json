@@ -54,7 +54,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$549.00",
+        "listPrice": 549,
         "salePrice": "",
         "skuId": "2162493",
         "skuImages": {
@@ -94,7 +94,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$499.00",
+        "listPrice": 499,
         "salePrice": "",
         "skuId": "2344299",
         "skuImages": {
@@ -135,7 +135,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$20.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2230829",
         "skuImages": {
@@ -175,7 +175,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$435.00",
+        "listPrice": 435,
         "salePrice": "",
         "skuId": "2109718",
         "skuImages": {
@@ -215,7 +215,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$399.00",
+        "listPrice": 399,
         "salePrice": "",
         "skuId": "2503811",
         "skuImages": {
@@ -256,7 +256,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$39.00",
+        "listPrice": 39,
         "salePrice": "",
         "skuId": "2402402",
         "skuImages": {
@@ -296,7 +296,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$209.00",
+        "listPrice": 209,
         "salePrice": "",
         "skuId": "1628601",
         "skuImages": {
@@ -337,7 +337,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$279.00",
+        "listPrice": 279,
         "salePrice": "",
         "skuId": "2126241",
         "skuImages": {
@@ -380,7 +380,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$6.00 - $23.00",
+        "listPrice": 6,
         "salePrice": "",
         "skuId": "1201474",
         "skuImages": {
@@ -421,7 +421,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$159.00",
+        "listPrice": 159,
         "salePrice": "",
         "skuId": "1734003",
         "skuImages": {
@@ -463,7 +463,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$69.00",
+        "listPrice": 69,
         "salePrice": "",
         "skuId": "2398022",
         "skuImages": {
@@ -505,7 +505,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$10.00 - $18.00",
+        "listPrice": 10,
         "salePrice": "",
         "skuId": "2186492",
         "skuImages": {
@@ -546,7 +546,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$99.00",
+        "listPrice": 99,
         "salePrice": "",
         "skuId": "2111573",
         "skuImages": {
@@ -587,7 +587,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$100.00",
+        "listPrice": 100,
         "salePrice": "",
         "skuId": "2559326",
         "skuImages": {
@@ -628,7 +628,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$249.00",
+        "listPrice": 249,
         "salePrice": "",
         "skuId": "2445351",
         "skuImages": {
@@ -668,7 +668,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$28.00 - $38.00",
+        "listPrice": 28,
         "salePrice": "",
         "skuId": "2113553",
         "skuImages": {
@@ -710,7 +710,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$20.00 - $30.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2290039",
         "skuImages": {
@@ -751,7 +751,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$12.00",
+        "listPrice": 12,
         "salePrice": "",
         "skuId": "2469088",
         "skuImages": {
@@ -791,7 +791,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$179.99",
+        "listPrice": 179,
         "salePrice": "",
         "skuId": "2505436",
         "skuImages": {
@@ -831,7 +831,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$150.00",
+        "listPrice": 150,
         "salePrice": "",
         "skuId": "2314680",
         "skuImages": {
@@ -871,7 +871,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$100.00",
+        "listPrice": 100,
         "salePrice": "",
         "skuId": "2556835",
         "skuImages": {
@@ -913,7 +913,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$49.00",
+        "listPrice": 49,
         "salePrice": "",
         "skuId": "2398014",
         "skuImages": {
@@ -955,7 +955,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$339.00",
+        "listPrice": 339,
         "salePrice": "",
         "skuId": "1572270",
         "skuImages": {
@@ -996,7 +996,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$29.00",
+        "listPrice": 29,
         "salePrice": "",
         "skuId": "2398006",
         "skuImages": {
@@ -1038,7 +1038,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$20.00 - $30.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2290526",
         "skuImages": {
@@ -1078,7 +1078,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$28.00",
+        "listPrice": 28,
         "salePrice": "",
         "skuId": "2362408",
         "skuImages": {
@@ -1118,7 +1118,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$89.00",
+        "listPrice": 89,
         "salePrice": "",
         "skuId": "1771260",
         "skuImages": {
@@ -1160,7 +1160,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$16.00",
+        "listPrice": 16,
         "salePrice": "",
         "skuId": "2302263",
         "skuImages": {
@@ -1200,7 +1200,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$149.00",
+        "listPrice": 149,
         "salePrice": "",
         "skuId": "2263507",
         "skuImages": {
@@ -1242,7 +1242,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$349.00",
+        "listPrice": 349,
         "salePrice": "",
         "skuId": "2554475",
         "skuImages": {
@@ -1282,7 +1282,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$69.00",
+        "listPrice": 69,
         "salePrice": "",
         "skuId": "2459238",
         "skuImages": {
@@ -1322,7 +1322,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$20.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2275782",
         "skuImages": {
@@ -1363,7 +1363,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$279.00",
+        "listPrice": 279,
         "salePrice": "",
         "skuId": "2277689",
         "skuImages": {
@@ -1405,7 +1405,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$34.00",
+        "listPrice": 34,
         "salePrice": "",
         "skuId": "2290070",
         "skuImages": {
@@ -1445,7 +1445,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$140.00",
+        "listPrice": 140,
         "salePrice": "",
         "skuId": "2490787",
         "skuImages": {
@@ -1485,7 +1485,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$20.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2275790",
         "skuImages": {
@@ -1525,7 +1525,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$449.00",
+        "listPrice": 449,
         "salePrice": "",
         "skuId": "1603521",
         "skuImages": {
@@ -1566,7 +1566,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$16.00",
+        "listPrice": 16,
         "salePrice": "",
         "skuId": "2362424",
         "skuImages": {
@@ -1606,7 +1606,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$159.00",
+        "listPrice": 159,
         "salePrice": "",
         "skuId": "2560308",
         "skuImages": {
@@ -1647,7 +1647,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$22.00 - $39.00",
+        "listPrice": 22,
         "salePrice": "",
         "skuId": "2085041",
         "skuImages": {
@@ -1688,7 +1688,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$18.00",
+        "listPrice": 18,
         "salePrice": "",
         "skuId": "1578657",
         "skuImages": {
@@ -1730,7 +1730,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$16.00",
+        "listPrice": 16,
         "salePrice": "",
         "skuId": "2239929",
         "skuImages": {
@@ -1770,7 +1770,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$24.00 - $45.00",
+        "listPrice": 24,
         "salePrice": "",
         "skuId": "1662154",
         "skuImages": {
@@ -1811,7 +1811,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$6.00",
+        "listPrice": 6,
         "salePrice": "",
         "skuId": "2414845",
         "skuImages": {
@@ -1852,7 +1852,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$15.00",
+        "listPrice": 15,
         "salePrice": "",
         "skuId": "2469054",
         "skuImages": {
@@ -1892,7 +1892,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$22.00",
+        "listPrice": 22,
         "salePrice": "",
         "skuId": "2517076",
         "skuImages": {
@@ -1933,7 +1933,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$39.00",
+        "listPrice": 39,
         "salePrice": "",
         "skuId": "2370252",
         "skuImages": {
@@ -1974,7 +1974,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$30.00",
+        "listPrice": 30,
         "salePrice": "",
         "skuId": "2426708",
         "skuImages": {
@@ -2015,7 +2015,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$34.00",
+        "listPrice": 34,
         "salePrice": "",
         "skuId": "2290187",
         "skuImages": {
@@ -2055,7 +2055,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$299.00",
+        "listPrice": 299,
         "salePrice": "",
         "skuId": "2384691",
         "skuImages": {
@@ -2095,7 +2095,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$150.00",
+        "listPrice": 150,
         "salePrice": "",
         "skuId": "2413912",
         "skuImages": {
@@ -2136,7 +2136,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$120.00",
+        "listPrice": 120,
         "salePrice": "",
         "skuId": "2190171",
         "skuImages": {
@@ -2177,7 +2177,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$20.00",
+        "listPrice": 20,
         "salePrice": "",
         "skuId": "2448587",
         "skuImages": {
@@ -2217,7 +2217,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$28.00 - $150.00",
+        "listPrice": 28,
         "salePrice": "",
         "skuId": "2569713",
         "skuImages": {
@@ -2258,7 +2258,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$34.00",
+        "listPrice": 34,
         "salePrice": "",
         "skuId": "2078483",
         "skuImages": {
@@ -2299,7 +2299,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$30.00",
+        "listPrice": 30,
         "salePrice": "",
         "skuId": "2289999",
         "skuImages": {
@@ -2340,7 +2340,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$30.00",
+        "listPrice": 30,
         "salePrice": "",
         "skuId": "2290203",
         "skuImages": {
@@ -2381,7 +2381,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$4.95",
+        "listPrice": 4.95,
         "salePrice": "",
         "skuId": "2299253",
         "skuImages": {
@@ -2421,7 +2421,7 @@
         "isOnlineOnly": true,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": "$299.00",
+        "listPrice": 299,
         "salePrice": "",
         "skuId": "2455608",
         "skuImages": {
@@ -2462,7 +2462,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": false,
-        "listPrice": "$325.00",
+        "listPrice": 325,
         "salePrice": "",
         "skuId": "1746940",
         "skuImages": {
