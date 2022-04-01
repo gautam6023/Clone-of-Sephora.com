@@ -66,7 +66,7 @@ const appendData = (data,main) => {
         let title1 = document.createElement('p');
         title1.innerText = elem.title ;
         div.addEventListener('click',function(){
-            console.log(event)
+            // console.log(event)
             let productArr = [];
             productArr.push(elem);
             localStorage.setItem('product',JSON.stringify(productArr));

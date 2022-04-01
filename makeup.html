@@ -264,7 +264,7 @@
                   </div>
                 
             </div>
-            <div id="sortdiv"><div onclick="sort_high()" id="sort_h2l">Sort H2L</div><div onclick="sort_low()";id="sort_l2h">Sort L2H</div></div>
+            <div id="sortdiv"><div onclick="sort_high()" id="sort_h2l">Sort H2L</div><div onclick="sort_low()" id="sort_l2h">Sort L2H</div></div>
             <div id="main">
 
             </div>
@@ -279,17 +279,17 @@
 
  <script type="module">
     
-    import sidebar from "./fetchAppend/fetch.js"
+    // import sidebar from "./fetchAppend/fetch.js"
 
-    let sidebar1 = document.querySelector("#sidebar");
-    sidebar1.innerHTML = sidebar();
+    // let sidebar1 = document.querySelector("#sidebar");
+    // sidebar1.innerHTML = sidebar();
 
     let main = document.getElementById('main');
-    import {getData,appendData} from "./scripts/newpage.js";
+    import {getData,appendData} from "./scripts/makeup.js";
   
     
    
-    let resp = await getData("fragrance.json");
+    let resp = await getData("./data/fragrance.json");
     console.log('resp: ', resp);
 
     appendData(resp,main);
@@ -298,7 +298,7 @@
   
 </script>
  
-<script src="./scripts/makeup.js">
+<!-- <script src="./scripts/makeup.js">
 
 
-</script> 
+</script>  -->

@@ -1,12 +1,12 @@
 
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
-		'X-RapidAPI-Key': '9241d20813mshed0ceea1c1c8b71p1de436jsn39d2f064f84e'
-	}
-};
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Host': 'sephora.p.rapidapi.com',
+// 		'X-RapidAPI-Key': '9241d20813mshed0ceea1c1c8b71p1de436jsn39d2f064f84e'
+// 	}
+// };
 
 // fetch('https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=1', options)
 // 	.then(response => response.json())
@@ -14,16 +14,16 @@ const options = {
 // 	.catch(err => console.error(err));
 
 
-let page = 1 ;
 
 
-const getData= async ()=>{
+
+const getData= async (url)=>{
     try{
-        let response = await fetch(`https://sephora.p.rapidapi.com/products/list?categoryId=cat140006&pageSize=60&currentPage=${page}`,options);
+        let response = await fetch(url);
         let data =await response.json();
-        data= data.products
+        data= data.products ;
        console.log('data: ', data);
-        appendData(data) ;
+        return data;
     }catch(error){
         console.log('error: ', error); 
     }
@@ -37,7 +37,7 @@ const getData= async ()=>{
 
 
 
-const appendData = (data) => {
+const appendData = (data,main) => {
     data.forEach((elem)=>{
         let div = document.createElement('div');
         let quicklook = document.createElement('div');
@@ -132,23 +132,26 @@ const appendData = (data) => {
         let span = document.createElement('span');
         span.id="span1"
         
-        let star1 = document.createElement('img');
-        star1.style = "height:1.9786vh; width:1.9786vh"
-        star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star2 = document.createElement('img');
-        star2.style = "height:1.9786vh; width:1.9786vh"
-        star2.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star3 = document.createElement('img');
-        star3.style = "height:1.9786vh; width:1.9786vh"
-        star3.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star4 = document.createElement('img');
-        star4.style = "height:1.9786vh; width:1.9786vh"
-        star4.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star5 = document.createElement('img');
-        star5.style = "height:1.9786vh; width:1.9786vh"
-        star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        span.append(star1,star2,star3,star4,star5)
-        div.append(new_heart,image1,brand1,title1,price1,span)
+
+        let rating = document.createElement('p');
+        rating.innerText =`Rating : ${Number(elem.rating).toFixed(1)}` ;
+        // let star1 = document.createElement('img');
+        // star1.style = "height:1.9786vh; width:1.9786vh"
+        // star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star2 = document.createElement('img');
+        // star2.style = "height:1.9786vh; width:1.9786vh"
+        // star2.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star3 = document.createElement('img');
+        // star3.style = "height:1.9786vh; width:1.9786vh"
+        // star3.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star4 = document.createElement('img');
+        // star4.style = "height:1.9786vh; width:1.9786vh"
+        // star4.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star5 = document.createElement('img');
+        // star5.style = "height:1.9786vh; width:1.9786vh"
+        // star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // span.append(star1,star2,star3,star4,star5)
+        div.append(new_heart,image1,brand1,title1,price1,rating)
 
         main.append(div);
 
@@ -157,7 +160,7 @@ const appendData = (data) => {
 
 
 
-getData();
+export {getData,appendData};
 
 
 
