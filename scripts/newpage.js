@@ -80,21 +80,21 @@ const appendData = (data,main) => {
         let span = document.createElement('span');
         span.id="span1"
         
-        let star1 = document.createElement('img');
-        star1.style = "height:1.9786vh; width:1.9786vh"
-        star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star2 = document.createElement('img');
-        star2.style = "height:1.9786vh; width:1.9786vh"
-        star2.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star3 = document.createElement('img');
-        star3.style = "height:1.9786vh; width:1.9786vh"
-        star3.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star4 = document.createElement('img');
-        star4.style = "height:1.9786vh; width:1.9786vh"
-        star4.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
-        let star5 = document.createElement('img');
-        star5.style = "height:1.9786vh; width:1.9786vh"
-        star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star1 = document.createElement('img');
+        // star1.style = "height:1.9786vh; width:1.9786vh"
+        // star1.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star2 = document.createElement('img');
+        // star2.style = "height:1.9786vh; width:1.9786vh"
+        // star2.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star3 = document.createElement('img');
+        // star3.style = "height:1.9786vh; width:1.9786vh"
+        // star3.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star4 = document.createElement('img');
+        // star4.style = "height:1.9786vh; width:1.9786vh"
+        // star4.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
+        // let star5 = document.createElement('img');
+        // star5.style = "height:1.9786vh; width:1.9786vh"
+        // star5.src = "https://www.sephora.com/img/ufe/icons/star-outline.svg"
         // span.append(star1,star2,star3,star4,star5)
         span.innerHTML = `<span class="css-1be0bml"></span>
         <span class="css-1be0bml"></span>

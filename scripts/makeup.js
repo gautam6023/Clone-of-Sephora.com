@@ -14,7 +14,7 @@ const options = {
 // 	.catch(err => console.error(err));
 
 
-let page = 4 ;
+let page = 1 ;
 
 
 const getData= async ()=>{
@@ -30,10 +30,7 @@ const getData= async ()=>{
 }
 
 
-let limitedED = document.querySelector("#limitedED");
-let newArvl = document.querySelector("#newArrival");
-let sephora = document.querySelector("#sephora");
-let organic = document.querySelector("#organic");
+
 
 
 
@@ -60,6 +57,12 @@ const appendData = (data) => {
             console.log("1");
             // lovediv.style = "fill:red";
         })
+
+
+        let limitedED = document.querySelector("#limitedED");
+        let newArvl = document.querySelector("#newArrival");
+        let sephora = document.querySelector("#sephora");
+        let organic = document.querySelector("#organic");
         
 
         limitedED.addEventListener("click",()=>{

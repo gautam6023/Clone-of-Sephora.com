@@ -147,6 +147,22 @@
                 padding: 1.5vw;
                 /* padding: 0.5vw; */
         }
+        #sortdiv{
+            float: right;
+            display: flex;
+            gap: 3.04414vh;
+            font-size: 2.4353vh;
+        }
+        #sort_l2h {
+            background-color:whitesmoke ;
+            padding: 0.9vh;
+            border-radius: 0.5vw;
+        }
+        #sort_h2l {
+            background-color:whitesmoke ;
+            padding: 0.9vh;
+            border-radius: 0.5vw;
+        }
     </style>
 </head>
 <body> 
@@ -248,6 +264,7 @@
                   </div>
                 
             </div>
+            <div id="sortdiv"><div onclick="sort_high()" id="sort_h2l">Sort H2L</div><div onclick="sort_low()";id="sort_l2h">Sort L2H</div></div>
             <div id="main">
 
             </div>
@@ -259,10 +276,8 @@
 </body>
 </html>
 
-<!-- <script src="./scripts/newpage.js">
 
-</script> -->
-<!-- <script type="module">
+ <script type="module">
     
     import sidebar from "./fetchAppend/fetch.js"
 
@@ -274,16 +289,16 @@
   
     
    
-    let resp = await getData("newpage.json");
+    let resp = await getData("fragrance.json");
     console.log('resp: ', resp);
 
     appendData(resp,main);
     
 
   
-</script> -->
-
+</script>
+ 
 <script src="./scripts/makeup.js">
 
 
-</script>
+</script> 
