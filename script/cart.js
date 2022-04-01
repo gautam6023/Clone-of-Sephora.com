@@ -1,5 +1,6 @@
 import { nav } from "../components/nav.js";
-let navData = document.getElementById("nav");
+let navData = document.getElementById("NAVIGATION");
+
 navData.innerHTML = nav();
 
 //Catching data from localStorage;

@@ -178,3 +178,9 @@ body {
 .listFlx > div:nth-child(2) > p:nth-child(1):hover {
   text-decoration: underline;
 }
+
+#signOut {
+  text-decoration: underline;
+  padding-left: 0.78vw;
+  padding-top: 1.64vh;
+}
