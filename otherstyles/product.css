@@ -1,0 +1,76 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+#product_main{
+display: flex;
+gap: 2rem;
+}
+#vertical_imgs{
+width: 15%;
+}
+#middle_img{
+/* border: 1px solid black; */
+width: 30%;
+}
+#middle_img>img{
+width: 100%;
+}
+#right{
+width: 50%;
+}
+#shipping{
+/* border: 1px solid black; */
+border-radius: 0.3rem;
+background-color:whitesmoke ;
+padding: 0.8rem;
+margin-top: 1rem;
+}
+#flexed{
+display: flex;
+justify-content: space-between;
+/* border: 1px solid red; */
+}
+#flexed1{
+display: flex;
+justify-content: space-between;
+gap: 0.8rem;
+}
+#flexed1 input{
+margin: auto;
+padding-top: 3rem;
+}
+#flexed1 i{
+margin: auto;
+padding-top: 0.4rem;
+}
+#icons{
+font-size: 3.04414vh;
+font-weight: bold ;   
+}
+#icons i{
+margin-top: 1rem;
+margin-right: 0.5rem;
+}
+#iconlast{
+padding-top: 1.5rem;
+}
+.css-1be0bml {
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star.svg);
+background-size: cover;
+width: 1em;
+height: 1em;
+}
+.css-m88no0{
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star-outline.svg);
+background-size: cover;
+width: 2.1308vh;
+height: 2.1308vh;
+margin-left: 0.167em;
+}
+#starsvg{
+fill:black;
+stroke: black;
+}
