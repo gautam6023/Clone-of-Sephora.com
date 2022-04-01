@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <nav id="nav">
       <div id="navFirst">
         <div style="color: #fff" id="navText">
@@ -44,8 +44,9 @@
                 width="100%"
             /></a>
           </div>
-          <div id="navSearch" class="flex">
+          <div id="navSearch">
             <input type="text" name="search" id="search" placeholder="Search" />
+            <div id="debounceDiv"></div>
           </div>
           <div id="navOptions" class="flex">
             <div id="buttons">
@@ -1195,3 +1196,4 @@
   </body>
 </html>
 <script src="./components/nav.js" type="module"></script>
+<script src="./script/nav.js" type="module"></script>

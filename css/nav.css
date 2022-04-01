@@ -71,6 +71,8 @@ body {
 #navSearch {
   width: 26.4vw;
   height: 4.4vh;
+  display: grid;
+  place-items: center;
 }
 /* input in searchbar */
 #search {
@@ -80,7 +82,58 @@ body {
   border: 0;
   background-color: #f6f6f8;
   text-indent: 1.5rem;
+  position: relative;
   font-size: 1.6vh;
+}
+#debounceDiv {
+  width: 26.4vw;
+
+  /* width: 100%; */
+  z-index: 5;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+  top: 15.3vh;
+  left: 25vw;
+  position: absolute;
+  max-height: 50vh;
+  box-sizing: border-box;
+}
+/* Debounnce Results */
+#resultDebounce {
+  margin: 1vh;
+  border-radius: 0.5vh;
+  height: 5vh;
+  z-index: 5;
+  display: flex;
+  gap: 0.5vw;
+  background-color: #ffffff;
+  /* background-color: white; */
+}
+#resultDebounce:hover {
+  background-color: rgb(240, 240, 240);
+}
+#divInner {
+  width: 22vw;
+
+  /* flex-grow: 1; */
+  font-size: 1.6vh;
+  display: flex;
+  align-items: center;
+  /* padding: 1vh; */
+}
+#imgCon {
+  width: 2.5vw;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imgCon > img {
+  width: 70%;
+  height: 70%;
 }
 #search:focus {
   outline: 1px solid black;
@@ -250,7 +303,7 @@ body {
 .nav-item:hover .sub-items {
   pointer-events: all;
   transform: translateY(0);
-  transition: 1s;
+  transition: 200ms;
   opacity: 1;
   visibility: visible;
 }
