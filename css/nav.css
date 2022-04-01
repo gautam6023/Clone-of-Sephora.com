@@ -383,3 +383,7 @@ body {
   transition: 300ms;
   z-index: 5;
 }
+svg {
+  color: #000000;
+  height: 3vh;
+}
