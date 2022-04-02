@@ -1,0 +1,186 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "helvetica neue", sans-serif;
+} */
+
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+#hovMainDiv {
+  width: 19vw;
+  height: auto;
+  border: 1px solid #ccc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: black;
+  /* margin-left: 1.56vw; */
+}
+#bold {
+  font-weight: bold;
+  color: #000000;
+}
+.btyDIV {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1vh;
+  font-size: 1.6vh;
+  line-height: 2.5vh;
+}
+#paraDiv {
+  box-sizing: border-box;
+
+  padding: 1vh 0.3vw;
+}
+#beauty {
+  width: 3.2vw;
+  height: auto;
+
+  /* padding: 1.64vh 0.78vw; */
+}
+
+.btnFlx {
+  display: flex;
+
+  justify-content: space-evenly;
+  /* gap: 1vw; */
+
+  box-sizing: border-box;
+  padding: 0.8vh;
+  /* gap: 1.26vw; */
+
+  /* margin-left: 1.56vw; */
+  /* margin-top: -3.28vh; */
+}
+.btnFlx > button {
+  background-color: black;
+  color: white;
+  /* padding: 1.64vh 1.17vw; */
+  /* margin-top: 3.28vh; */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 7.76vw;
+  height: 4vh;
+  font-size: 1.36vh;
+  font-weight: bold;
+}
+.btnFlx > button:nth-child(2) {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.mainListDiv {
+  width: 19vw;
+  height: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  line-height: 1.7vh;
+  height: 60vh;
+  border: 0.1px solid #ccc;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  /* margin-left: 1.56vw; */
+}
+
+.mainListDiv > div {
+  border-bottom: 0.1px solid #ccc;
+  font-size: 1.8vh;
+  height: 8.2vh;
+  color: #000000;
+}
+
+.firstFlx {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  /* padding-top: 1.64vh;
+  padding-left: 1.01vw; */
+  padding: 0 1vw;
+  align-items: center;
+  font-size: 1.5vh;
+  line-height: 2.5vh;
+}
+#logoOFsepgora {
+  width: 3.2vw;
+  /* padding-right: 2.56vw; */
+}
+.firstFlx > div > p:nth-child(2) {
+  color: rgb(102, 102, 102);
+  font-size: 1.6vh;
+}
+.firstFlx > div > p:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+.secondFlx {
+  /* padding-left: 1.01vw;
+  cursor: pointer;
+  font-size: 1.8vh;
+  padding-top: 1.64vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  cursor: pointer;
+  /* padding-top: 1.64vh;
+  padding-left: 1.01vw; */
+  padding: 0 1vw;
+  font-size: 1.5vh;
+  line-height: 2.5vh;
+}
+.secondFlx > p:nth-child(2) {
+  color: rgb(102, 102, 102);
+}
+.secondFlx > p:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+.listFlx {
+  display: flex;
+  padding-top: 1.64vh;
+  cursor: pointer;
+  padding-left: 0.78vw;
+  font-size: 1.8vh;
+  line-height: 2vh;
+}
+
+.listFlx > div > img {
+  width: 1.87vw;
+  height: 3.94vh;
+
+  margin-right: 0.7vw;
+}
+
+.listFlx > div:nth-child(2) > p:nth-child(2) {
+  color: rgb(102, 102, 102);
+  font-size: 1.5vh;
+}
+
+.listFlx > div:nth-child(2) > p:nth-child(1):hover {
+  text-decoration: underline;
+}
+
+#signOut {
+  text-decoration: underline;
+  padding-left: 0.78vw;
+  padding-top: 1.64vh;
+}

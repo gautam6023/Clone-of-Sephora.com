@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+<button onclick="document.getElementById('popUp').style.display='block'" style="width:auto;">Login</button>
+
+<div id="popUp" class="modal">
+  
+  <div class="modal-content animate">
+      
+
+
+    <div class="container">
+        <div id="clsRight">
+            <div class="formHead">Sign in to Sephora</div>
+            <div onclick="document.getElementById('popUp').style.display='none'" class="close" title="Close Modal">X</div>
+            
+        </div>
+        
+        <div><input type="email" id="email" placeholder="Email address*" required></div>
+
+        <div>
+            <input type="password" id="password" placeholder="Password*" required>
+            <i class="bi bi-eye-slash" id="togglePassword"></i> 
+           
+        </div>
+
+        <div id="formRight">
+            <div id="chkflex">
+                <div><input type="checkbox" id="remember-me" class="check"></div>
+                <div>Keep me signed In</div>
+                <i class="bi bi-exclamation-circle"></i>
+                
+              </div>
+      
+              <div>
+                <a href="#">Forgot Password?</a>
+              </div>
+        </div>
+        
+      <button type="submit" id="sign-btn">Sign In</button>
+      <div id="hr1"></div>
+      <div id="nwSph">New to Sephora?</div>
+      <button type="submit" id="ac-btn">Create Account</button>
+      <div class="formBottom">
+          <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('popUp');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+       
+</script>
+
+</body>
+</html>

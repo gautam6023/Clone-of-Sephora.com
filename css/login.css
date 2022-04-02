@@ -1,0 +1,176 @@
+/* Full-width input fields */
+#l_email,
+#l_password {
+  width: 100%;
+  /* padding: 2.46vh 1.17vw; */
+
+  margin-bottom: 1.5vh;
+  height: 5vh;
+  text-indent: 1vw;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.6vh;
+}
+
+.check {
+  width: 1.1vw;
+  height: 2.27vh;
+
+  border-color: rgb(102, 102, 102);
+}
+#chkflex {
+  display: flex;
+  gap: 0.39vw;
+  align-items: center;
+  /* margin-bottom: 2vh; */
+}
+#lgclsRight {
+  display: flex;
+  justify-content: space-between;
+}
+.lgformHead {
+  font-weight: bold;
+  margin-bottom: 2vh;
+  font-size: 1.81;
+}
+/* Set a style for all buttons */
+.c_btn {
+  background-color: black;
+  color: white;
+  /* padding: 2.29vh 1.56vw; */
+  margin: 1.5vh 0;
+  border: none;
+  /* border-radius: 20px; */
+  cursor: pointer;
+  border-radius: 10vh;
+  width: 10.57vw;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 1.6vh;
+}
+#createAccLogin {
+  background-color: white;
+  color: black;
+  /* padding: 2.29vh 1.56vw; */
+  margin: 1.5vh 0;
+  border: none;
+  /* border-radius: 20px; */
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10vh;
+  width: 10.57vw;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 1.6vh;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+#formRight {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6vh;
+  align-items: center;
+  /* padding-top: 10px; */
+}
+#formRight a {
+  text-decoration: none;
+  color: rgb(19, 107, 234);
+}
+/* Extra styles for the cancel button */
+/* .containerLg {
+  padding: 2.62vh 1.25vw;
+} */
+
+/* The Modal (background) */
+.login-modal {
+  /* display: none; */
+  position: absolute;
+  z-index: 1;
+  width: 25vw;
+
+  height: 47vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#spacingForBtns {
+  width: 100%;
+  height: 1px;
+  background-color: #dedede;
+  margin: 1vh 0;
+}
+/* Modal Content/Box */
+.modal-content-1 {
+  background-color: #fefefe;
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  width: 100%;
+  padding: 2vh;
+  height: 100%;
+}
+
+/* The Close Button (x) */
+.closeLg {
+  /* padding-bottom: 20px; */
+  color: black;
+  cursor: pointer;
+  font-size: 2.5vh;
+
+  padding: 0;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* #hr1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+  border-top-color: rgba(0, 0, 0, 0.063);
+  border-right-color: rgba(0, 0, 0, 0.063);
+  border-left-color: rgba(0, 0, 0, 0.063);
+  margin: 3.94vh -1.25vw;
+} */
+
+.formBottomLg {
+  width: 100%;
+  display: flex;
+  height: 4vh;
+  align-items: flex-end;
+  justify-content: center;
+}
+.formBottomLg > a {
+  color: #136bea;
+  font-size: 1.36vh;
+}
+#togglePassword {
+  margin: -4.92vh -2.34vw;
+}
+#nwSph {
+  font-weight: bold;
+  font-size: 1.81vh;
+}

@@ -1,0 +1,265 @@
+/* Full-width input fields */
+#c_email,
+#c_password,
+#phone,
+#zip {
+  width: 100%;
+  /* padding: 2.62vh 1.25vw; */
+  /* margin: 1.3vw 0; */
+  margin-bottom: 2.1vh;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 4.47vh;
+  text-indent: 1vw;
+  font-size: 1.61vh;
+}
+
+input:focus {
+  outline: 0.5px solid black;
+}
+/* .check {
+  width: 1.1vw;
+  height: 2.27vh;
+
+  border-color: rgb(102, 102, 102);
+}
+#chkflex {
+  display: flex;
+  gap: 0.39vw;
+  align-items: center;
+
+} */
+.check1 {
+  width: 1.1vw;
+  height: 2.27vh;
+
+  border-color: rgb(102, 102, 102);
+}
+#chkflex1 {
+  display: flex;
+  gap: 0.39vw;
+  align-items: center;
+
+  font-size: 1.61vh;
+}
+#clsRight1 {
+  display: flex;
+  justify-content: space-between;
+}
+#clsRight1 > div {
+  width: 33%;
+}
+.formHead {
+  font-weight: bold;
+  font-size: 1.81vh;
+}
+#clsRight1 > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Set a style for all buttons */
+#join-btn {
+  background-color: black;
+  color: white;
+  /* padding: 2.29vh 1.56vw; */
+  margin: 1.5vh 0;
+  border: none;
+  /* border-radius: 20px; */
+  cursor: pointer;
+  border-radius: 10vh;
+  width: 10.57vw;
+  height: 5vh;
+  font-weight: bold;
+  font-size: 1.6vh;
+}
+
+#join-btn:hover {
+  opacity: 0.8;
+}
+
+#formRight1 {
+  display: flex;
+  justify-content: space-between;
+}
+#formRight1 a {
+  text-decoration: none;
+  color: rgb(19, 107, 234);
+}
+
+.containerAc {
+  padding: 2vh;
+}
+
+/* The Modal (background) */
+.modal-2 {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 25vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Modal Content/Box */
+.modal-content-2 {
+  background-color: #fefefe;
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* The Close Button (x) */
+.close {
+  color: black;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#sepImg {
+  width: 10.41vw;
+}
+#sepImg > img {
+  width: 100%;
+}
+#descOfCA {
+  font-size: 1.6vh;
+  color: #000000;
+}
+#hr1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.063);
+  border-top-color: rgba(0, 0, 0, 0.063);
+  border-right-color: rgba(0, 0, 0, 0.063);
+  border-left-color: rgba(0, 0, 0, 0.063);
+  margin: 2vh 0;
+}
+#ac-btn {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.formBottom {
+  margin-top: 4.92vh;
+  width: 40%;
+  margin: auto;
+  padding-top: 4.92vh;
+}
+.formBottom > a {
+  color: rgb(19, 107, 234);
+  font-size: 1.97vh;
+}
+
+#nameFlx,
+#selectFlx {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.56vw;
+}
+
+#fname,
+#lname,
+#selectFlx > select {
+  width: 50%;
+  /* padding: 2.46vh 1.171vw; */
+  height: 4.47vh;
+  text-indent: 1vw;
+  margin: 1.31vh 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 2.1vh;
+  font-size: 1.61vh;
+}
+#selectFlx > select {
+  background-color: white;
+
+  font-size: 1.61vh;
+}
+
+#err_circle {
+  margin: -4.92vh -2.34vw;
+}
+
+#img-icon-flx {
+  display: flex;
+
+  gap: 0.39vw;
+  font-weight: bold;
+  font-size: 1.6vh;
+
+  align-items: center;
+}
+
+#img-icon {
+  width: 3.44vh;
+  height: 1.64vw;
+}
+
+#zip {
+  width: 100%;
+}
+
+.anch_class {
+  cursor: pointer;
+  --color: 19, 107, 234;
+  text-decoration-line: underline;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: rgba(var(--color), 0.3);
+  text-underline-offset: 1px;
+  transition: text-decoration-color 0.2s ease 0s;
+  color: rgb(19, 107, 234);
+  display: inline-block;
+}
+
+.endAgg {
+  font-size: 1.37vh;
+  line-height: 2.46vh;
+  overflow-wrap: break-word;
+  margin-bottom: 1vh;
+  color: #666;
+  font-family: "helvetica neue", sans-serif;
+}
+
+.scroll-auto::-webkit-scrollbar {
+  width: 0.54vw;
+}
+
+/* Track */
+.scroll-auto::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.scroll-auto::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}

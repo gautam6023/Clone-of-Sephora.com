@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- COPY ALL BELOW FILES TO ADD NAV -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/signinhov.css" />
+    <link rel="icon" href="https://www.sephora.com/img/ufe/favicon.ico" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/createac.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5664c1180.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- TILL HERE -->
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Basket | Sephora</title>
+  </head>
+  <body id="body">
+    <div id="NAVIGATION"></div>
+    <div id="containerCart">
+      <h2>My Basket</h2>
+      <div id="sub-container">
+        <div id="sub-left">
+          <div class="sub-left-first">
+            <p class="boldTxt headinInDiv">The Sephora Credit Card Program</p>
+            <div class="offers">
+              <span>
+                <img
+                  src="	https://www.sephora.com/contentimages/creditcard/cardicon/CreditCard.svg"
+                  alt=""
+                />
+              </span>
+              <p class="descriptionInDiv">
+                Save $14.75 on this order when you open and use either Sephora
+                Credit Card today*
+              </p>
+              <button id="seeDetailsBtn">SEE DETAILS</button>
+            </div>
+            <p class="thirdTxt">
+              *Subject to credit approval. Exclusions apply.
+            </p>
+          </div>
+          <div class="sub-left-second">
+            <h3>Get It Shipped (0)</h3>
+            <div id="cartItems">
+              <div id="returnsCartItems">
+                <span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="css-psp8z9 eanm77i0"
+                    data-comp="Icon StyledComponent "
+                  >
+                    <path
+                      d="M16.014 3.067c.258 0 .468.209.468.467V6.03h3.256c.149 0 .289.07.376.19l3.795 5.17c.06.082.091.178.091.278v5.216c0 .257-.21.466-.467.466l-2.637.001a3.501 3.501 0 01-6.852-.297H8.956a3.5 3.5 0 01-6.852.297h-.95a.467.467 0 01-.468-.467L.685 11H.393C.177 11 0 10.774 0 10.5s.177-.5.393-.5h.292V9H.348C.156 9 0 8.774 0 8.5S.156 8 .348 8h.337V7H.417C.187 7 0 6.774 0 6.5S.188 6 .417 6h.268v-.15a2.787 2.787 0 012.616-2.778l.17-.005zM5.5 14a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm12 0a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm0 1a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm-12 0a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm12 1a.5.5 0 100 1 .5.5 0 000-1zm-12 0a.5.5 0 100 1 .5.5 0 000-1zM15.547 4H3.47c-1.02 0-1.849.83-1.849 1.85V6h3.962c.23 0 .417.226.417.5s-.188.5-.417.5H1.62v1h3.031c.192 0 .348.226.348.5s-.156.5-.348.5H1.621v1h1.986c.216 0 .393.226.393.5s-.177.5-.393.5H1.621v5.417h.38a3.5 3.5 0 016.979-.297h5.04a3.5 3.5 0 016.98.38l-.003-.083h2.067v-4.596l-3.561-4.858h-3.489a.468.468 0 01-.467-.465V4zm3.127 4c.13 0 .25.07.325.187l1.973 3.12c.085.134.095.31.028.455a.393.393 0 01-.351.238H16.44c-.219 0-.397-.197-.397-.44V8.44c0-.243.178-.44.397-.44h2.233zm-.205.88h-1.632v2.24h3.048L18.47 8.88zM9.925 6c.294 0 .535.242.535.536 0 .293-.241.535-.535.535h-1.39A.537.537 0 018 6.536C8 6.242 8.24 6 8.535 6h1.39z"
+                    ></path>
+                  </svg>
+                </span>
+                <span>
+                  <p class="descriptionInDiv">
+                    You now qualify for Free Shipping!
+                  </p>
+                  <p><a href="#">Free Returns</a>,see details/exclusions.*</p>
+                </span>
+              </div>
+              <div id="redeemDivs">
+                <div>
+                  <p>Get <strong>2</strong> free sample(s) with every order</p>
+                  <p><strong>SELECT YOUR SAMPLE(S)</strong></p>
+                </div>
+                <div>
+                  <p>You now have <strong>0</strong> Beauty Insider points</p>
+                  <p><strong>REDEEP YOUR REWARDS</strong></p>
+                </div>
+              </div>
+              <div id="headerLine"></div>
+              <!-- show items here -->
+              <div id="cartItemsTable"></div>
+            </div>
+            <h3>Add These Under $15</h3>
+            <div id="itemsSuggested"></div>
+          </div>
+        </div>
+        <!-- Payment Section -->
+        <div id="sub-right">
+          <div id="totalSection">
+            <div class="totalFlex">
+              <p>Merchandise Subtotal</p>
+              <p id="totalBefore">$0</p>
+            </div>
+            <div class="totalFlex">
+              <p>Shipping & Handling</p>
+              <p>FREE</p>
+            </div>
+            <div class="totalFlex">
+              <p>Estimated Tax</p>
+              <p>TBD</p>
+            </div>
+            <div class="headerLine2"></div>
+            <div class="totalFlex last">
+              <p>Estimated Total</p>
+              <p id="totalFinal">$0</p>
+            </div>
+            <button id="checkout">Checkout Shipped Items</button>
+            <button id="paywithPaypalBtn" class="flex">
+              <p>Pay with</p>
+              <span
+                ><img
+                  src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png"
+                  alt=""
+              /></span>
+            </button>
+          </div>
+          <div id="promoCodeSection">
+            <input
+              type="text"
+              id="promoCode"
+              name="promo"
+              placeholder="Promo or Reward Code"
+            />
+            <button id="submitCode">Add Promo Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script type="module" src="./script/cart.js"></script>
+<!-- <script src="./data/cartData.js"></script> -->
+<script src="./components/nav.js" type="module"></script>
+<script src="./script/nav.js" type="module"></script>
+<script src="./script/createac.js" type="module"></script>
+
+<script src="./script/login.js" type="module"></script>
+<script src="./data/cartData.js"></script>
