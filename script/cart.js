@@ -13,6 +13,7 @@ let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 
 //catching container
 let cartProducts = document.getElementById("cartItemsTable");
+let Price;
 const displayData = (data) => {
   cartProducts.innerHTML = "";
   data.map((el, index) => {
@@ -73,6 +74,7 @@ const displayData = (data) => {
     select.addEventListener("change", () => {
       updateUnitPrice(select.value, index);
     });
+    select.value = el.qty;
 
     let btnLoves = document.createElement("button");
     btnLoves.innerText = `Move to Loves`;
@@ -97,7 +99,7 @@ const displayData = (data) => {
     let col3 = document.createElement("div");
     col3.setAttribute("id", "thirdDiv");
 
-    let Price = document.createElement("p");
+    Price = document.createElement("p");
     let PriceAft = Number(price) * Number(el.qty);
     Price.innerText = `$${PriceAft}`;
     console.log(price);
@@ -114,7 +116,8 @@ displayData(cartData);
 //UnitPriceUpdate
 const updateUnitPrice = (value, index) => {
   cartData[index].qty = value;
-
+  cartData[index].qty = value;
+  localStorage.setItem("cart", JSON.stringify(cartData));
   showTotal();
   displayData(cartData);
 };
@@ -171,4 +174,5 @@ document.getElementById("checkout").addEventListener("click", () => {
   let checkoutAmt = document.getElementById("totalFinal");
 
   localStorage.setItem("checkoutAmt", checkoutAmt.innerText);
+  window.location.href = "../payment.html";
 });

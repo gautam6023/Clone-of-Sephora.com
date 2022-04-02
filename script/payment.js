@@ -1,7 +1,7 @@
-var cartArr =JSON.parse(localStorage.getItem("cart"))
+var cartArr = JSON.parse(localStorage.getItem("cart"));
 console.log(cartArr);
 
-document.getElementById("cartlength").innerText=`(${cartArr.length})`;
+document.getElementById("cartlength").innerText = `(${cartArr.length})`;
 
 const shipcartFun = () => {
   cartArr.forEach((el) => {
@@ -23,9 +23,11 @@ const shipcartFun = () => {
     qdescriptionTag1.innerText = "Color: 1 Cool (104)";
 
     let priceTag = document.createElement("b");
-    priceTag.innerText = el.currentSku.listPrice;
+    let PriceAft = Number(el.currentSku.listPrice) * Number(el.qty);
+    priceTag.innerText = `$${PriceAft}`;
+
     let qtyTag = document.createElement("b");
-    qtyTag.innerText = `Qty: ${el.qty}`
+    qtyTag.innerText = `Qty: ${el.qty}`;
 
     let priceqtyTag = document.createElement("div");
     priceqtyTag.append(qtyTag, priceTag);
@@ -56,12 +58,10 @@ const addressFun = () => {
   appendAdressFun(addObj);
 };
 
-document
-  .getElementById("shippingForm")
-  .addEventListener("submit", addressFun);
+document.getElementById("shippingForm").addEventListener("submit", addressFun);
 
 const appendAdressFun = (el) => {
-  document.getElementById("showAddress").innerHTML= "";
+  document.getElementById("showAddress").innerHTML = "";
   document.getElementById("showAddress").style.display = "block";
   document.getElementById("shippingForm").style.display = "none";
   let divTag = document.createElement("div");
@@ -79,11 +79,12 @@ const appendAdressFun = (el) => {
 
   document.getElementById("showAddress").append(divTag);
 
-  document.querySelector("#shipping>div:first-child>a").style.display =
-    "block";
+  document.querySelector("#shipping>div:first-child>a").style.display = "block";
 
-    //cardadress
-    document.getElementById("cardadress").innerText= `${el.saddress},${el.zip},${el.phone}`;
+  //cardadress
+  document.getElementById(
+    "cardadress"
+  ).innerText = `${el.saddress},${el.zip},${el.phone}`;
 };
 
 document.getElementById("cardclick").addEventListener("click", () => {
@@ -118,37 +119,49 @@ document.getElementById("addressedit").addEventListener("click", () => {
 //inrightcontainer4
 
 document.getElementById("paymentcon1").addEventListener("click", () => {
-  document.querySelector("#inrightcontainer4>button").style.background = "crimson";
-  document.querySelector("#inrightcontainer4>button").addEventListener("click",()=>{
-    window.location.href="otp.html";
-  })
+  document.querySelector("#inrightcontainer4>button").style.background =
+    "crimson";
+  document
+    .querySelector("#inrightcontainer4>button")
+    .addEventListener("click", () => {
+      window.location.href = "otp.html";
+    });
 });
-
 
 document.getElementById("paymentcon2").addEventListener("click", () => {
-  document.querySelector("#inrightcontainer4>button").style.background = "crimson";
-  document.querySelector("#inrightcontainer4>button").addEventListener("click",()=>{
-    window.location.href="otp.html";
-  })
+  document.querySelector("#inrightcontainer4>button").style.background =
+    "crimson";
+  document
+    .querySelector("#inrightcontainer4>button")
+    .addEventListener("click", () => {
+      window.location.href = "otp.html";
+    });
 });
-
 
 //inrightcontainer5
 
-document.querySelector("#inrightcontainer5>button").addEventListener("click", () => {
-  document.querySelector(".inrightcontainer6").classList.toggle("toggleclass")
-});
+document
+  .querySelector("#inrightcontainer5>button")
+  .addEventListener("click", () => {
+    document
+      .querySelector(".inrightcontainer6")
+      .classList.toggle("toggleclass");
+  });
 
 let msubtotal = localStorage.getItem("checkoutAmt");
-document.getElementById("fetprice").innerText=msubtotal;
-document.getElementById("fprice").innerText=`$${Number((document.getElementById("fetprice")).innerText.substring(1))+ 8.34}`
+document.getElementById("fetprice").innerText = msubtotal;
+document.getElementById("fprice").innerText = `$${
+  Number(document.getElementById("fetprice").innerText.substring(1)) + 8.34
+}`;
 
 // #shippingForm > input:nth-child(10)
 
-const showNYFun= ()=>{
-  document.querySelector("#shippingForm > input:nth-child(10)").style.display="inline-block";
-  document.querySelector("#shippingForm > input:nth-child(9)").style.display="inline-block";
-  document.querySelector("#shippingForm > span").style.display="none";
-}
+const showNYFun = () => {
+  document.querySelector("#shippingForm > input:nth-child(10)").style.display =
+    "inline-block";
+  document.querySelector("#shippingForm > input:nth-child(9)").style.display =
+    "inline-block";
+  document.querySelector("#shippingForm > span").style.display = "none";
+};
 
 // let ziplength= document.querySelector("#shippingForm > input:nth-child(7)").innerText
