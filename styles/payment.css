@@ -1,0 +1,399 @@
+#container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    /* box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    /* border: 1px solid red; */
+  }
+  #container1 img {
+    height: 10vh;
+    width: 13vw;
+  }
+  #main {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  #leftcontainer {
+    width: 40vw;
+    /* border: 1px solid red; */
+    margin-right: 2vw;
+    height: auto;
+  }
+  #leftcontainer > p {
+    font-size: 4vh;
+    padding-bottom: 2vh;
+    border-bottom: 2px solid black;
+  }
+  #shippingForm input {
+    padding: 1.5vh 1vw;
+    width: 16.7vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  #shippingForm > input:nth-child(4) {
+    width: 92%;
+  }
+  #shippingForm > a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.6vh;
+    /* margin-bottom: 1vh; */
+  }
+  #shippingForm > input:nth-child(7) {
+    width: 7vw;
+  }
+  #shippingForm > input:nth-child(9) {
+    display: none;
+    width: 7vw;
+  }
+  #shippingForm > input:nth-child(10) {
+    display: none;
+    width: 7vw;
+  }
+  /* #shippingForm{
+        font-size: 1.6vh;
+    } */
+  #shippingForm > input:last-child {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    width: 13vw;
+    border-radius: 25px;
+  }
+  #shippingForm > span {
+    display: inline-block;
+    font-size: 1.8vh;
+    width: 12vw;
+  }
+  #shipping {
+    border-bottom: 2px solid black;
+    margin-top: -2.5vh;
+  }
+  #shipping > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+  }
+  #shipping > div:first-child > h2 {
+    font-size: 3vh;
+  }
+  #shipping > div:first-child > a {
+    display: none;
+    text-decoration: none;
+  }
+  #delivery > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #delivery > div > a {
+    text-decoration: none;
+    font-size: 2vh;
+  }
+  #delivery {
+    font-size: 1.8vh;
+    border-bottom: 2px solid black;
+  }
+  #payment > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #payment > div > span {
+    font-size: 1.8vh;
+    color: rgb(102, 102, 102);
+  }
+  .paymentclass > img {
+    height: 4vh;
+    width: 4vw;
+  }
+  .paymentclass {
+    display: flex;
+    align-items: center;
+    font-size: 1.8vh;
+    padding-bottom: 3vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid lightgray;
+  }
+  .paymentcardclass {
+    border: 0;
+    background-color: white;
+    /* width: 100%; */
+    cursor: pointer;
+  }
+  .paymentcardclass:hover {
+    text-decoration: underline;
+  }
+  .giftclass {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8vh;
+    padding: 2vh 1vw;
+    margin-bottom: 5vh;
+    align-items: center;
+    border: 1px solid lightgray;
+  }
+  .giftclass:hover{
+      border: 1px solid black;
+      cursor: pointer;
+  }
+  .giftclass img {
+    height: 4vh;
+    width: 4vw;
+  }
+  .giftclass > div {
+    display: flex;
+    align-items: center;
+  }
+  #paymentsChange > button {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    padding: 1.5vh 1vw;
+    width: 13vw;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+  }
+  #payment {
+    border-bottom: 2px solid black;
+    padding-bottom: 4vh;
+    font-size: 1.8vh;
+  }
+  #review {
+    font-size: 1.8vh;
+  }
+
+  #rightcontainer {
+    width: 18vw;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    height: auto;
+    margin-top: 4vh;
+  }
+  #inrightcontainer1 {
+    padding: 1.5vh 1vw;
+  }
+  .pricefirst {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8vh;
+    align-items: center;
+    margin-top: -2vh;
+  }
+  .hline {
+    border: 0.5px solid black;
+    background-color: black;
+  }
+  .totpriceclass {
+    margin-top: 2vh;
+  }
+  .indicon {
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+  }
+  .klarnacap {
+    display: flex;
+    align-items: center;
+    font-size: 1.4vh;
+    gap: 0.2vw;
+  }
+  .klarnacap>div:last-child{
+    display: flex;
+    align-items: center;
+  }
+  .klarnacap>div:last-child>img{
+      display: block;
+     margin-top: -0.4vh;
+  }
+  #inrightcontainer2 {
+    padding-bottom: 2vh;
+    border-bottom: 1px solid lightgray;
+    padding: 1.5vh 1vw;
+  }
+  #inrightcontainer3 {
+    padding: 2vh 0;
+    padding: 1.5vh 1vw;
+    border-bottom: 1px solid lightgray;
+  }
+  #inrightcontainer3 > div:first-child {
+    text-align: end;
+    font-size: 1.6vh;
+  }
+  #inrightcontainer3 > input {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1vh;
+  }
+  #inrightcontainer4 {
+    padding: 1.5vh 1vw;
+  }
+  #inrightcontainer4 > button {
+    margin: 2vh 0;
+    width: 100%;
+    height: 6vh;
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+    /* background-color: crimson; */
+  }
+  #inrightcontainer5 > button {
+    display: flex;
+    width: 100%;
+    height: 6vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    border: 0px;
+    font-size: 1.6vh;
+    cursor: pointer;
+  }
+  .inrightcontainer6 {
+    padding: 1.5vh 1vw;
+    display: block;
+  }
+  .inrightcontainer6 > a {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.7vh;
+    border-bottom: 1px solid lightgray;
+    padding: 2vh 0;
+  }
+  .cartdivMain {
+    display: flex;
+    padding: 1vh 0;
+    border-bottom: 1px solid lightgray;
+    font-size: 1.5vh;
+    justify-content: space-between;
+  }
+  .cartdivMain > div:first-child {
+    margin-right: 1vw;
+    width: 5vw;
+    /* border: 1px solid red; */
+  }
+  .cartdivMain > div > img {
+    height: 10vh;
+    width: 5vw;
+    /* border: 1px solid red; */
+  }
+  .cartdivMain > div:last-child {
+    width: 10vw;
+    /* border: 1px solid red; */
+    line-height: normal;
+  }
+  .cartpriceclass {
+    display: flex;
+    justify-content: space-between;
+  }
+  #showAddress{
+    line-height: 0.5;
+    font-size: 1.8vh;
+  }
+  #incardChange1 {
+    font-size: 1vw;
+  }
+  #incardChange1 > img {
+    height: 4vh;
+    width: 4vw;
+  }
+  #incardChange2form > input {
+    padding: 1.5vh 1vw;
+    width: 16.7vw;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  #incardChange2form > .cardex {
+    width: 7vw;
+  }
+  .paymentclass2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.8vh;
+  }
+  .paymentclass2 input {
+    height: 2.5vh;
+    width: 2.5vw;
+    background-color: black;
+  }
+  .paymentclass2 > div {
+    line-height: 0.5;
+  }
+  #incardChange3 button {
+    background-color: black;
+    color: white;
+    font-size: 2vh;
+    padding: 1.5vh 1vw;
+    width: 13vw;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+  }
+  #cardcancel {
+    margin-left: 2vw;
+    color: blue;
+  }
+  #cardcancel:hover {
+    text-decoration: underline;
+  }
+  #giftinput > input {
+    padding: 1.5vh 1vw;
+    width: 16.7vw;
+    margin-right: 1vw;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  #giftinput > input:nth-child(2) {
+    width: 7vw;
+  }
+  #giftinput > button {
+    background-color: white;
+    font-size: 1.8vh;
+    padding: 1.5vh 1vw;
+    width: 9vw;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #giftcancel {
+    font-size: 2vh;
+    color: blue;
+    cursor: pointer;
+  }
+  #giftcancel:hover{
+      text-decoration: underline;
+  }
+  #giftid2 {
+    display: none;
+  }
+  #cardChange {
+    display: none;
+  }
+  .toggleclass{
+      display:none
+  }
+  footer{
+      height: 14vh;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.7vh;
+      justify-content: center;
+      align-items: center;
+      /* line-height: 0.7; */
+      margin-top: 8vh;
+  }

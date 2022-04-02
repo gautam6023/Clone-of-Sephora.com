@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Sephora</title>
+    <link rel="icon" href="https://www.sephora.com/img/ufe/favicon.ico" />
+    <link rel="stylesheet" href="styles/payment.css">
+  </head>
+  <body>
+    <div id="container1">
+      <a href="index.html">
+        <img src="https://www.sephora.com/img/ufe/logo.svg" alt="SEPHORA" />
+      </a>
+    </div>
+    <div id="main">
+      <div id="leftcontainer">
+        <p>Checkout</p>
+        <div id="shipping">
+          <div>
+            <h2>Shipping Address</h2>
+            <a id="addressedit" href="#">Edit</a>
+          </div>
+          <form id="shippingForm">
+            <input type="text" placeholder="First name*" id="fname" required />
+            <input type="text" placeholder="Last name*" id="lname" required />
+            <input
+              type="text"
+              placeholder="Phone*"
+              id="phone"
+              required="required"
+            />
+            <input
+              type="text"
+              placeholder="Street address*"
+              id="saddress"
+              required
+            />
+            <a href="#">Add Apt #, Floor, etc.</a><br />
+            <input
+              type="text"
+              placeholder="ZIP/Postal code*"
+              id="zip"
+              required
+              onchange="showNYFun()"
+            />
+            <span>Enter ZIP/Postal code to see City and State/Region.</span>
+            <input type="text" value="New York City" />
+            <input type="text" value="NY- New York" />
+            <br /><input type="submit" value="Save &Continue" />
+          </form>
+          <div id="showAddress"></div>
+        </div>
+        <div id="delivery">
+          <div>
+            <h2>Delivery & Gift Options</h2>
+            <a href="#">Edit</a>
+          </div>
+          <b>FREE – Standard Ground</b>
+          <p>Delivery By Mon, Apr 4</p>
+        </div>
+        <div id="payment">
+          <div>
+            <h2>Payment Method</h2>
+            <span>
+              <svg viewBox="0 0 17 17" style="height: 2vh">
+                <path
+                  d="M3 6.5V3.4C3 2.1 4.1 1 5.5 1S8 2.1 8 3.4v3.1c0 .3.2.5.5.5s.5-.2.5-.5V3.4C9 1.5 7.4 0 5.5 0S2 1.5 2 3.4v3.1c0 .3.2.5.5.5s.5-.2.5-.5zM9.8 7H1.2C.6 7 0 7.6 0 8.3v7.4c0 .7.6 1.3 1.2 1.3h8.5c.7 0 1.2-.6 1.2-1.3V8.3C11 7.6 10.4 7 9.8 7zm.2 8.7c0 .1-.1.3-.2.3H1.2c-.1 0-.2-.1-.2-.3V8.3c0-.1.1-.3.2-.3h8.5c.1 0 .2.1.2.3v7.4z"
+                ></path>
+                <path
+                  d="M5.5 10c-.3 0-.5.3-.5.6v2.9c0 .2.2.5.5.5s.5-.3.5-.6v-2.9c0-.2-.2-.5-.5-.5z"
+                ></path>
+              </svg>
+              Secure
+            </span>
+          </div>
+          <div id="paymentsChange">
+            <div>
+              <div class="paymentclass">
+                <input type="radio" name="paynow" />
+                <img
+                  src="https://www.sephora.com/img/ufe/payments/payPal.svg"
+                  alt="Paypal"
+                />
+                <b>Pay with PayPal</b>
+              </div>
+              <div class="paymentclass">
+                <input type="radio" name="paynow" />
+                <img
+                  src="https://www.sephora.com/img/ufe/payments/klarna.svg"
+                  alt="klarna"
+                />
+                <b>Pay with 4 interest-free payments</b>
+              </div>
+            </div>
+            <div>
+              <button class="paymentclass paymentcardclass" id="cardclick">
+                <span>
+                  <svg viewBox="0 0 17 17" style="height: 2vh">
+                    <path d="M17 7.5H9.5V0h-2v7.5H0v2h7.5V17h2V9.5H17"></path>
+                  </svg>
+                </span>
+                <img
+                  src="https://www.sephora.com/img/ufe/payments/placeholder.svg"
+                  alt=""
+                />
+                <b>Add new credit or debit card</b>
+              </button>
+            </div>
+            <div class="giftclass" id="giftid1">
+              <div>
+                <img
+                  src="https://www.sephora.com/img/ufe/payments/giftCard.svg"
+                  alt="Sephoragift"
+                />
+                <strong>Add gift card</strong>
+              </div>
+              <span>
+                <svg viewBox="0 0 7 4" style="height: 2vh">
+                  <path
+                    d="m.5.5 3 3 3-3"
+                    fill="none"
+                    stroke="black"
+                    stroke-width="1"
+                    vector-effect="non-scaling-stroke"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <div id="giftid2">
+              <div class="indicon">
+                <h3>Gift card</h3>
+                <span>
+                  <svg viewBox="0 0 24 24" style="height: 2vh; width: 1vw">
+                    <path
+                      d="M12 24C5.4 24 0 18.6 0 12S5.4 0 12 0s12 5.4 12 12-5.4 12-12 12zm0-1.1c6 0 10.9-4.9 10.9-10.9S18 1.1 12 1.1 1.1 6 1.1 12 6 22.9 12 22.9zM9.8 9.3h3.3V18h1.1v.5H9.8V18h1.1V9.8H9.8v-.5zm1.9-1.7c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <div id="giftinput">
+                <input type="text" placeholder="Gift card number*" required />
+                <input type="text" placeholder="PIN*" required />
+                <button>Apply</button>
+              </div>
+              <p id="giftcancel">Cancel</p>
+            </div>
+            <button id="paymentcon1">Save & Continue</button>
+          </div>
+          <div id="cardChange">
+            <div id="incardChange1">
+              <b>Add new credit or debit card</b>
+              <img
+                src="https://www.sephora.com/img/ufe/payments/sephora.svg"
+                alt="Sephora"
+              />
+              <img
+                src="https://www.sephora.com/img/ufe/payments/visa.svg"
+                alt="Visa"
+              />
+              <img
+                src="https://www.sephora.com/img/ufe/payments/masterCard.svg"
+                alt="master"
+              />
+              <img
+                src="https://www.sephora.com/img/ufe/payments/americanExpress.svg"
+                alt="American Express"
+              />
+              <img
+                src="https://www.sephora.com/img/ufe/payments/discover.svg"
+                alt="Discover"
+              />
+              <img
+                src="https://www.sephora.com/img/ufe/payments/JCPenney.svg"
+                alt="Penny"
+              />
+            </div>
+            <div id="incardChange2">
+              <form id="incardChange2form">
+                <input type="text" required placeholder="Card number*" /><br />
+                <input
+                  type="number"
+                  required
+                  placeholder="MM*"
+                  class="cardex"
+                />
+                <input type="text" required placeholder="YY*" class="cardex" />
+                <input
+                  type="text"
+                  required
+                  placeholder="CVV/CVC*"
+                  class="cardex"
+                />
+                <input type="text" placeholder="First name*" required />
+                <input type="text" placeholder="Last name*" required />
+              </form>
+            </div>
+            <!-- <div></div> -->
+            <div id="incardChange3">
+              <h3>Billing Address</h3>
+              <div>
+                <div class="paymentclass2">
+                  <input type="radio" checked name="adnow" />
+                  <div>
+                    <p>Use my shipping address</p>
+                    <b id="cardadress">200 Fm 1105, Weir, TX 78674-2001</b>
+                  </div>
+                </div>
+                <div class="paymentclass2">
+                  <input type="radio" name="adnow" />
+                  <p>Use a different address</p>
+                </div>
+                <div class="paymentclass2">
+                  <input type="checkbox" />
+                  <p>Save this card for future purchases</p>
+                </div>
+                <div class="paymentclass2">
+                  <input type="checkbox" />
+                  <p>Set as my default card</p>
+                </div>
+              </div>
+              <div>
+                <button  id="paymentcon2">Save & Continue</button>
+                <span id="cardcancel">Cancel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="review">
+          <h2>Review & Place Order</h2>
+          <p>Please review your order information before placing your order.</p>
+        </div>
+      </div>
+      <div id="rightcontainer">
+        <div id="inrightcontainer1">
+          <div>
+            <div class="pricefirst">
+              <p>Merchandise Subtotal</p>
+              <b id="fetprice">$8.34</b>
+            </div>
+            <div class="pricefirst">
+              <div class="indicon">
+                <p>Shipping & Handling</p>
+                <svg viewBox="0 0 24 24" style="height: 2vh; width: 1vw">
+                  <path
+                    d="M12 24C5.4 24 0 18.6 0 12S5.4 0 12 0s12 5.4 12 12-5.4 12-12 12zm0-1.1c6 0 10.9-4.9 10.9-10.9S18 1.1 12 1.1 1.1 6 1.1 12 6 22.9 12 22.9zM9.8 9.3h3.3V18h1.1v.5H9.8V18h1.1V9.8H9.8v-.5zm1.9-1.7c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4z"
+                  ></path>
+                </svg>
+              </div>
+              <b>Free</b>
+            </div>
+            <div class="pricefirst">
+              <div class="indicon">
+                <p>Estimated Tax</p>
+                <svg viewBox="0 0 24 24" style="height: 2vh; width: 1vw">
+                  <path
+                    d="M12 24C5.4 24 0 18.6 0 12S5.4 0 12 0s12 5.4 12 12-5.4 12-12 12zm0-1.1c6 0 10.9-4.9 10.9-10.9S18 1.1 12 1.1 1.1 6 1.1 12 6 22.9 12 22.9zM9.8 9.3h3.3V18h1.1v.5H9.8V18h1.1V9.8H9.8v-.5zm1.9-1.7c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4z"
+                  ></path>
+                </svg>
+              </div>
+              <b>$8.34</b>
+            </div>
+          </div>
+        </div>
+        <div id="inrightcontainer2">
+          <div class="hline"></div>
+          <div class="pricefirst totpriceclass">
+            <b>Estimated Total</b>
+            <b id="fprice"></b>
+          </div>
+          <div class="klarnacap">
+            <div>
+              <p>or 4 interest-free payments of $25.59</p>
+            </div>
+            <div>
+              <img
+                src="https://www.sephora.com/img/ufe/logo-klarna.svg"
+                alt="Klarna"
+              />
+              <span>
+                <svg viewBox="0 0 24 24" style="height: 2vh; width: 1vw">
+                  <path
+                    d="M12 24C5.4 24 0 18.6 0 12S5.4 0 12 0s12 5.4 12 12-5.4 12-12 12zm0-1.1c6 0 10.9-4.9 10.9-10.9S18 1.1 12 1.1 1.1 6 1.1 12 6 22.9 12 22.9zM9.8 9.3h3.3V18h1.1v.5H9.8V18h1.1V9.8H9.8v-.5zm1.9-1.7c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4s-.6 1.4-1.4 1.4z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="inrightcontainer3">
+          <div>
+            <span>View featured offers</span>
+            <svg viewBox="0 0 4 7" style="height: 1vh">
+              <path
+                d="m.5 6.5 3-3-3-3"
+                fill="none"
+                stroke="black"
+                stroke-width="1"
+                vector-effect="non-scaling-stroke"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+          <input type="text" placeholder="Promo or Reward Code" />
+        </div>
+        <div id="inrightcontainer4">
+          <button>Place Order</button>
+        </div>
+        <div id="inrightcontainer5">
+          <button>
+            <div>
+              <b>Items in Order</b>
+              <b id="cartlength">(2)</b>
+            </div>
+            <span>
+              <svg viewBox="0 0 7 4" style="height: 1vh">
+                <path
+                  d="m.5.5 3 3 3-3"
+                  fill="none"
+                  stroke="black"
+                  stroke-width="1"
+                  vector-effect="non-scaling-stroke"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="inrightcontainer6">
+          <a href="cart.html">View Basket</a>
+          <div id="cartData"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <span>© 2022 Sephora USA, Inc. All rights reserved. Terms of Use | Privacy Policy</span>
+        <span>1-877-SEPHORA (1-877-737-4672) | TTY (1-888-866-9845) | customerservice@sephora.com</span>
+    </footer>
+  </body>
+</html>
+<script src="./scripts/payment.js"></script>

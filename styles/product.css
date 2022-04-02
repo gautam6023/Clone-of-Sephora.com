@@ -1,0 +1,226 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+#product_main{
+display: flex;
+gap: 2rem;
+width: 75vw;
+margin: auto;
+margin-top: 10vh;
+/* border: 1px solid red; */
+/* justify-content: space-between; */
+}
+#leftcontainer{
+width: 40%;
+/* border: 1px solid red; */
+}
+#leftcontainer>img{
+width: 100%;
+}
+#rightcontainer{
+width: 50%;
+}
+#shipping{
+/* border: 1px solid black; */
+border-radius: 0.3rem;
+background-color:whitesmoke ;
+padding: 0.8rem;
+margin-top: 1rem;
+}
+.flexed{
+display: flex;
+justify-content: space-between;
+/* border: 1px solid red; */
+align-items: center;
+}
+.flexed>a:hover{
+text-decoration: underline;
+}
+.flexed1{
+display: flex;
+justify-content: space-between;
+gap: 0.8rem;
+align-items: center;
+font-size: 1.8vh;
+}
+.flexed1 input{
+margin: auto;
+padding-top: 3rem;
+}
+.flexed1 i{
+margin: auto;
+padding-top: 0.4rem;
+}
+.flexed1
+#icons{
+font-size: 3.04414vh;
+font-weight: bold ;   
+}
+.flexed>a{
+font-size: 1.8vh;
+}
+.flexed>a:hover{
+text-decoration: underline;
+}
+#icons i{
+margin-top: 1rem;
+margin-right: 0.5rem;
+}
+#iconlast{
+padding-top: 1.5rem;
+}
+.css-1be0bml {
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star.svg);
+background-repeat: no-repeat;
+width: 0.9em;
+height: 0.9em;
+
+}
+.css-m88no0{
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star-outline.svg);
+background-size: cover;
+width: 0.9em;
+height: 0.9em;
+margin-left: 0.167em;
+}
+
+#smallImages>div{
+height: 6vh;
+width: 3vw;
+/* border: 1px solid black; */
+border-radius: 50%;
+margin-bottom: 2vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#smallImages>div:hover{
+border: 2px solid lightgray;
+}
+#smallImages>div>img{
+height: 4vh;
+width: 2vw;
+}
+#leftcontainer{
+display: flex;
+}
+#leftcontainer>div:first-child{
+width: 10vw;
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+}
+.priceTag{
+display: flex;
+font-size: 1.5vh;
+gap: 0.2vw;
+align-items: center;
+}
+.priceTag>h4{
+font-size: 1.8vh;
+font-weight: bold;
+}
+.priceTag>a{
+text-decoration: underline;
+}
+#right_info p{
+font-size: 1.8vh;
+}
+#right_info>h5{
+margin-bottom: -1.6vh;
+}
+#sizeTag{
+margin-top: -1.6vh;
+}
+#sizeTag>p:nth-child(2)
+{
+font-size: 1.4vh;
+}
+#sizeTag>button{
+background-color: white;
+padding: 1vh 1vw;
+border-radius: 5px;
+border: 2px solid black;
+}
+#shipping>div{
+line-height: 0;
+}
+.flexed2{
+display: flex;
+align-items: center;
+gap: 0.2vw;
+}
+#baskedbutton{
+margin-top: 3vh;
+display: inline-flex;
+align-items: center;
+gap: 2vw;
+}
+#baskedbutton>button{
+line-height: 0.1;
+border-radius: 5vh 2.5vw;
+padding: 0.5vh 1vw;
+padding-top: 2vh;
+font-size: 1.5vh;
+width: 15vw;
+background-color: crimson;
+border: 0px;
+margin: auto;
+color: white;
+}
+#baskedbutton>span>svg{
+height:3vh;
+width: 2vw;
+fill:white;
+stroke:black;
+}
+#baskedbutton>span>svg:hover{
+fill: crimson;
+}
+#container10{
+
+display: flex;
+width: 60vw;
+/* border: 1px solid red; */
+margin: auto;
+margin-bottom: 4vh;
+justify-content: space-between;
+margin-top: 10vh;
+    
+}
+#container10>div>p{
+font-size: 1.5vh;
+}
+#container3{
+width: 75vw;
+margin: auto;
+font-weight: bold;
+font-size: 1.8vh;
+margin-top: 4vh;
+border-top: 1px solid lightgray;
+border-bottom: 1px solid lightgray;
+}
+#incontainer3{
+display: grid;
+width: 75%;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(2,10vh);
+justify-content: center;
+margin: auto;
+/* border: 1px solid red; */
+gap: 0.5vw;
+font-size: 1.6vh;
+align-items: center;
+}
+#incontainer3>div{
+display: flex;
+align-items: center;
+}
+#incontainer3>div>img{
+height: 6vh;
+width: 5vw;
+/* border: 1px solid red; */
+}
