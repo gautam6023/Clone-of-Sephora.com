@@ -28,7 +28,10 @@
        crossorigin="anonymous"
      ></script>
 </head>
-<body>
+<body id="body">
+    <!-- Nav -->
+    <div id="NAVIGATION"></div>
+    <!-- Nav Ends -->
     <div id="product_main">
 
         <div id="leftcontainer">
@@ -192,6 +195,25 @@
             <p>Advertising</p>
             <img src="https://tpc.googlesyndication.com/simgad/8882396802943877837" alt="advt3">
         </div>
+        </div>
+    <!-- Footer -->
+<section id="FOOTER"></section>
 </body>
 </html>
 <script src="./script/product.js"></script>
+<!-- Nav Scripts -->
+<script type="module">
+    import { nav, Footer } from "../components/nav.js";
+    let navData = document.getElementById("NAVIGATION");
+  
+    //Appdending nav and footer
+    let footer = document.getElementById("FOOTER");
+    footer.innerHTML = Footer();
+    navData.innerHTML = nav();
+  </script>
+  <script src="./components/nav.js" type="module"></script>
+  <script src="./script/nav.js" type="module"></script>
+  <script src="./script/createac.js" type="module"></script>
+  
+  <script src="./script/login.js" type="module"></script>
+  <!-- Nav Scripts Ends Here -->
