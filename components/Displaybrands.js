@@ -1,4 +1,4 @@
-import {displayAtoZ}  from "../index.js";
+import {displayAtoZ}  from "../brand.js";
 import { alphabeticalBrands } from "../Constants/constants.js";
 const Displaybrands=()=>{   
     const alphabets =displayAtoZ();
