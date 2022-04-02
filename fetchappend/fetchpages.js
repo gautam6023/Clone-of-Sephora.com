@@ -71,6 +71,7 @@ const appendData = (data,main) => {
     data.forEach((elem)=>{
 
         let div = document.createElement('div');
+        div.id= "maindiv22"
         let quicklook = document.createElement('div');
         quicklook.id ="quicklook";
         let new_heart = document.createElement('div');
@@ -88,6 +89,9 @@ const appendData = (data,main) => {
             console.log("1");
             // lovediv.style = "fill:red";
         })
+        lovediv.innerHTML =`<svg id="heart" viewBox="0 0 24 24">
+        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
+        </svg>`
 
 
         let limitedED = document.querySelector("#limitedED");
@@ -123,12 +127,10 @@ const appendData = (data,main) => {
 
         div.addEventListener("mouseenter", ()=>{
             quicklook.innerHTML =null ;
-            quicklook.innerHTML = `<div id='quicklookdiv'>Quicklook  </div>`;        
+            quicklook.innerHTML = `<div id='quicklookdiv'> <div>Quicklook</div>   </div>`;        
             div.append(quicklook);
             title1.style="text-decoration: underline"
-            lovediv.innerHTML =`<svg id="heart" viewBox="0 0 24 24">
-        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
-        </svg>`
+            
         })
         div.addEventListener("mouseleave", ()=>{
             quicklook.innerHTML = null ;
