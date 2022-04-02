@@ -1,11 +1,15 @@
-import { nav } from "../components/nav.js";
+import { nav, Footer } from "../components/nav.js";
 let navData = document.getElementById("NAVIGATION");
 
+//Appdending nav and footer
+let footer = document.getElementById("FOOTER");
+footer.innerHTML = Footer();
 navData.innerHTML = nav();
+
+//Footer and Nav appending ends here
 
 //Catching data from localStorage;
 let cartData = JSON.parse(localStorage.getItem("cart")) || [];
-console.log(cartData);
 
 //catching container
 let cartProducts = document.getElementById("cartItemsTable");

@@ -13,7 +13,7 @@
 /* sub Container to retain all data */
 #sub-container {
   margin-top: 3vh;
-  height: 800px;
+  height: auto;
   width: 100%;
 
   display: flex;
@@ -22,6 +22,7 @@
 /* left con */
 #sub-left {
   width: 34vw;
+  height: auto;
 }
 #sub-right {
   flex-grow: 1;
