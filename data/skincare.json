@@ -2601,7 +2601,7 @@
         "isOnlineOnly": false,
         "isOrganic": false,
         "isSephoraExclusive": true,
-        "listPrice": 15,
+        "listPrice":15,
         "salePrice": "",
         "skuId": "2348431",
         "skuImages": {
