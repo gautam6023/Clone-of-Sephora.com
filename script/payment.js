@@ -139,9 +139,9 @@ document.querySelector("#inrightcontainer5>button").addEventListener("click", ()
   document.querySelector(".inrightcontainer6").classList.toggle("toggleclass")
 });
 
-let msubtotal = localStorage.getItem("totalprice");
+let msubtotal = localStorage.getItem("checkoutAmt");
 document.getElementById("fetprice").innerText=msubtotal;
-document.getElementById("fprice").innerText=Number((document.getElementById("fetprice")).innerText.substring(1))+ 8.34
+document.getElementById("fprice").innerText=`$${Number((document.getElementById("fetprice")).innerText.substring(1))+ 8.34}`
 
 // #shippingForm > input:nth-child(10)
 

@@ -66,6 +66,14 @@ const appendData = (data, main) => {
     }
     let lovediv = document.createElement("div");
     lovediv.id = "lovediv";
+// <<<<<<< HEAD
+// =======
+    lovediv.innerHTML = `<svg id="heart" viewBox="0 0 24 24">
+        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
+        </svg>`;
+    new_heart.append(newdiv, lovediv);
+    let heart = document.querySelector("#lovediv>svg");
+// >>>>>>> 2eb82d5cc326c4ccb3bf17750ddbc1da153e278c
     lovediv.addEventListener("click", () => {
       console.log("1");
         document.querySelector("#heart").style.fill = "red";
@@ -107,22 +115,30 @@ const appendData = (data, main) => {
     div.addEventListener("mouseenter", () => {
       quicklook.innerHTML = null;
       quicklook.innerHTML = `<div id='quicklookdiv'>Quicklook  </div>`;
+// <<<<<<< HEAD
     //  div.append(quicklook);
       title1.style = "text-decoration: underline";
       lovediv.innerHTML = `<svg id="heart" viewBox="0 0 24 24">
         <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
         </svg>`;
       
+// =======
+      //   div.append(quicklook);
+      title1.style = "text-decoration: underline";
+// >>>>>>> 2eb82d5cc326c4ccb3bf17750ddbc1da153e278c
     });
     div.addEventListener("mouseleave", () => {
       quicklook.innerHTML = null;
       title1.style = "text-decoration: none";
       lovediv.innerHTML = null ;
     });
+// <<<<< HEAD<<
     new_heart.append(newdiv, lovediv);
     
     
     
+// =======
+// >>>>>>> 2eb82d5cc326c4ccb3bf17750ddbc1da153e278c
 
     let image1 = document.createElement("img");
     image1.src = elem.heroImage;
@@ -135,8 +151,9 @@ const appendData = (data, main) => {
     title1.addEventListener("click", function () {
       let productArr = [];
       productArr.push(elem);
-      localStorage.setItem("clickedProduct", JSON.stringify(productArr));
-      console.log(productArr);
+      console.log(elem);
+      localStorage.setItem("clickedProduct", JSON.stringify(elem));
+
       window.location.href = "../product.html";
     });
 

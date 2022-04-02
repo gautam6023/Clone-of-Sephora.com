@@ -157,11 +157,22 @@
   align-items: center;
   gap: 0.2vw;
 }
-#baskedbutton {
+#right_info {
   margin-top: 3vh;
-  display: inline-flex;
+
+  height: auto;
+  line-height: 4vh;
+  margin-bottom: 1vh;
+  /* display: inline-flex; */
   align-items: center;
   gap: 2vw;
+}
+#baskedbutton {
+  display: flex;
+  width: 17vw;
+  gap: 1vw;
+  align-items: center;
+  justify-content: flex-start;
 }
 #baskedbutton > button {
   border-radius: 5vh 2.5vw;

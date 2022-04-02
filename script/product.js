@@ -67,6 +67,7 @@ const appendproduct = (elem) => {
   let pricedivTag = document.createElement("div");
   let itemprice = document.createElement("h4");
   itemprice.innerText = elem.currentSku.listPrice;
+  console.log(itemprice);
   let pricecap1 = document.createElement("span");
   pricecap1.innerText =
     "or $10.00 off your Sephora order when you open and use a Sephora Credit Card today.¹";
@@ -90,17 +91,23 @@ const appendproduct = (elem) => {
   right_info.append(brand, title, starTag, pricedivTag, sizeTag);
 };
 appendproduct(product);
-
+let count = 0;
 document.querySelector("#baskedbutton>button").addEventListener("click", () => {
   let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
   product.qty = 1;
-  cartArr.push(product);
-  localStorage.setItem("cart", JSON.stringify(cartArr));
+  if (count == 0) {
+    cartArr.push(product);
+    localStorage.setItem("cart", JSON.stringify(cartArr));
+    alert("Product is succsesfully added to basket");
+    count++;
+  } else {
+    alert("Product is already added to basket");
+  }
 });
 
 document.querySelector("#baskedbutton>span").addEventListener("click", () => {
   let wishArr = JSON.parse(localStorage.getItem("wish")) || [];
   document.querySelector("#baskedbutton>span>svg").style.fill = "crimson";
   wishArr.push(product);
-  localStorage.setItem("wish", JSON.stringify(cartArr));
+  localStorage.setItem("wish", JSON.stringify(wishArr));
 });
