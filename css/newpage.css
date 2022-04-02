@@ -1,0 +1,109 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+#container{
+    display: flex;   
+    justify-content: center;       
+}
+#sidebar{
+    padding: 0.4rem;
+}
+#sidebar div p{
+    padding-right: 4rem;
+    font-size: 2.1308vh;
+}
+#sidebar div p:hover{
+    text-decoration: underline;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border-left: 2px solid grey;
+    width: 100%;
+    gap: 3vh;
+    padding-left: 5vh;
+    box-sizing: border-box;
+
+}
+#main div{
+    /* position: relative; */
+    text-align: center;
+    font-size: 1.8264vh ;
+    box-sizing: border-box;
+    /* margin-top: 1vh; */
+
+}
+
+#newtitle{
+    text-align: center;
+    padding: 1rem;
+    font-size: 4.87064vh ;
+}
+#products{
+    width: 70%;
+}
+#quicklookdiv{
+   
+    margin: auto;
+    padding: 1vh;
+    color: white;
+    
+}
+#quicklook{
+    border-radius: 0.5vh;
+    /* padding: 1vh; */
+    background-color:black;
+    opacity:0.7;width:20vh;
+    position:absolute;z-index:1;
+    margin-top:-22vh;
+    margin-left:6.5vh;
+    font-size:3.4358vw;
+    
+}
+#quicklook:hover{
+    opacity: 0.4;
+}
+#newdiv1{
+    background-color:black ;
+    color: white;width: 19%;
+}
+#span1{
+    display:flex;justify-content:space-between;width:25%;margin:auto ;
+    padding-bottom:1vh;
+    
+}
+#lovediv{
+    width: 1.5vw;
+    height: 1.5vh;
+
+    border: 1px solid blue;
+    top:0.5vh;
+    right:1vh;
+}
+#lovediv svg{
+    height: 3vh;
+    fill: white;
+    stroke: black;
+    width: 2vw;
+}
+#new_heart{
+    padding: 0.3vh;
+    display:flex;
+    justify-content: space-between;
+}
+.css-1be0bml {
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star.svg);
+background-size: cover;
+width: 1em;
+height: 1em;
+}
+.css-m88no0{
+display: inline-block;
+background-image: url(https://www.sephora.com/img/ufe/icons/star-outline.svg);
+background-size: cover;
+width: 1em;
+height:1em;
+margin-left: 0.167em;
+}
