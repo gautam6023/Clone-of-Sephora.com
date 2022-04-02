@@ -6,18 +6,18 @@ body {
   font-family: "helvetica neue", sans-serif;
 } */
 
-::-webkit-scrollbar {
+#hovMainDiv > ::-webkit-scrollbar {
   width: 0.4vw;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+#hovMainDiv > ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+#hovMainDiv > ::-webkit-scrollbar-thumb {
   background: black;
   border-radius: 10px;
 }

@@ -3,7 +3,7 @@ let navData = document.getElementById("nav");
 
 //Function to import export nav data
 const nav = () => {
-  return ` <div id="NAVIGATION">
+  return ` 
   <!-- login -->
   <div id="popUpLog" class="login-modal">
     <div class="modal-content-1 animate">
@@ -1439,7 +1439,7 @@ const nav = () => {
   </div>
 
   <!-- create a/c End-->
-</div>`;
+`;
 };
 
 const Footer = () => {

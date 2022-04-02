@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html {
   font-size: 16px;
@@ -13,9 +13,10 @@ html {
 #########################################################################   */
 
 .sectionFooter {
-  /* width: 98.5vw; */
+  width: 100vw;
   font-size: 0.6rem;
   margin-top: 3rem;
+  border: 1px solid red;
 }
 .sectionFooter a {
   text-decoration: none;
@@ -69,7 +70,7 @@ html {
 
 /* ******************** megaFooter********************** */
 .sectionFooter .footerContainer .megaFooter {
-  width: 98vw;
+  /* width: 100vw; */
   margin: 1rem auto;
   border-top: 1px solid gray;
   padding: 1rem;
