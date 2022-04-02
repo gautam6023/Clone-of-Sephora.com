@@ -81,17 +81,19 @@ const appendData = (data,main) => {
         newdiv.innerHTML = null;
         if(elem.currentSku.isNew===true){
             newdiv.innerHTML = "New";
-            newdiv.style="background-color:black ;color: white; width: 19%"
+            newdiv.style="background-color:black ;color: white; width: 19%:"
         }
         let lovediv = document.createElement('div');
         lovediv.id = "lovediv" ;
-        lovediv.addEventListener("click",()=>{
-            console.log("1");
-            // lovediv.style = "fill:red";
-        })
         lovediv.innerHTML =`<svg id="heart" viewBox="0 0 24 24">
         <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
-        </svg>`
+        </svg>`;
+         new_heart.append(newdiv,lovediv);
+        lovediv.addEventListener("click",()=>{
+            document.querySelector("#heart").style.fill = "red";
+            document.querySelector("#heart").style.stroke = "red";
+        })
+       
 
 
         let limitedED = document.querySelector("#limitedED");
@@ -135,9 +137,9 @@ const appendData = (data,main) => {
         div.addEventListener("mouseleave", ()=>{
             quicklook.innerHTML = null ;
             title1.style="text-decoration: none";
-            lovediv.innerHTML = null;
+            // lovediv.innerHTML = null;
         })
-        new_heart.append(newdiv,lovediv);
+        
 
         let heart = document.getElementById("heart");
         
@@ -150,7 +152,7 @@ const appendData = (data,main) => {
 
         let title1 = document.createElement('p');
         title1.innerText = elem.displayName ;
-        div.addEventListener('click',function(){
+        title1.addEventListener('click',function(){
             let productArr = [];
             productArr.push(elem);
             localStorage.setItem('product',JSON.stringify(productArr));

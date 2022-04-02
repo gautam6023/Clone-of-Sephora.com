@@ -112,7 +112,7 @@
   opacity: 0.4;
 }
 #newdiv1 {
-  background-color: white;
+  /* background-color: white; */
   color: white;
   width: 19%;
 }
@@ -123,14 +123,22 @@
   margin: auto;
   padding-bottom: 1vh;
 }
+#newdiv1{
+  
+  padding: 0;
+  /* padding-top: 1.2vh ; */
+  text-align: center;
+  margin-top:1.3vh;
+  margin-bottom:1.5vh;
+}
 #lovediv {
   width: 1.5vw;
   height: 1.5vh;
 
-  /* border: 1px solid blue; */
-  top: 0.5vh;
-  right: 1vh;
-  padding: 1vw;
+  border: 1px solid blue;
+  /* top: 0.5vh;
+  right: 1vh; */
+  padding: 1.2vw;
 }
 #lovediv svg {
   height: 3vh;
