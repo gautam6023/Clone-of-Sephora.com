@@ -193,102 +193,66 @@ const slidersFun=(count,x,container,k)=>{
 console.log(container);
 document.querySelector(`${container}>.arrows>button:first-child`).addEventListener("click",()=>{
 
-    // slideFun(-1)
-    if(count>k)
-    {
-        document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
-        document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+        // document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+        // document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
         slideFun(-1)
-    }
-    else
-    {
-        // console.log("Hello");
-        document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "lightgray"
-    }
+   
    
     });
 
 document.querySelector(`${container}>.arrows>button:last-child`).addEventListener("click",()=>{
-    if(count<=x.length-k)
-    {
-        document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
-        document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+    
         slideFun(1);
-    }
-    else
-    {
-        // console.log("bye");
-        document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "lightgray"
-    }
 });
 
 
 const slideFun= (n)=>{
         
-    // console.log("Hello",n,count);
-    if(n==1)
-    {
-        var y=count;
-        const rightFun = ()=>{
-            for(var i=0;i<x.length; i++)
-            {
-                x[i].style.opacity= "1";
-                x[i].style.display= "none";
-            }
-            for(i=count;i<y+k; i++)
-            {
-                x[i].style.opacity= "1";
-                if(k===4)
-                {
-                    x[i].style.display= "flex";
-                }
-                else{
-                    x[i].style.display= "block";
-                }
-                count++;
-            }
-        }
+    //console.log("Hello",n,count);
+    var arr3 = [
+        "translateX(-600%)",
+        "translateX(-1200%)",
+      ];
+      var arr4 = [
+        "translateX(0%)",
+        "translateX(0%)",
+        "translateX(-600%)",
+        "translateX(-1200%)",
+      ];
 
-        for(var i=0;i<x.length; i++)
-        {
-            x[i].style.opacity= "0";
+    if (n > 0) {
+        if (count > arr3.length-1) {
+            count = arr3.length-1;
+            document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "lightgray"
+              
+          }
+          else{
+                document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+                document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+          }
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.transform = arr3[count];
+          
         }
-        setTimeout(rightFun,500)
-
-        return count;
-    }
-    
-    if(n==-1)
-    {
-        var y=count;
-        const leftFun= ()=>{
-            for(var i=0;i<x.length; i++)
-            {
-                x[i].style.opacity= "1";
-                x[i].style.display= "none";
-            }
-            for(i=count-(2*k);i<y-k; i++)
-            {
-                x[i].style.opacity= "1";
-                if(k===4)
-                {
-                    x[i].style.display= "flex";
-                }
-                else{
-                    x[i].style.display= "block";
-                }
-                
-                count--;
-            }
-
+        count++;
+        
+      }
+      if (n < 0) {
+        if (count < 1) {
+            count = 1;
+            document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "lightgray"
+          }
+          else{
+            document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+            document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
         }
-        for(var i=0;i<x.length; i++)
-        {
-            x[i].style.opacity= "0";
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.transform = arr4[count];
         }
-        setTimeout(leftFun,500)
-        return count;
-    }
+        count--;
+       
+      }
+      return count;
 }
 
 }

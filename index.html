@@ -5,510 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            font-family: georgia,times,serif;
-        }
-        #container1{
-            width: 78vw;
-            height: 32vw;
-            margin: auto;
-            margin-bottom: 4vh;
-        }
-        #container1>img{
-            display: block;
-            margin: auto;
-            width: 100%;
-            height: 100%;
-        }
-        #container2{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh; 
-        }
-        .firstdiv{
-            display: flex;
-            /* border: 1px solid red; */
-            align-items: flex-end;
-            /* padding: 3vh 0; */
-      
-        }
-        .firstdiv>p{
-            font-size: 4vh;
-            text-align: center;
-            display: block;
-            margin: auto;
-        }
-        .firstdiv>a{
-            /* padding: 8px;
-            margin: 8px; */
-            align-self: center;
-            font-size: 2vh;
-            text-decoration: none;
-        }
-        #datacontainer2{
-            display: flex;
-            overflow: hidden;
-            height: 29vh;
-            margin: 0 4vh;
-            margin-top: -3vh; 
-            /* border: 1px solid red;         */
-        }
-        #datacontainer2>div{
-            display: block;
-            text-align: center;
-            /* border: 1px solid red; */
-            padding: 0px 0.8vw;
-            line-height: 0.4;
-            transition: all 0.5s;
-            position: relative;
-        }
-      
-        #datacontainer2>div>img{
-            width: 7vw;
-            /* height: 97px; */
-            height: 12vh;
-        }
-        #datacontainer2>div>p{
-            font-weight: bold;
-            text-transform: lowercase;
-            font-size: 1.5vh;
-        }
-
-        #datacontainer2>div>div{
-            font-weight: bold;
-            font-size: 1.6vh;
-            line-height: normal;
-        }
-        #datacontainer2>div>div>p:last-child{
-            margin-top: -1.4vh;
-            font-weight: normal;
-            width: 8.6vw;
-            line-height: normal;
-        }
-        .arrows{
-            display: flex;
-            margin: auto;
-            z-index: 2;
-            justify-content: space-between;
-        }
-        .arrows>button{
-            display: block;
-            font-weight:lighter;
-            position: relative;
-            top: 12vh;
-            background-color: transparent;
-            border: 0px;
-        }
-        .arrows>button>svg:hover{
-            fill:lightgray;
-        }
-        .arrows>button>svg{
-            height: 5vh;
-        }
-        #container3{
-            display: flex;
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh;
-            justify-content: space-between;
-        }
-        #container3>img{
-            width: 32vw;
-        }
-
-        #container4{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh; 
-        }
-        #datacontainer4{
-            display: flex;
-            overflow: hidden;
-            height: 29vh;
-            margin: 0 4vh;
-            margin-top: -3vh; 
-            /* border: 1px solid red;         */
-        }
-        #datacontainer4>div{
-            display: block;
-            text-align: center;
-            /* border: 1px solid red; */
-            padding: 0px 0.8vw;
-            line-height: 0.4;
-            transition: all 0.5s;
-            position: relative;
-        }
-      
-        #datacontainer4>div>img{
-            width: 7vw;
-            /* height: 97px; */
-            height: 12vh;
-        }
-        #datacontainer4>div>p{
-            font-weight: bold;
-            text-transform: lowercase;
-            font-size: 1.5vh;
-        }
-
-        #datacontainer4>div>div{
-            font-weight: bold;
-            font-size: 1.6vh;
-            line-height: normal;
-        }
-        #datacontainer4>div>div>p:last-child{
-            margin-top: -1.4vh;
-            font-weight: normal;
-            width: 8.6vw;
-            line-height: normal;
-        }
-        #container5{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh; 
-        }
-        #datacontainer5{
-            display: flex;
-            overflow: hidden;
-            height: 29vh;
-            margin: 0 4vh;
-            margin-top: -3vh; 
-            /* border: 1px solid red;         */
-        }
-        #datacontainer5>div{
-            display: block;
-            text-align: center;
-            /* border: 1px solid red; */
-            padding: 0px 0.8vw;
-            line-height: 0.4;
-            transition: all 0.5s;
-            position: relative;
-        }
-      
-        #datacontainer5>div>img{
-            width: 7vw;
-            /* height: 97px; */
-            height: 12vh;
-        }
-        #datacontainer5>div>p{
-            font-weight: bold;
-            text-transform: lowercase;
-            font-size: 1.5vh;
-        }
-
-        #datacontainer5>div>div{
-            font-weight: bold;
-            font-size: 1.6vh;
-            line-height: normal;
-        }
-        #datacontainer5>div>div>p:last-child{
-            margin-top: -1.4vh;
-            font-weight: normal;
-            width: 8.6vw;
-            line-height: normal;
-        }
-
-        #container6{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh; 
-        }
-        #datacontainer6{
-            display: flex;
-            overflow: hidden;
-            height: 29vh;
-            margin: 0 4vh;
-            margin-top: -3vh; 
-            /* border: 1px solid red;         */
-        }
-        #datacontainer6>div{
-            display: block;
-            text-align: center;
-            /* border: 1px solid red; */
-            padding: 0vh 0.8vw;
-            line-height: 0.4;
-            transition: all 0.5s;
-            position: relative;
-        }
-      
-        #datacontainer6>div>img{
-            width: 7vw;
-            /* height: 97px; */
-            height: 12vh;
-        }
-        #datacontainer6>div>p{
-            font-weight: bold;
-            text-transform: lowercase;
-            font-size: 1.5vh;
-        }
-
-        #datacontainer6>div>div{
-            font-weight: bold;
-            font-size: 1.6vh;
-            line-height: normal;
-        }
-        #datacontainer6>div>div>p:last-child{
-            margin-top: -1.4vh;
-            font-weight: normal;
-            width: 8.6vw;
-            line-height: normal;
-        }
-        #container7{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh;
-        }
-        #datacontainer7{
-            display: flex;
-            overflow: hidden;
-            height: 35vh;
-            margin: 0 4vh;
-            margin-top: -4vh;       
-        }
-        #datacontainer7>div{
-            display: flex;
-            height: 35vh;
-            flex-direction: column;
-            justify-content: space-between;
-            text-align: center;
-            justify-content: space-between;
-            /* border: 1px solid red; */
-            /* width: 25vw; */
-            padding: 0vh 1.5vw;
-            line-height: 0.4;
-            transition: all 0.5s;
-            position: relative;
-           
-        }
-        #datacontainer7>div>img{
-            width: 12vw;
-            height: 12vh;
-        }
-        #datacontainer7>div>p{
-            font-weight: bold;
-            font-size: 1.6vh;
-        }
-        #datacontainer7>div>div{
-            font-weight: bold;
-            font-size: 1.6vh;
-        }
-        #datacontainer7>div>div>p:last-child
-        {
-            margin-top: -1vh;
-            line-height: normal;
-            font-weight: normal;
-        }
-        #datacontainer7>div>button:nth-child(4){
-        line-height: 0.1;
-        border-radius: 5vh 2.5vw;
-        padding: 0.5vh 1vw;
-        font-size: 1.5vh;
-        width: 10vw;
-        background-color: lightgray;
-        border: 0px;
-        margin: auto;
-        opacity: 0.6;
-        }
-        #datacontainer7>div>button>p:first-child{
-            font-weight: bold;
-        }
-        .quickclass{
-            width: 7vw;
-            height: 3.5vh;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: absolute;
-           bottom: 50%;
-           left: 18%;
-           border-radius: 8%;
-           cursor: pointer;
-        }
-
-        .quickclass7{
-            width: 7vw;
-            height: 3.5vh;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: absolute;
-           bottom: 50%;
-           left: 28%;
-           border-radius: 8%;
-           cursor: pointer;
-        }
-        .newClass{
-            display: flex;
-            align-items: center;
-            width: 1.8vw;
-            height: 1.6vh;
-            font-size: 1.4vh;
-            padding: 1%;
-            background: black;
-            color: white;
-            position: absolute;
-            margin: auto;
-            top: 0;
-            left: 0;
-           border-radius: 10%;
-
-        }
-        .sequenceOfNum{
-            height: 2vh;
-            font-size: 2.5vh;
-            padding: 2%;
-            padding-right: 3%;
-            border: 1px solid black;
-            position: absolute;
-           left: 0;
-           top: 0;
-           border-radius: 10%;
-           border-bottom-right-radius: 50%;
-
-        }
-        #container8{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh;
-        }
-        #datacontainer8{
-            display: flex;
-            margin-top: 3vh;
-            justify-content: space-between;
-            
-        }
-        #container9{
-            width: 65vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh;
-            justify-content: space-between;
-        }
-        #container9>img{
-            width: 100%;
-            height: 100%;
-        }
-        #container10{
-            display: flex;
-            width: 60vw;
-            /* border: 1px solid red; */
-            margin: auto;
-            margin-bottom: 4vh;
-            justify-content: space-between;
-            
-        }
-        #container10>div>p{
-            font-size: 1.5vh;
-        }
-        #main{
-            position: relative;
-        }
-        #showImage{
-            display: none;
-            margin: auto;
-            height: 50vh;
-            width: 60vw;
-            position: fixed;
-            top: 50vh;
-            left: 50vw;
-            /* border: 1px solid red; */
-            background: white;
-            transform: translate(-50%,-50%);
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-            border-radius: 15px;   
-            padding: 2vh 2vw;
-        }
-        #showImage>div{
-            height: 50vh;
-            width: 60vw;
-            display: flex;
-            justify-content: space-around;
-           
-        }
-        #showImage>div>div:first-child{
-            width: 25vw;  
-            /* border: 1px solid red; */
-            margin: auto;
-        }
-        #showImage>div>div:last-child>a{
-           display: flex;
-           justify-content: end;
-        }
-        #showImage>div>div>img:first-child{
-            width: 80%;
-            height: 80%;
-        }
-        .reviewsclass{
-            display: flex;
-            align-items: center;
-        }
-        .reviewsclass>img{
-            width: 20%;
-            height: 10%;
-            /* border: 1px solid red; */
-        }
-        .reviewsclass>p{
-            font-size: 1.6vh;
-            font-weight: bold;
-            /* display: inline-block; */
-            /* border: 1px solid red; */
-        }
-        #showImage>div>div:last-child{
-            font-size: 2vh;
-            font-weight: normal;
-            width: 35vw;  
-          
-        }
-        #showImage>div>div:last-child>p:first-child{
-            font-weight: bold;
-        }
-        .priceclass{
-            display: flex;
-            flex-direction: column;
-        }
-        .priceclass>p:first-child{
-            font-weight: bold;
-            font-size: 3vh;
-        }
-        .priceclass>p:last-child{
-            font-weight: bold;
-            font-size: 1.3vh;
-        }
-        .buttonsclass{
-            display: flex;
-            flex-direction: column;
-        }
-        .buttonsclass>button:first-child{
-            background-color: crimson;
-            width: 15vw;
-            padding: 3vh 2.5vw;
-            border-radius: 6vh 3vw;
-            margin-bottom: 1vh;
-            border: 0px;
-            color: white;
-            font-weight: bold;
-        }
-        .buttonsclass>button:last-child{
-            display: flex;
-            padding: 3vh 2.5vw;
-            width: 15vw;
-            height: 8vh;
-            border-radius: 6vh 3vw;
-            border: 0px;
-            border: 2px solid black;
-            align-items: center;
-            font-weight: bold;          
-        }
-        .lastinquick{
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/landingbody.css">
 </head>
 <body>
     <div id = "main">
@@ -609,36 +106,37 @@
 
     import {arrowsFun} from "./components/arrows.js";
 
+    import {appendJustFun,slidersFun} from "./scripts/appendslideFun.js";
+    
     let arrowsData= arrowsFun();
     var arrowsclasses= document.querySelectorAll(".arrows");
     for(var j=0; j<arrowsclasses.length; j++)
     {
         arrowsclasses[j].innerHTML= arrowsData;
     }
-     let justdroppedArr = JSON.parse(localStorage.getItem("justDropped"));
+    let justdroppedArr = JSON.parse(localStorage.getItem("justDropped"));
     console.log(justdroppedArr);
 
     let datacontainer2= document.getElementById("datacontainer2");
 
-    import {appendJustFun,slidersFun} from "./scripts/appendsliderFun.js";
-
+    
     appendJustFun(justdroppedArr,datacontainer2);
     let container2= document.getElementById("container2");
-    let count2=6;
+    let count2=0;
     var x2 = document.querySelectorAll("#datacontainer2>div");
     count2 = slidersFun(count2,x2,"#container2",6);
 
     let sellingFastArr = JSON.parse(localStorage.getItem("sellingFast"));
     let datacontainer4= document.getElementById("datacontainer4");
     appendJustFun(sellingFastArr,datacontainer4);
-    let count4=6;
+    let count4=0;
     var x4 = document.querySelectorAll("#datacontainer4>div");
     count4 = slidersFun(count4,x4,"#container4",6);
 
     let valueSetsArr = JSON.parse(localStorage.getItem("valueSets"));
     let datacontainer5= document.getElementById("datacontainer5");
     appendJustFun(valueSetsArr,datacontainer5);
-    let count5=6;
+    let count5=0;
     var x5 = document.querySelectorAll("#datacontainer5>div");
     count5 = slidersFun(count5,x5,"#container5",6);
 
@@ -646,181 +144,84 @@
     let chosenArr = JSON.parse(localStorage.getItem("chosen"));
     let datacontainer6= document.getElementById("datacontainer6");
     appendJustFun(chosenArr,datacontainer6);
-    let count6=6;
+    let count6=0;
     var x6 = document.querySelectorAll("#datacontainer6>div");
     count6 = slidersFun(count6,x6,"#container6",6);
+    ////=====
+    const slidersFun7=(count,x,container)=>{
+// console.log("Hel")
+console.log(container);
+document.querySelector(`${container}>.arrows>button:first-child`).addEventListener("click",()=>{
+
+    // document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+    // document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+    slideFun(-1)
 
 
-    let beautyArr = JSON.parse(localStorage.getItem("beautyinsider"));
-    let datacontainer7= document.getElementById("datacontainer7");
+});
 
-    const append7Fun= ()=>{
-        beautyArr.forEach((el,index)=>{
-        let divTag = document.createElement("div");
+document.querySelector(`${container}>.arrows>button:last-child`).addEventListener("click",()=>{
 
-        let imgTag = document.createElement("img");
-        imgTag.src= el.image;
-
-        let limitedTag = document.createElement("p");
-        if(el.points===undefined)
-        {
-            limitedTag.innerText= "";
-        }
-        else
-        {
-            limitedTag.innerText= el.points;
-        }
-
-        let titleTag = document.createElement("p");
-        titleTag.innerText= el.title;
-
-        let descriptionTag = document.createElement("p");
-        descriptionTag.innerText= el.description;
-
-        let infoTag= document.createElement("div");
-        infoTag.append(titleTag,descriptionTag)
+    slideFun(1);
+});
 
 
-        infoTag.addEventListener("mouseover", ()=>{
-            infoTag.style.textDecoration= "underline";
-        })
-
-        infoTag.addEventListener("mouseout", ()=>{
-            infoTag.style.textDecoration= "none";
-        })
-
-        let buttonTag = document.createElement("button");
-        let buttonptag1 =  document.createElement("p");
-        buttonptag1.innerText= "Add to Basket";
-        let buttonptag2 =  document.createElement("p");
-        buttonptag2.innerText= "for Standard Shopping";
-        buttonTag.append(buttonptag1,buttonptag2)
-
-        divTag.append(imgTag,infoTag,limitedTag,buttonTag);
-
-        divTag.addEventListener("mouseenter", ()=>{
-            divTag.innerHTML= "";
-            let quickPTag=  document.createElement("button");
-            quickPTag.innerText= "Quicklook";
-            quickPTag.setAttribute("class","quickclass7")
-            quickPTag.style.background= "rgba(0, 0, 0, 0.5)"
-            quickPTag.addEventListener("click",()=>{
-                showFullDataFun7(el);
-            })
-            divTag.append(imgTag,infoTag,limitedTag,buttonTag,quickPTag);
-        })
-        divTag.addEventListener("mouseleave", ()=>{
-            divTag.innerHTML= "";
-            divTag.append(imgTag,infoTag,limitedTag,buttonTag);
-        })
-
-        document.getElementById("datacontainer7").append(divTag);
-
-    })
-
-    function showFullDataFun7(el)
-    {
-        document.getElementById("showImage").innerHTML= "";
-        //console.log(el);
-        let qdivTag = document.createElement("div");
-        let qdivTagim = document.createElement("div");
-        let qimgTag= document.createElement("img");
-        qimgTag.src= el.image;
-
-        let reviewsDivTag = document.createElement("div");
-
-        let starTag =  document.createElement("img");
-        starTag.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2g_CyJEN6QWdQbSd7psuahRnxl2wbp32EA&usqp=CAU"
-       
-        let reviewsTag = document.createElement("p");
-        reviewsTag.innerText= "716 reviews  |  87.4K loves";
-
-
-        reviewsDivTag.append(starTag,reviewsTag)
-        reviewsDivTag.setAttribute("class","reviewsclass")
-        qdivTagim.append(qimgTag,reviewsDivTag);
-
-
-
-        let qtitleTag = document.createElement("p");
-        qtitleTag.innerText= el.title;
-
-        let qdescriptionTag = document.createElement("p");
-        qdescriptionTag.innerText= el.description;
-
-
-        let qdescriptionTag1= document.createElement("p");
-        qdescriptionTag1.innerText= "A Dior foundation with 24h wear, radiant medium-to-full coverage and hydration. With 86% skincare ingredients to visibly improve skin over time."
-
-        let qdescriptionTag2= document.createElement("p");
-        qdescriptionTag2.innerText= "Size: 6.7 oz/ 200 mL"
-
-          let qdescriptionTag3= document.createElement("a");
-        qdescriptionTag3.href= "#";
-        qdescriptionTag3.innerText= "See product details"
-
-        // let qdescriptionTag3= document.createElement("img");
-        // qdescriptionTag3.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AYKF-v3JL8Cqshjat8Qkg_nRBbw3UNCnwQ&usqp=CAU"
-
-        let lastDivTag =document.createElement("div");
-
-        let priceTag= document.createElement("p");
-        priceTag.innerText= `$${Math.floor(Math.random() * 90) + 10}`;
-
-        let shipTag= document.createElement("p");
-        shipTag.innerText= "FREE SHIPPING";
-
-        let priceDetails= document.createElement("div");
-        priceDetails.append(priceTag,shipTag);
-        priceDetails.setAttribute("class","priceclass")
-
-        let buyTag=  document.createElement("button");
-        buyTag.innerText= "Add to Basket";
-        let cartTag = document.createElement("button");
-        // cartTag.innerText= "Add to Loves"
-        let carttext=document.createElement("span");
-        carttext.innerText= "Add to Loves";
-        let lovessvgTag = document.createElement("div");
-        lovessvgTag.innerHTML= `<svg style = "height:3vh;width: 2vw; fill:white; stroke:black" viewBox="0 0 24 24">
-        <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
-        </svg>`
-        cartTag.append(lovessvgTag,carttext);
-
-        let buttonTag= document.createElement("div");
-        buttonTag.append(buyTag,cartTag)
-        buttonTag.setAttribute("class","buttonsclass")
-
-        lastDivTag.append(priceDetails,buttonTag)
-        lastDivTag.setAttribute("class","lastinquick")
-
-        let qinfoTag= document.createElement("div");
-        qinfoTag.append(qtitleTag,qdescriptionTag,qdescriptionTag1,qdescriptionTag3,qdescriptionTag2,lastDivTag);
-
-        qdivTag.append(qdivTagim,qinfoTag)
-
-        document.getElementById("showImage").append(qdivTag);
-        console.log( document.getElementById("showImage"));
-        document.getElementById("showImage").style.display= "block";
-
-            document.getElementById("main").addEventListener("click",()=>{
-                
-                showImageFun(event)
-            })
-        
-    }
+const slideFun= (n)=>{
     
-    const showImageFun= (ev)=>{
-        if(ev.target.innerText !== "Quicklook")
-        {
-            document.getElementById("showImage").style.display= "none";
-        }
+//console.log("Hello",n,count);
+var arr3 = [
+    "translateX(-400%)",
+    "translateX(-800%)",
+    // "translateX(-1200%)",
+  ];
+  var arr4 = [
+    "translateX(0%)",
+    "translateX(0%)",
+    "translateX(-400%)",
+    "translateX(-800%)",
+    // "translateX(-1500%)",
+  ];
+
+  if (n > 0) {
+    if (count > arr3.length-1) {
+        count = arr3.length-1;
+        document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "lightgray"
+          
+      }
+      else{
+            document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+            document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+      }
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.transform = arr3[count];
+      
     }
-    } 
-    append7Fun();
+    count++;
+    
+  }
+  if (n < 0) {
+    if (count < 1) {
+        count = 1;
+        document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "lightgray"
+      }
+      else{
+        document.querySelector(`${container}>.arrows>button:first-child`).style.fill = "black"
+        document.querySelector(`${container}>.arrows>button:last-child`).style.fill = "black"
+    }
+    for (var i = 0; i < x.length; i++) {
+      x[i].style.transform = arr4[count];
+    }
+    count--;
+   
+  }
+  return count;
+}
 
-    let count7=4;
-    var x7 = document.querySelectorAll("#datacontainer7>div");
-    count7 = slidersFun(count7,x7,"#container7",4);
 
-   var showImagedisplay= document.getElementById("showImage")
+}
+
+let count7=0;
+var x7 = document.querySelectorAll("#datacontainer7>div");
+count7 = slidersFun7(count7,x7,"#container7");
 </script>
+<script src="./scripts/landingbody.js"></script>
