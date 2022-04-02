@@ -3,18 +3,34 @@
   text-decoration: none;
 }
 #mainbody {
-  width: 95%;
+  width: 100%;
+  margin-top: 10vh;
 }
 #container {
+  margin: auto;
+
+  width: 80%;
+
   display: flex;
   justify-content: center;
 }
 #sidebar {
   padding: 0.4rem;
 }
+#sidebar div h2 {
+  margin-bottom: 1.5vh;
+}
+#sidebar h6 {
+  margin-top: 1vh;
+  color: #666666;
+  font-weight: 100;
+}
+#sidebar h5 {
+}
 #sidebar div p {
-  padding-right: 4rem;
-  font-size: 2.1308vh;
+  padding-right: 4vw;
+  font-size: 1.61vh;
+  line-height: 3vh;
 }
 #sidebar div p:hover {
   text-decoration: underline;
@@ -23,22 +39,32 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* border-left: 2px solid grey; */
-  width: 115%;
-  gap: 3vh;
+  width: 100%;
+
+  gap: 4vh;
   padding-left: 5vh;
   box-sizing: border-box;
 }
-#main div {
+#main > div {
   /* position: relative; */
   text-align: center;
   font-size: 1.8264vh;
   box-sizing: border-box;
-
+  text-align: left;
   /* margin-top: 1vh; */
 }
+#main > div > img {
+  margin-bottom: 1.5vh;
+}
+#main > div > p,
+#main > div > h5 {
+  margin-bottom: 1vh;
+}
+
 #navvv p {
-  font-size: 1.8264vh;
-  margin-left: 15vh;
+  font-size: 1.6vh;
+  margin-left: 14vw;
+  padding: 2vh 0;
 }
 /* #main div img{
     width: 100%;
@@ -65,8 +91,8 @@
   width: 20vh;
   position: absolute;
   z-index: 1;
-  margin-top: -22vh;
-  margin-left: 6.5vh;
+  margin-top: -17vh;
+  margin-left: 1.5vw;
   font-size: 3.4358vw;
 }
 #quicklook:hover {
@@ -104,39 +130,47 @@
   justify-content: space-between;
 }
 #pageGrids {
-  /* border-left: 2px solid grey; */
-  width: 115%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 5vh);
   gap: 1vh;
   padding: 1vh;
 }
-#pageGrids div {
-  background-color: whitesmoke;
+#pageGrids > div {
+  background-color: white;
   padding: 0.3vh;
   margin-left: 0.9vh;
-  font-size: 2.1308vh;
+  font-size: 1.6vh;
+  box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+}
+#sidebar > div:last-child {
+  width: 80%;
 }
 #newInner {
-  width: 85%;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #newInner img {
-  margin-top: 1.3vh;
   width: 4.2617vh;
   height: 4.2617vh;
 }
+
 #filtersdiv {
   display: flex;
+  margin: 1vh 0;
   justify-content: space-between;
+
+  align-items: center;
 }
-#filtersdiv svg {
-  /* border: 1px solid black; */
-  width: 1.634vh;
+#filtersdiv > svg {
   stroke: black;
-  margin-right: 2vh;
-  padding: 1.5vw;
+  fill: black;
+  padding: 1vh;
+
   /* padding: 0.5vw; */
 }
 #sortdiv {

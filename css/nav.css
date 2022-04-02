@@ -5,30 +5,12 @@ body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   background-color: #ffffff;
 }
-ol,
+
 ul {
   list-style: none;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-#nav h1,
-#nav h2,
-#nav h3,
-#nav h4,
-#nav h5,
-#nav h6,
-#nav p {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
 /* Firts part of div */
+
 #navFirst {
   height: 7.2vh;
   width: 100%;
@@ -100,7 +82,7 @@ body {
 #search {
   width: 23.02vw;
   height: 4.15vh;
-
+  border-radius: 1000px;
   border: 0;
   background-color: #f6f6f8;
   text-indent: 1.5rem;
@@ -246,7 +228,8 @@ body {
 /* Third element */
 #navThird {
   height: 5.4vh;
-  width: 100%;
+  width: 100vw;
+  border: 1px solid red;
   background-color: black;
   display: flex;
   align-items: center;
