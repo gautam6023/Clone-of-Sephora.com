@@ -16,6 +16,8 @@ const getData= async (url)=>{
 
 const appendData = (data,main) => {
     data.forEach((elem)=>{
+        elem.count = 1; 
+        let countclick = 0;
         let div = document.createElement('div');
         let quicklook = document.createElement('div');
         quicklook.id ="quicklook";
@@ -28,7 +30,8 @@ const appendData = (data,main) => {
         lovediv.id = "lovediv" ;
         lovediv.addEventListener("click",()=>{
             console.log("ssssss");
-            document.querySelector("#heart").style.fill = "red";
+            
+            countclick=1;
         })
         
 
@@ -43,6 +46,10 @@ const appendData = (data,main) => {
             lovediv.innerHTML =`<svg id="heart" viewBox="0 0 24 24">
         <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
         </svg>`
+            if(countclick===1){
+                document.querySelector("#heart").style.fill = "red";
+            document.querySelector("#heart").style.stroke = "red";
+            }   
         })
         // document.querySelector("#heart").addEventListener("click",()=>{
         //     document.querySelector("#heart").style.fill = "red";
@@ -50,7 +57,11 @@ const appendData = (data,main) => {
         div.addEventListener("mouseleave", ()=>{
             quicklook.innerHTML = null ;
             title1.style="text-decoration: none";
-            lovediv.innerHTML = null;
+            if(countclick===0){
+                lovediv.innerHTML = null;
+            }
+            
+            
         })
         new_heart.append(newdiv,lovediv);
 
@@ -65,7 +76,7 @@ const appendData = (data,main) => {
 
         let title1 = document.createElement('p');
         title1.innerText = elem.title ;
-        div.addEventListener('click',function(){
+        title1.addEventListener('click',function(){
             // console.log(event)
             let productArr = [];
             productArr.push(elem);
