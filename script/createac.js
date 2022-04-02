@@ -36,22 +36,29 @@ document.getElementById("join-btn").addEventListener("click", createacDetails);
 let createacArr = JSON.parse(localStorage.getItem("userLocal")) || [];
 
 function createacDetails() {
+let fname = document.getElementById("fname").value;
+let lname = document.getElementById("lname").value;
+let c_email = document.getElementById("c_email").value;
+let c_password = document.getElementById("c_password").value;
+let mobile = document.getElementById("phone").value;
+let zip = document.getElementById("zip").value;
   let userobj = {
-    fname: document.getElementById("fname").value,
-    lname: document.getElementById("lname").value,
-    c_email: document.getElementById("c_email").value,
-    c_password: document.getElementById("c_password").value,
-    mobile: document.getElementById("phone").value,
-    zip: document.getElementById("zip").value,
+    fname,
+    lname,
+    c_email,
+    c_password,
+    mobile,
+    zip,
   };
-  //    if(fname == null || lname == null || c_email == null || c_password == null || zip == null || mobile === ""){
-  //         alert("Please enter the details")
-  //     }
-  //     else{
+     if(fname == null || lname == null || c_email == null || c_password == null || zip == null || mobile === ""){
+          alert("Please enter the details")
+      }
+      else{
   createacArr.push(userobj);
   localStorage.setItem("userLocal", JSON.stringify(createacArr));
 
   alert("Your acccount has been created successfully");
   document.getElementById("popUp").style.display = "none";
   document.getElementById("popUpLog").style.display = "block";
+}
 }
