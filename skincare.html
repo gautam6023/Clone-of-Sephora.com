@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mainstyles/main.css">
+</head>
+<body> 
+    <div id="mainbody">
+    <div id="navvv">
+        <p>Skincare </p>
+    </div>
+    <div id="container">
+        
+        <div id="sidebar">
+           
+
+
+        <div >
+            <div><h6>Filters</h6></div>
+            <div id="filtersdiv" ><h5>Limited Edition</h5><svg id="limitedED" aria-hidden="true" viewBox="0 0 7 4" class="css-rwnkk2 e65zztl0" data-comp="Chevron StyledComponent "><path d="m.5.5 3 3 3-3" fill="none" vector-effect="non-scaling-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+
+            <div id="filtersdiv" ><h5>New Arrival</h5><svg id="newArrival" ;aria-hidden="true" viewBox="0 0 7 4" class="css-rwnkk2 e65zztl0" data-comp="Chevron StyledComponent "><path d="m.5.5 3 3 3-3" fill="none" vector-effect="non-scaling-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+
+            <div id="filtersdiv" ><h5>Sephora Exclusive</h5><svg id="sephora" aria-hidden="true" viewBox="0 0 7 4" class="css-rwnkk2 e65zztl0" data-comp="Chevron StyledComponent "><path d="m.5.5 3 3 3-3" fill="none" vector-effect="non-scaling-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+
+            <div id="filtersdiv" ><h5>Organic</h5><svg id="organic" aria-hidden="true" viewBox="0 0 7 4" class="css-rwnkk2 e65zztl0" data-comp="Chevron StyledComponent "><path d="m.5.5 3 3 3-3" fill="none" vector-effect="non-scaling-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div>
+
+            
+         </div>
+    </div>
+        <div id="products">
+            <div id="pageGrids">
+                <div id="newlocation">
+                  <div id="newInner">
+                      <p>New</p>
+                      <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="">
+                  </div>
+                </div>
+
+                <div id="newlocation">
+                    <div id="newInner">
+                        <p>Bestseller</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Clean</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Vegan</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Mini Size</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Lip Quiz</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/lip_quiz.svg" alt="">
+                    </div>
+                  </div>
+
+                  <div id="newlocation">
+                    <div id="newInner">
+                        <p>Foundation Quiz</p>
+                        <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/foundation_quiz.svg" alt="">
+                    </div>
+                  </div>
+                
+            </div>
+            <div id="sortdiv"><button id="sort_h2l">Sort H2L</button>
+                <button   id="sort_l2h">Sort L2H</button>
+                <button id="topRated">Top Rated</button>
+            </div>
+            <div id="main">
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+</body>
+</html>
+
+
+ <script type="module">
+    
+
+    let main = document.getElementById('main');
+    import {getData,appendData} from "./fetchappend/fetchpages.js";
+  
+    
+   
+    let resp = await getData("./data/skincare.json");
+    console.log('resp: ', resp);
+
+    appendData(resp,main);
+    
+    
+
+
+
+</script>
+ 
+<script src="./scripts/makeup.js">
+
+
+</script> 

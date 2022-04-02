@@ -6,62 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/cd8f1662fe.js" crossorigin="anonymous"></script>
-    <style>
-    #product_main{
-        display: flex;
-        gap: 2rem;
-    }
-    #vertical_imgs{
-        width: 15%;
-    }
-    #middle_img{
-        /* border: 1px solid black; */
-        width: 30%;
-    }
-    #middle_img>img{
-        width: 100%;
-    }
-    #right{
-        width: 50%;
-    }
-    #shipping{
-        /* border: 1px solid black; */
-        border-radius: 0.3rem;
-        background-color:whitesmoke ;
-        padding: 0.8rem;
-        margin-top: 1rem;
-    }
-    #flexed{
-        display: flex;
-        justify-content: space-between;
-        /* border: 1px solid red; */
-    }
-    #flexed1{
-        display: flex;
-        justify-content: space-between;
-        gap: 0.8rem;
-    }
-    #flexed1 input{
-        margin: auto;
-        padding-top: 3rem;
-    }
-    #flexed1 i{
-        margin: auto;
-        padding-top: 0.4rem;
-    }
-    #icons{
-        font-size: 20px;
-        font-weight: bold ;
-        
-    }
-    #icons i{
-        margin-top: 1rem;
-        margin-right: 0.5rem;
-    }
-    #iconlast{
-        padding-top: 1.5rem;
-    }
-    </style>
+    <link rel="stylesheet" href="./otherstyles/product.css">
 </head>
 <body>
     <div id="product_main">
@@ -73,7 +18,16 @@
         </div>
         <div id="right" >
             <div id="right_info">
-
+                
+            </div>
+            <div>
+                <span>
+                    <span class="css-1be0bml"></span>
+                    <span class="css-1be0bml"></span>
+                    <span class="css-1be0bml"></span>
+                    <span class="css-1be0bml"></span>
+                    <span class="css-m88no0"></span>
+                </span>
             </div>
             <div id="shipping">
                 <div id="flexed"><h3>Get It Shipped</h3><p>Shipping &Returns</p></div>
@@ -84,7 +38,8 @@
                         <p>Standard</p>
                         <p>You now qualify for free shipping.</p>
                     </div>
-                    <div id="icons"><i class="fa-solid fa-truck"></i>
+                    <div id="icons">
+                        <i class="fa-solid fa-truck"></i>
                     </div>
                 </div>
 
@@ -95,7 +50,7 @@
                         <p>Select to see availability for your location</p>
                     </div>
                     <div id="icons">
-                        <i class="fa-solid fa-bag-shopping"></i>
+                     <i class="fa-solid fa-bag-shopping"></i>
                     </div>
                 </div>
             </div>
@@ -111,7 +66,7 @@
 
                 <div id="flexed">                  
                     <div id="flexed1">
-                        <input type="radio" checked>
+                        <input type="radio" >
                         <p>Select to see availability at </p> 
 
                         <p>stores near you</p>
@@ -119,16 +74,7 @@
                     </div>
                 </div>
 
-                <!-- <div id="flexed">                  
-                    <div id="flexed1">
-                        <input type="radio" >
-                        <p>Same-Day Delivery</p>
-                        <p>Select to see availability for your location</p>
-                    </div>
-                    <div id="icons">
-                        <i class="fa-solid fa-bag-shopping"></i>
-                    </div>
-                </div> -->
+
             </div>
 
         </div>
