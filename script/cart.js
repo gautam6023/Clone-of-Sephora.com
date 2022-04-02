@@ -16,16 +16,21 @@ let cartProducts = document.getElementById("cartItemsTable");
 const displayData = (data) => {
   cartProducts.innerHTML = "";
   data.map((el, index) => {
-    let { brand, title, image, price } = el;
-    el.qty = 1;
-    console.log(el);
+    console.log(data);
+    let {
+      brandName,
+      displayName,
+      image450,
+      currentSku: { listPrice: price },
+    } = el;
+
     let row = document.createElement("div");
     row.setAttribute("id", "row");
 
     // let col1 = document.createElement("d");
 
     let img = document.createElement("img");
-    img.src = image;
+    img.src = image450;
     img.setAttribute("class", "cartImage");
 
     // col1.append(img);
@@ -35,11 +40,11 @@ const displayData = (data) => {
 
     let innDiv = document.createElement("div");
     let Title = document.createElement("p");
-    Title.innerText = title;
+    Title.innerText = displayName;
     Title.setAttribute("id", "cartTitle");
     Title.setAttribute("class", "cartHover");
     let desc = document.createElement("p");
-    desc.innerText = brand;
+    desc.innerText = brandName;
     desc.setAttribute("class", "cartHover");
     let itemCode = document.createElement("p");
     let code = Math.floor(Math.random() * (1000000 - 500000 + 1)) + 500000;
@@ -72,6 +77,12 @@ const displayData = (data) => {
     let btnLoves = document.createElement("button");
     btnLoves.innerText = `Move to Loves`;
 
+    btnLoves.addEventListener("click", () => {
+      let wishArr = JSON.parse(localStorage.getItem("wish")) || [];
+      wishArr.push(el);
+      localStorage.setItem("wish", JSON.stringify(wishArr));
+    });
+
     let btnRemove = document.createElement("button");
     btnRemove.innerText = `Remove`;
     btnRemove.addEventListener("click", () => {
@@ -87,8 +98,11 @@ const displayData = (data) => {
     col3.setAttribute("id", "thirdDiv");
 
     let Price = document.createElement("p");
-    Price.innerText = price;
-    col3.append(price);
+    let PriceAft = Number(price) * Number(el.qty);
+    Price.innerText = `$${PriceAft}`;
+    console.log(price);
+
+    col3.append(Price);
 
     row.append(img, col2, col3);
 
@@ -99,17 +113,16 @@ displayData(cartData);
 
 //UnitPriceUpdate
 const updateUnitPrice = (value, index) => {
-  console.log(value, index);
-
   cartData[index].qty = value;
 
   showTotal();
+  displayData(cartData);
 };
 let totalAm;
 let toalFinal;
 const showTotal = () => {
   let total = cartData.reduce((ac, el) => {
-    return ac + el.price.substring(1) * el.qty;
+    return ac + Number(el.currentSku.listPrice) * el.qty;
   }, 0);
   console.log(total);
 
@@ -149,7 +162,13 @@ document.getElementById("submitCode").addEventListener("click", () => {
 //Delete Func
 const getDelete = (index) => {
   cartData.splice(index, 1);
-  // localStorage.setItem("cart", JSON.stringify(cartData));
+  localStorage.setItem("cart", JSON.stringify(cartData));
   displayData(cartData);
   showTotal();
 };
+
+document.getElementById("checkout").addEventListener("click", () => {
+  let checkoutAmt = document.getElementById("totalFinal");
+
+  localStorage.setItem("checkoutAmt", checkoutAmt.innerText);
+});

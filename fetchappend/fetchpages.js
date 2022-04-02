@@ -129,8 +129,9 @@ const appendData = (data, main) => {
     div.addEventListener("click", function () {
       let productArr = [];
       productArr.push(elem);
-      localStorage.setItem("clickedProduct", JSON.stringify(productArr));
-      console.log(productArr);
+      console.log(elem);
+      localStorage.setItem("clickedProduct", JSON.stringify(elem));
+
       window.location.href = "../product.html";
     });
 
