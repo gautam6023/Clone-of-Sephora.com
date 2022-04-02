@@ -1,19 +1,35 @@
 /* body{
     font-family: georgia,times,serif;
 } */
-#container1 {
+/* #container1 {
   width: 78vw;
   height: 32vw;
   margin: auto;
   margin-bottom: 4vh;
   margin-top: 5.4vh;
+} */
+
+#container1{
+  display: flex;
+  width: 78vw;
+  height: 32vw;
+  margin: auto;
+  margin-bottom: 4vh;
+  margin-top: 5.4vh;
+  background-image: url("https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-03-25-hp-slide-slotting-bestsellers-desktop-us-slice.jpeg?imwidth=1200");
+  background-repeat: no-repeat;
 }
-#container1 > img {
+#container1 a{
+  width: 26vw;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+/* #container1 > img {
   display: block;
   margin: auto;
   width: 100%;
   height: 100%;
-}
+} */
 #container2 {
   width: 65vw;
   /* border: 1px solid red; */
@@ -44,7 +60,7 @@
   overflow: hidden;
   height: 29vh;
   margin: 0 4vh;
-  margin-top: -3vh;
+  margin-top: -1vh;
   /* border: 1px solid red;         */
 }
 #datacontainer2 > div {
@@ -52,7 +68,7 @@
   text-align: center;
   /* border: 1px solid red; */
   padding: 0px 0.8vw;
-  line-height: 0.4;
+  line-height: 2;
   transition: width 2s, height 2s, transform 2s;
   position: relative;
 }
@@ -71,13 +87,12 @@
 #datacontainer2 > div > div {
   font-weight: bold;
   font-size: 1.6vh;
-  line-height: normal;
+  line-height: 1.2;
 }
 #datacontainer2 > div > div > p:last-child {
-  margin-top: -1.4vh;
   font-weight: normal;
   width: 8.6vw;
-  line-height: normal;
+  /* line-height: 1; */
 }
 .arrows {
   display: flex;
@@ -122,7 +137,7 @@
   overflow: hidden;
   height: 29vh;
   margin: 0 4vh;
-  margin-top: -3vh;
+  margin-top: -1vh;
   /* border: 1px solid red;         */
 }
 #datacontainer4 > div {
@@ -130,7 +145,7 @@
   text-align: center;
   /* border: 1px solid red; */
   padding: 0px 0.8vw;
-  line-height: 0.4;
+  line-height: 2;
   transition: width 2s, height 2s, transform 2s;
   position: relative;
 }
@@ -149,13 +164,12 @@
 #datacontainer4 > div > div {
   font-weight: bold;
   font-size: 1.6vh;
-  line-height: normal;
+  line-height: 1.2;
 }
 #datacontainer4 > div > div > p:last-child {
-  margin-top: -1.4vh;
   font-weight: normal;
   width: 8.6vw;
-  line-height: normal;
+  /* line-height: 1; */
 }
 #container5 {
   width: 65vw;
@@ -168,7 +182,7 @@
   overflow: hidden;
   height: 29vh;
   margin: 0 4vh;
-  margin-top: -3vh;
+  margin-top: -1vh;
   /* border: 1px solid red;         */
 }
 #datacontainer5 > div {
@@ -176,7 +190,7 @@
   text-align: center;
   /* border: 1px solid red; */
   padding: 0px 0.8vw;
-  line-height: 0.4;
+  line-height: 2;
   transition: width 2s, height 2s, transform 2s;
   position: relative;
 }
@@ -195,15 +209,13 @@
 #datacontainer5 > div > div {
   font-weight: bold;
   font-size: 1.6vh;
-  line-height: normal;
+  line-height: 1.2;
 }
 #datacontainer5 > div > div > p:last-child {
-  margin-top: -1.4vh;
   font-weight: normal;
   width: 8.6vw;
-  line-height: normal;
+  /* line-height: 1; */
 }
-
 #container6 {
   width: 65vw;
   /* border: 1px solid red; */
@@ -215,15 +227,15 @@
   overflow: hidden;
   height: 29vh;
   margin: 0 4vh;
-  margin-top: -3vh;
+  margin-top: -1vh;
   /* border: 1px solid red;         */
 }
 #datacontainer6 > div {
   display: block;
   text-align: center;
   /* border: 1px solid red; */
-  padding: 0vh 0.8vw;
-  line-height: 0.4;
+  padding: 0px 0.8vw;
+  line-height: 2;
   transition: width 2s, height 2s, transform 2s;
   position: relative;
 }
@@ -242,13 +254,12 @@
 #datacontainer6 > div > div {
   font-weight: bold;
   font-size: 1.6vh;
-  line-height: normal;
+  line-height: 1.2;
 }
 #datacontainer6 > div > div > p:last-child {
-  margin-top: -1.4vh;
   font-weight: normal;
   width: 8.6vw;
-  line-height: normal;
+  /* line-height: 1; */
 }
 #container7 {
   width: 65vw;
@@ -261,7 +272,7 @@
   overflow: hidden;
   height: 35vh;
   margin: 0 4vh;
-  margin-top: -4vh;
+  margin-top: -1vh;
 }
 #datacontainer7 > div {
   display: flex;
@@ -288,16 +299,20 @@
 #datacontainer7 > div > div {
   font-weight: bold;
   font-size: 1.6vh;
+  line-height: 1.2;
 }
 #datacontainer7 > div > div > p:last-child {
-  margin-top: -1vh;
   line-height: normal;
   font-weight: normal;
 }
+#datacontainer7 > div > p{
+  display: block;
+  margin-top: 1.6vh;
+}
 #datacontainer7 > div > button:nth-child(4) {
-  line-height: 0.1;
+  /* line-height: 0.1; */
   border-radius: 5vh 2.5vw;
-  padding: 0.5vh 1vw;
+  padding: 1.2vh 1vw;
   font-size: 1.5vh;
   width: 10vw;
   background-color: lightgray;
@@ -309,27 +324,34 @@
   font-weight: bold;
 }
 .quickclass {
-  width: 7vw;
-  height: 3.5vh;
+  width: 6w;
+  height: 4vh;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   position: absolute;
-  bottom: 50%;
+  top: 25%;
   left: 18%;
-  border-radius: 8%;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1.5vh;
+  font-weight: bold;
+  padding: 1vh 1vw;
+ 
 }
 
-.quickclass7 {
-  width: 7vw;
-  height: 3.5vh;
+#datacontainer7 > div>.quickclass7 {
+  width: 6vw;
+  height: 4vh;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   position: absolute;
-  bottom: 50%;
+  top: 25%;
   left: 28%;
-  border-radius: 8%;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5vh;
+  padding: 1vh 1vw;
 }
 .newClass {
   display: flex;
@@ -347,10 +369,12 @@
   border-radius: 10%;
 }
 .sequenceOfNum {
-  height: 2vh;
-  font-size: 2.5vh;
+  display: flex;
+  align-items: center;
+  height: 3vh;
+  font-size: 1.8vh;
   padding: 2%;
-  padding-right: 3%;
+  padding-right: 5%;
   border: 1px solid black;
   position: absolute;
   left: 0;
@@ -397,8 +421,8 @@
 #showImage {
   display: none;
   margin: auto;
-  height: 50vh;
-  width: 60vw;
+  height: 54vh;
+  width: 64vw;
   position: fixed;
   top: 50vh;
   left: 50vw;
@@ -419,7 +443,7 @@
 #showImage > div > div:first-child {
   width: 25vw;
   /* border: 1px solid red; */
-  margin: auto;
+  
 }
 #showImage > div > div:last-child > a {
   display: flex;
@@ -428,6 +452,7 @@
 #showImage > div > div > img:first-child {
   width: 80%;
   height: 80%;
+  /* border: 1px solid red; */
 }
 .reviewsclass {
   display: flex;
@@ -448,17 +473,28 @@
   font-size: 2vh;
   font-weight: normal;
   width: 35vw;
+  /* border: 1px solid red; */
+  line-height: 2 ;
 }
 #showImage > div > div:last-child > p:first-child {
   font-weight: bold;
 }
+
+#showImage > div > div:last-child > p:nth-child(3)
+{
+  margin-top: 1vh;
+  line-height:1;
+  margin-bottom: 1vh;
+}
 .priceclass {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .priceclass > p:first-child {
   font-weight: bold;
   font-size: 3vh;
+  margin-bottom: 3vh;
 }
 .priceclass > p:last-child {
   font-weight: bold;
@@ -492,4 +528,5 @@
 .lastinquick {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
