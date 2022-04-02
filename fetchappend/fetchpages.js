@@ -85,8 +85,8 @@ const appendData = (data,main) => {
         let lovediv = document.createElement('div');
         lovediv.id = "lovediv" ;
         lovediv.addEventListener("click",()=>{
-            console.log("1");
-            // lovediv.style = "fill:red";
+            document.querySelector("#heart").style.fill = "red";
+            document.querySelector("#heart").style.stroke = "red";
         })
 
 
@@ -148,7 +148,7 @@ const appendData = (data,main) => {
 
         let title1 = document.createElement('p');
         title1.innerText = elem.displayName ;
-        div.addEventListener('click',function(){
+        title1.addEventListener('click',function(){
             let productArr = [];
             productArr.push(elem);
             localStorage.setItem('product',JSON.stringify(productArr));

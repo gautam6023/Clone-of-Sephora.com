@@ -27,8 +27,8 @@ const appendData = (data,main) => {
         let lovediv = document.createElement('span');
         lovediv.id = "lovediv" ;
         lovediv.addEventListener("click",()=>{
-            console.log("ssssss");
             document.querySelector("#heart").style.fill = "red";
+            document.querySelector("#heart").style.stroke = "red";
         })
         
 
@@ -44,9 +44,7 @@ const appendData = (data,main) => {
         <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
         </svg>`
         })
-        // document.querySelector("#heart").addEventListener("click",()=>{
-        //     document.querySelector("#heart").style.fill = "red";
-        // })
+        
         div.addEventListener("mouseleave", ()=>{
             quicklook.innerHTML = null ;
             title1.style="text-decoration: none";
@@ -54,8 +52,10 @@ const appendData = (data,main) => {
         })
         new_heart.append(newdiv,lovediv);
 
-        let heart = document.getElementById("heart");
-        
+        // let heart = document.getElementById("heart");
+        // heart.addEventListener("click",()=>{
+        //     document.querySelector("#heart").style.fill = "red";
+        // })
 
         let image1 = document.createElement('img');
         image1.src = elem.image ;
@@ -65,7 +65,7 @@ const appendData = (data,main) => {
 
         let title1 = document.createElement('p');
         title1.innerText = elem.title ;
-        div.addEventListener('click',function(){
+        title1.addEventListener('click',function(){
             // console.log(event)
             let productArr = [];
             productArr.push(elem);
