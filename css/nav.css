@@ -5,7 +5,10 @@ body {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   background-color: #ffffff;
 }
-
+ol,
+ul {
+  list-style: none;
+}
 /* Firts part of div */
 #navFirst {
   height: 7.2vh;

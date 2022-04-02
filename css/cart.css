@@ -216,6 +216,7 @@
   font-weight: bold;
   height: 3.52vh;
   font-size: 1.6vh;
+  gap: 1vw;
 }
 /* PROMOCODE */
 #promoCodeSection {

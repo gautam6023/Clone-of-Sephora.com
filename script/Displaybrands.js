@@ -1,5 +1,5 @@
-import { displayAtoZ } from "../brand.js";
-import { alphabeticalBrands } from "../Constants/constants.js";
+import { displayAtoZ } from "../components/brand.js";
+import { alphabeticalBrands } from "../components/constants.js";
 const Displaybrands = () => {
   const alphabets = displayAtoZ();
   console.log(alphabets);

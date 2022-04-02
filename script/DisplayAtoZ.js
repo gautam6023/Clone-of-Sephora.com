@@ -1,4 +1,4 @@
-import { displayAtoZ } from "../brand.js";
+import { displayAtoZ } from "../components/brand.js";
 import Displaybrands from "./Displaybrands.js";
 // import "../styles.css";
 const DisplayAtoZ = () => {
@@ -6,7 +6,7 @@ const DisplayAtoZ = () => {
   console.log(alphabets);
   const displayAlphabets = () =>
     alphabets
-      .map(res => {
+      .map((res) => {
         return `<a class="displayAlphabetLink" href="#${res}">${res}</a>`;
       })
       .join("");

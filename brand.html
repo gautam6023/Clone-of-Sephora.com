@@ -6,16 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <title>Document</title>
+    <!-- COPY ALL BELOW FILES TO ADD NAV -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/signinhov.css" />
+    <link rel="icon" href="https://www.sephora.com/img/ufe/favicon.ico" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/createac.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5664c1180.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Sephora Brands List | Sephora</title>
   </head>
-  <body>
+  <body id="body">
+    <div id="NAVIGATION"></div>
     <div id="container">
       <div id="displayAlphabet"></div>
     </div>
+    <!-- Footer -->
+    <section id="FOOTER"></section>
   </body>
 </html>
 <script type="module">
-  import DisplayAtoZ from "./components/DisplayAtoZ.js";
+  import { nav, Footer } from "../components/nav.js";
+  let navData = document.getElementById("NAVIGATION");
+
+  //Appdending nav and footer
+  let footer = document.getElementById("FOOTER");
+  footer.innerHTML = Footer();
+  navData.innerHTML = nav();
+</script>
+<script src="./script/login.js" type="module"></script>
+
+<script src="./script/createac.js" type="module"></script>
+<script src="./components/nav.js" type="module"></script>
+<script src="./script/nav.js" type="module"></script>
+<script type="module">
+  import DisplayAtoZ from "./script/DisplayAtoZ.js";
   let side = document.getElementById("displayAlphabet");
   side.innerHTML = DisplayAtoZ();
 </script>

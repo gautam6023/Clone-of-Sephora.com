@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./otherstyles/newpage.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Beauty Products | Sephora</title>
+    <link rel="stylesheet" href="./css/newpage.css" />
+
+    <!-- COPY ALL BELOW FILES TO ADD NAV -->
+
+    <link rel="stylesheet" href="./css/signinhov.css" />
+    <link rel="icon" href="https://www.sephora.com/img/ufe/favicon.ico" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/createac.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f5664c1180.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="body">
+    <!-- Nav -->
+    <div id="NAVIGATION"></div>
+    <!-- Nav Ends -->
     <div id="container">
-        <div id="sidebar">
-            
-        </div>
-        <div id="products">
-            <div id="newtitle">NEW</div>
-            <div id="main">
-
-            </div>
-        </div>
-
+      <div id="sidebar"></div>
+      <div id="products">
+        <div id="newtitle">NEW</div>
+        <div id="main"></div>
+      </div>
     </div>
-    
-    
-</body>
+    <!-- Footer -->
+    <section id="FOOTER"></section>
+  </body>
 </html>
-
+<!-- Nav Scripts -->
 <script type="module">
-    
-    import sidebar from "./fetchAppend/fetch.js"
+  import { nav, Footer } from "../components/nav.js";
+  let navData = document.getElementById("NAVIGATION");
 
-    let sidebar1 = document.querySelector("#sidebar");
-    sidebar1.innerHTML = sidebar();
-
-    let main = document.getElementById('main');
-    import {getData,appendData} from "./scripts/newpage.js";
-    
-
-    let resp = await getData("newpage.json");
-    console.log('resp: ', resp);
-
-    appendData(resp,main);
-    
-
-  
+  //Appdending nav and footer
+  let footer = document.getElementById("FOOTER");
+  footer.innerHTML = Footer();
+  navData.innerHTML = nav();
 </script>
+<script src="./components/nav.js" type="module"></script>
+<script src="./script/nav.js" type="module"></script>
+<script src="./script/createac.js" type="module"></script>
 
+<script src="./script/login.js" type="module"></script>
+<!-- Nav Scripts Ends Here -->
+<script type="module">
+  import sidebar from "./fetchappend/fetch.js";
+
+  let sidebar1 = document.querySelector("#sidebar");
+  sidebar1.innerHTML = sidebar();
+
+  let main = document.getElementById("main");
+  import { getData, appendData } from "./script/newpage.js";
+
+  let resp = await getData("./data/newpage.json");
+  console.log("resp: ", resp);
+
+  appendData(resp, main);
+</script>
