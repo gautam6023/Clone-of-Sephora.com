@@ -89,7 +89,7 @@
 }
 #quicklookdiv>div{
   margin-left: 3vw;
-  padding: 1vh;
+  /* padding: 1vh; */
   color: white;
 }
 #quicklook {
