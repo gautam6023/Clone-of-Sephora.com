@@ -80,6 +80,7 @@
   width: 7vw;
   /* height: 97px; */
   height: 10vh;
+  margin-bottom: 2.5vh;
 }
 #datacontainer2 > div > p {
   font-weight: bold;
@@ -156,7 +157,8 @@
 #datacontainer4 > div > img {
   width: 7vw;
   /* height: 97px; */
-  height: 12vh;
+  height: 10vh;
+  margin-bottom: 2.5vh;
 }
 #datacontainer4 > div > p {
   font-weight: bold;
@@ -201,7 +203,8 @@
 #datacontainer5 > div > img {
   width: 7vw;
   /* height: 97px; */
-  height: 12vh;
+  height: 10vh;
+  margin-bottom: 2.5vh;
 }
 #datacontainer5 > div > p {
   font-weight: bold;
@@ -246,7 +249,8 @@
 #datacontainer6 > div > img {
   width: 7vw;
   /* height: 97px; */
-  height: 12vh;
+  height: 10vh;
+  margin-bottom: 2.5vh;
 }
 #datacontainer6 > div > p {
   font-weight: bold;
@@ -294,12 +298,14 @@
 #datacontainer7 > div > img {
   width: 12vw;
   height: 10vh;
+  margin-bottom: 4vh;
 }
 #datacontainer7 > div > p {
   font-weight: bold;
   font-size: 1.6vh;
 }
 #datacontainer7 > div > div {
+ 
   font-weight: bold;
   font-size: 1.6vh;
   line-height: 1.2;
