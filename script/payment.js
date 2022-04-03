@@ -129,13 +129,23 @@ document.getElementById("paymentcon1").addEventListener("click", () => {
 });
 
 document.getElementById("paymentcon2").addEventListener("click", () => {
-  document.querySelector("#inrightcontainer4>button").style.background =
+
+  let cardlength = document.querySelector("#incardChange2form>input:first-child").value.length
+
+  if(cardlength===16)
+  {
+    document.querySelector("#inrightcontainer4>button").style.background =
     "crimson";
-  document
-    .querySelector("#inrightcontainer4>button")
-    .addEventListener("click", () => {
+    document.querySelector("#inrightcontainer4>button").addEventListener("click", () => {
       window.location.href = "otp.html";
     });
+  }
+  else
+  {
+    alert("Enter valid card details");
+  }
+  
+
 });
 
 //inrightcontainer5

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification</title>
+    <link rel="icon" href="https://www.sephora.com/img/ufe/favicon.ico" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <style>
+      body{
+          /* background-size: cover; */
+          display: flex;
+          margin: auto;
+          justify-content: center;
+          background-size: 80%;
+        background-repeat: no-repeat;
+      }
+    #payment {
+      height: auto;
+      width: 20%;
+      border: 1px solid rgb(207, 200, 200);
+      margin: auto;
+      margin-top: 180px;
+      box-sizing: border-box;
+      padding: 25px;
+      border-radius: 4px;
+    }
+
+    #payment > h2 {
+      margin: 0;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    #options {
+      display: flex;
+      flex-direction: column;
+      columns: 200px;
+    }
+    #options > p {
+      text-align: left;
+      margin: 0;
+      margin-top: 10px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+      color: rgb(0, 36, 104);
+      text-align: center;
+    }
+
+    #options > p:nth-child(2) {
+      color: black;
+      margin: 0;
+    }
+
+    #otp {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      height: 35px;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding-left: 10px;
+    }
+
+    #placeOrder {
+      margin-top: 0px;
+
+      height: 35px;
+      margin-bottom: 17px;
+      background-color: crimson;
+      border: 1px solid black;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <!-- <div id="container"> -->
+
+    <div id="payment">
+      <h2>OTP Verificaion</h2>
+      <hr />
+      <form action="" id="options">
+        <p>An OTP has been sent to ********45</p>
+        <p>Do not leave the page</p>
+        <input type="number" id="otp" placeholder="Enter OTP" />
+        <input type="submit" name="Pay" id="placeOrder" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#options").addEventListener("submit", getOTP);
+
+  function getOTP() {
+    event.preventDefault();
+    let otp = document.querySelector("#otp").value;
+    if (otp == "1234") {
+      alert("Payment Successful");
+      document.querySelector("#otp").value = "";
+      window.location.href = "thankyou.html";
+    } else {
+      alert("Invalid OTP");
+    }
+  }
+
+</script>
