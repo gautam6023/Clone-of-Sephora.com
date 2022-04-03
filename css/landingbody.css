@@ -525,6 +525,13 @@
   align-items: center;
   font-weight: bold;
 }
+.buttonsclass>button:last-child>div>svg{
+  fill: white;
+}
+.buttonsclass>button:last-child>div>svg:hover
+{
+  fill:crimson;
+}
 .lastinquick {
   display: flex;
   justify-content: space-between;

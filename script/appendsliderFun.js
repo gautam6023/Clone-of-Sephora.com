@@ -4,23 +4,23 @@ const appendJustFun= (data,appendTag)=>{
         let divTag = document.createElement("div");
 
         let imgTag = document.createElement("img");
-        imgTag.src= el.image;
+        imgTag.src= el.image250;
 
         let limitedTag = document.createElement("p");
-        if(el.limited===undefined)
+        if(el.currentSku.isLimitedEdition===false)
         {
             limitedTag.innerText= "";
         }
         else
         {
-            limitedTag.innerText= el.limited;
+            limitedTag.innerText= "limited edition";
         }
 
         let titleTag = document.createElement("p");
-        titleTag.innerText= el.title;
+        titleTag.innerText= el.brandName;
 
         let descriptionTag = document.createElement("p");
-        descriptionTag.innerText= el.description;
+        descriptionTag.innerText= el.displayName;
 
         let infoTag= document.createElement("div");
         infoTag.append(titleTag,descriptionTag);
@@ -88,7 +88,7 @@ const appendJustFun= (data,appendTag)=>{
         let qdivTag = document.createElement("div");
         let qdivTagim = document.createElement("div");
         let qimgTag= document.createElement("img");
-        qimgTag.src= el.image;
+        qimgTag.src= el.image450;
 
         let reviewsDivTag = document.createElement("div");
 
@@ -96,7 +96,7 @@ const appendJustFun= (data,appendTag)=>{
         starTag.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2g_CyJEN6QWdQbSd7psuahRnxl2wbp32EA&usqp=CAU"
        
         let reviewsTag = document.createElement("p");
-        reviewsTag.innerText= "716 reviews  |  87.4K loves";
+        reviewsTag.innerText= `${el.reviews} reviews  |  87.4K loves`;
 
 
         reviewsDivTag.append(starTag,reviewsTag)
@@ -106,10 +106,10 @@ const appendJustFun= (data,appendTag)=>{
 
 
         let qtitleTag = document.createElement("p");
-        qtitleTag.innerText= el.title;
+        qtitleTag.innerText= el.brandName;
 
         let qdescriptionTag = document.createElement("p");
-        qdescriptionTag.innerText= el.description;
+        qdescriptionTag.innerText= el.displayName;
 
 
         let qdescriptionTag1= document.createElement("p");
@@ -128,7 +128,7 @@ const appendJustFun= (data,appendTag)=>{
         let lastDivTag =document.createElement("div");
 
         let priceTag= document.createElement("p");
-        priceTag.innerText= `$${Math.floor(Math.random() * 90) + 10}`
+        priceTag.innerText= `$${el.currentSku.listPrice}`
 
         let shipTag= document.createElement("p");
         shipTag.innerText= "FREE SHIPPING";
@@ -139,20 +139,38 @@ const appendJustFun= (data,appendTag)=>{
 
         let buyTag=  document.createElement("button");
         buyTag.innerText= "Add to Basket";
+        buyTag.addEventListener("click",()=>{
+            let cartArr= JSON.parse(localStorage.getItem("cart")) || [];
+            cartArr.push(el);
+            localStorage.setItem("cart",JSON.stringify(cartArr));
+        })
         let cartTag = document.createElement("button");
         // cartTag.innerText= "Add to Loves"
 
 
-        let carttext=document.createElement("span");
+        var carttext=document.createElement("span");
         carttext.innerText= "Add to Loves";
 
-        let lovessvgTag = document.createElement("div");
+        var lovessvgTag = document.createElement("div");
 
-        lovessvgTag.innerHTML= `<svg style = "height:3vh;width: 2vw; fill:white; stroke:black" viewBox="0 0 24 24">
+        lovessvgTag.innerHTML= `<svg style = "height:3vh;width: 2vw; stroke:black" viewBox="0 0 24 24">
         <path d="M22 3.1c2.7 2.2 2.6 7.2.1 9.7-2.2 2.8-7.4 8.1-9.3 9.6-.5.4-1.1.4-1.6 0-1.8-1.5-7-6.8-9.2-9.6-2.6-2.6-2.7-7.6 0-9.7C4.6.5 9.7.7 12 4.2 14.3.8 19.3.5 22 3.1z"></path>>
         </svg>`
 
         cartTag.append(lovessvgTag,carttext);
+
+        cartTag.addEventListener("click",()=>{
+            let wishArr= JSON.parse(localStorage.getItem("wish")) || [];
+            wishArr.push(el);
+            localStorage.setItem("wish",JSON.stringify(wishArr));
+          
+            document.querySelector(".buttonsclass>button:last-child>div>svg").style.fill="red";
+
+        })
+
+        // cartTag.addEventListener("mouseenter",()=>{
+        //     document.querySelector(".buttonsclass>button:last-child>div>svg").style.fill="red";
+        // })
 
         
 
@@ -180,9 +198,16 @@ const appendJustFun= (data,appendTag)=>{
     }
     
     const showImageFun= (ev)=>{
+        //console.log("ev", ev.target.parentNode.parentNode);
+        //ev.path["6"].id !=="showImage"
+        
         if(ev.target.innerText !== "Quicklook")
         {
             document.getElementById("showImage").style.display= "none";
+        }
+        if(ev.path["6"].id ==="showImage")
+        {
+            document.getElementById("showImage").style.display= "block";
         }
     }
 } 
