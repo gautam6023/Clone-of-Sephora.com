@@ -181,13 +181,14 @@ ul {
   width: auto;
 }
 #buttons > div > a {
-  border: 1px solid black;
   width: auto;
   padding: 2vh 0;
 }
+
 #buttons > div > a:last-child {
   padding-left: 0.5vw;
 }
+
 /* P element  */
 .inText {
   font-size: 1.6vh;
@@ -203,12 +204,16 @@ ul {
 
   /* justify-content: space-around; */
 }
+#icon2 > a {
+  padding: 0.8vh 0;
+}
 #icon2 > a > span {
   font-size: 3.2vh;
   color: #9f9f9f;
   margin-right: 1.2vw;
   /* border: 1px solid black; */
 }
+
 .iconUser {
   width: 3.3vh;
   color: #9f9f9f;
@@ -302,6 +307,7 @@ ul {
   left: 0;
   top: 5.4vh;
   opacity: 0;
+  z-index: 5;
   visibility: hidden;
 }
 /* After Hover on element */
@@ -349,7 +355,7 @@ ul {
 }
 
 .sub-img > img {
-  width: 100%;
+  height: 100%;
 }
 
 /* .sub-items {
@@ -391,4 +397,22 @@ ul {
 svg {
   color: #000000;
   height: 3vh;
+}
+#cartIcon {
+  position: relative;
+}
+#cartCount {
+  position: absolute;
+  height: 2vh;
+  top: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #d2472d;
+  font-weight: bold;
+  font-size: 1.5vh;
+  left: 0.8vw;
+  width: 2vh;
 }

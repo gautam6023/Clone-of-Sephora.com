@@ -40,7 +40,9 @@ let openDiv = (resultCon, body, data) => {
     divInner.append(name);
     div.addEventListener("click", function () {
       resultCon.innerHTML = null;
-      // showData(show, el);
+      console.log(1);
+      localStorage.setItem("clickedProduct", JSON.stringify(el));
+      window.location.href = "../product.html";
       console.log(el);
     });
     div.append(imgCon, divInner);
