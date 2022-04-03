@@ -130,6 +130,10 @@ const appendJustFun= (data,appendTag)=>{
           let qdescriptionTag3= document.createElement("a");
         qdescriptionTag3.href= "#";
         qdescriptionTag3.innerText= "See product details"
+        qdescriptionTag3.addEventListener("click",()=>{
+            localStorage.setItem("clickedProduct",JSON.stringify(el));
+            window.location.href="product.html";
+        })
 
         // let qdescriptionTag3= document.createElement("img");
         // qdescriptionTag3.src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8AYKF-v3JL8Cqshjat8Qkg_nRBbw3UNCnwQ&usqp=CAU"
