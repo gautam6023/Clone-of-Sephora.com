@@ -38,19 +38,19 @@ Sephora.com is leading E-Commerce website for all type of cosmetic products such
 
 ## Screenshots
 
-![Website Screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1645977375942/ZvvdOsCvM.png)
+![Screenshot from 2022-04-03 20-17-55.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998570810/hNK2qLu9l.png)
 
-![Screenshot from 2022-02-27 20-57-05.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645976977453/Syoyw5ZJX.png)
+![Screenshot from 2022-04-03 20-18-49.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998586328/jLdu0CVim.png)
 
-![Screenshot from 2022-02-27 20-57-13.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645977058939/RFwDg5uqJ.png)
+![Screenshot from 2022-04-03 20-18-56.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998601755/2WUCjwNTe.png)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645952211716/aSboxm1Phc.png)
+![Screenshot from 2022-04-03 20-18-53.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998625808/UPWE-itQ9.png)
 
-![2022-02-27 (5).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645974613126/Qu0VM_qxC.png)
+![Screenshot from 2022-04-03 20-24-26.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998644909/Y3XaymJpN.png)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645952352339/FP-TI7Jbr.png)
+![Screenshot from 2022-04-03 20-24-39.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998665341/55x5DMcGM.png)
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645952436530/5Y4-JLPNF.png)
+![Screenshot from 2022-04-03 20-25-01.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1648998675460/BYJfilKZb.png)
 
 ## Challenges
 
@@ -64,12 +64,12 @@ Sephora.com is leading E-Commerce website for all type of cosmetic products such
 
 ## Team
 
+- Kavita Patel
 - Gautam Gohil
-- Dathu Ram
-- Saradhi Mopada
-- Biman Gharai
-- Nikesh Hiwraj Borkar
-- Rojalini Das
+- Sachin Ramesh Ingle
+- Papannagari Dathu Ram Reddy
+- Sachin Vishwanath Kudande
+- Aun Mohammad
 
 ## Authors
 
