@@ -1503,7 +1503,7 @@ const Footer = () => {
       <div class="footerList">
         <ul>
           <li><strong>About Sephora</strong></li>
-          <a href="#"><li>About Sephora</li></a>
+          <a href="../about.html"><li>About Sephora</li></a>
           <a href="#"><li>Newsroom</li></a>
           <a href="#"><li>Careers</li></a>
           <a href="#"><li>Sephora Social Impact</li></a>
