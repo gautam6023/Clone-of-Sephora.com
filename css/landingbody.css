@@ -9,17 +9,20 @@
   margin-top: 5.4vh;
 } */
 
-#container1{
+#container1 {
   display: flex;
   width: 78vw;
   height: 32vw;
   margin: auto;
+  justify-content: center;
+
   margin-bottom: 4vh;
   margin-top: 5.4vh;
+  background-size: cover;
   background-image: url("https://www.sephora.com/contentimages/homepage/031522/Homepage/DesktopMweb/2022-03-25-hp-slide-slotting-bestsellers-desktop-us-slice.jpeg?imwidth=1200");
   background-repeat: no-repeat;
 }
-#container1 a{
+#container1 a {
   width: 26vw;
   height: 100%;
   /* border: 1px solid red; */
@@ -305,7 +308,7 @@
   line-height: normal;
   font-weight: normal;
 }
-#datacontainer7 > div > p{
+#datacontainer7 > div > p {
   display: block;
   margin-top: 1.6vh;
 }
@@ -336,10 +339,9 @@
   font-size: 1.5vh;
   font-weight: bold;
   padding: 1vh 1vw;
- 
 }
 
-#datacontainer7 > div>.quickclass7 {
+#datacontainer7 > div > .quickclass7 {
   width: 6vw;
   height: 4vh;
   background: rgba(0, 0, 0, 0.5);
@@ -443,7 +445,6 @@
 #showImage > div > div:first-child {
   width: 25vw;
   /* border: 1px solid red; */
-  
 }
 #showImage > div > div:last-child > a {
   display: flex;
@@ -474,16 +475,15 @@
   font-weight: normal;
   width: 35vw;
   /* border: 1px solid red; */
-  line-height: 2 ;
+  line-height: 2;
 }
 #showImage > div > div:last-child > p:first-child {
   font-weight: bold;
 }
 
-#showImage > div > div:last-child > p:nth-child(3)
-{
+#showImage > div > div:last-child > p:nth-child(3) {
   margin-top: 1vh;
-  line-height:1;
+  line-height: 1;
   margin-bottom: 1vh;
 }
 .priceclass {
@@ -525,12 +525,11 @@
   align-items: center;
   font-weight: bold;
 }
-.buttonsclass>button:last-child>div>svg{
+.buttonsclass > button:last-child > div > svg {
   fill: white;
 }
-.buttonsclass>button:last-child>div>svg:hover
-{
-  fill:crimson;
+.buttonsclass > button:last-child > div > svg:hover {
+  fill: crimson;
 }
 .lastinquick {
   display: flex;

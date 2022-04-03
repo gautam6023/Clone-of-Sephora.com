@@ -191,9 +191,13 @@
             </div>
           </div>
           <div id="sortdiv">
-            <button id="sort_h2l">Sort H2L</button>
-            <button id="sort_l2h">Sort L2H</button>
-            <button id="topRated">Top Rated</button>
+            <b>Sort by:</b>
+            <select id="sortSelect">
+              <option value="Relevance(Default)">Relevance(Default)</option>
+              <option id="topRated" value="topRated">Top Rated</option>
+              <option id="sort_h2l" value="sort_h2l">Price High to Low</option>
+              <option id="sort_l2h" value="sort_l2h">Price Low to High</option>
+            </select>
           </div>
           <div id="main"></div>
         </div>
