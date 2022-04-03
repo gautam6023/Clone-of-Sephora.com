@@ -55,6 +55,15 @@ const append7Fun= ()=>{
         divTag.append(imgTag,infoTag,limitedTag,buttonTag);
     })
 
+    divTag.addEventListener("click",(ev)=>{
+        // console.log("Hello");
+        if(ev.target.innerText !== "Quicklook")
+        {
+            localStorage.setItem("clickedProduct",JSON.stringify(el));
+            window.location.href="product.html";
+        }
+    })
+
     document.getElementById("datacontainer7").append(divTag);
 
 })
