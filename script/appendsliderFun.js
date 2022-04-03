@@ -77,6 +77,15 @@ const appendJustFun= (data,appendTag)=>{
             divTag.append(imgTag,limitedTag,infoTag,newTag);
         })
 
+        divTag.addEventListener("click",(ev)=>{
+            // console.log("Hello");
+            if(ev.target.innerText !== "Quicklook")
+            {
+                localStorage.setItem("clickedProduct",JSON.stringify(el));
+                window.location.href="product.html";
+            }
+        })
+
         appendTag.append(divTag);
 
     })
