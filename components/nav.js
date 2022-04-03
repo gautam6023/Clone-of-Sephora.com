@@ -3,7 +3,7 @@ let navData = document.getElementById("nav");
 
 //Function to import export nav data
 const nav = () => {
-return `  <!-- login -->
+  return ` <!-- login -->
 <div id="popUpLog" class="login-modal">
   <div class="modal-content-1 animate">
     <div class="containerLg">
@@ -77,7 +77,7 @@ return `  <!-- login -->
   <div id="navSecond">
     <div id="navSecondElements">
       <div id="logo" class="flex">
-        <a href="#"
+        <a href="./index.html"
           ><img
             src="https://www.sephora.com/img/ufe/logo.svg"
             alt=""
@@ -143,7 +143,9 @@ return `  <!-- login -->
                     </div>
                     <div id="paraDiv">
                       <p id="bold">Good afternoon, Beautiful. 👋</p>
-                      <p id="siginPara">Sign in for a more personalized experience</p>
+                      <p id="siginPara">
+                        Sign in for a more personalized experience
+                      </p>
                     </div>
                   </div>
                   <div class="btnFlx">
@@ -305,7 +307,7 @@ return `  <!-- login -->
             </span>
           </a>
           <!-- whishlist -->
-          <a href="#" class="iconHover">
+          <a href="./wishlist.html" class="iconHover">
             <span>
               <!-- <i class="fa-regular fa-heart color"></i> -->
               <svg
@@ -321,7 +323,7 @@ return `  <!-- login -->
             </span>
           </a>
           <!-- cart -->
-          <a href="#" class="iconHover">
+          <a href="./cart.html" class="iconHover" id="cartIcon">
             <span>
               <!-- <i class="fa-solid fa-basket-shopping color"></i> -->
               <svg
@@ -337,6 +339,7 @@ return `  <!-- login -->
                 >
               </svg>
             </span>
+            <p id="cartCount"></p>
           </a>
         </div>
       </div>
@@ -346,7 +349,7 @@ return `  <!-- login -->
     <ul id="navThirdList">
       <!-- Items -->
       <li class="nav-item">
-        <a href="#">New</a>
+        <a href="./newpage.html">New</a>
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <!-- Sub-Items -->
 
@@ -384,7 +387,7 @@ return `  <!-- login -->
         </div>
       </li>
       <li class="nav-item">
-        <a href="#">Brands</a>
+        <a href="./brand.html">Brands</a>
         <!-- sub-items -->
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <div class="sub-items">
@@ -446,7 +449,7 @@ return `  <!-- login -->
         </div>
       </li>
       <li class="nav-item">
-        <a href="#">Makeup</a>
+        <a href="./makeup.html">Makeup</a>
 
         <!-- sub-items -->
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
@@ -577,7 +580,7 @@ return `  <!-- login -->
       </li>
 
       <li class="nav-item">
-        <a href="#">Skincare</a>
+        <a href="./skincare.html">Skincare</a>
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <div class="sub-items">
           <div class="sub-list">
@@ -713,7 +716,7 @@ return `  <!-- login -->
         </div>
       </li>
       <li class="nav-item">
-        <a href="#">Hair</a>
+        <a href="./hair.html">Hair</a>
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <!-- sub-items -->
 
@@ -843,7 +846,7 @@ return `  <!-- login -->
         </div>
       </li>
       <li class="nav-item">
-        <a href="#">Fragrance</a>
+        <a href="./fragrance.html">Fragrance</a>
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <!-- sub-items -->
 
@@ -906,7 +909,7 @@ return `  <!-- login -->
         </div>
       </li>
       <li class="nav-item">
-        <a href="#">Tools & Brush</a>
+        <a href="./toolsandbrushes.html">Tools & Brush</a>
         <span class="liIcon"><i class="fa-solid fa-caret-up"></i></span>
         <!-- sub Items -->
         <div class="sub-items">
@@ -1437,7 +1440,7 @@ return `  <!-- login -->
   <!-- create a/c end -->
 </div>
 
-<!-- create a/c End-->`
+<!-- create a/c End-->`;
 };
 
 const Footer = () => {
