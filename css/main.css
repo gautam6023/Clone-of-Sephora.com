@@ -135,7 +135,7 @@
   width: 1.5vw;
   height: 1.5vh;
 
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* top: 0.5vh;
   right: 1vh; */
   padding: 1.2vw;
@@ -200,8 +200,9 @@
   display: flex;
   gap: 3.04414vh;
   font-size: 2.4353vh;
+  align-items: center;
 }
-#sort_l2h {
+/* #sort_l2h {
   background-color: whitesmoke;
   padding: 0.9vh;
   border-radius: 0.5vw;
@@ -215,4 +216,10 @@
   background-color: whitesmoke;
   padding: 0.9vh;
   border-radius: 0.5vw;
+} */
+#sortSelect{
+  padding: 1vh 1vw;
+}
+#sortdiv>b{
+  font-size: 1.8vh;
 }
