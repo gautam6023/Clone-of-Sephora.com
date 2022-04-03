@@ -121,6 +121,7 @@ function showFullDataFun7(el)
         let cartArr= JSON.parse(localStorage.getItem("cart")) || [];
         cartArr.push(el);
         localStorage.setItem("cart",JSON.stringify(cartArr));
+        alert("Product is succsesfully added to basket");
     })
     let cartTag = document.createElement("button");
     // cartTag.innerText= "Add to Loves"
