@@ -6,12 +6,12 @@ We have completed this project in 5 days.
 
 - [Click here](https://peaceful-dodol-946a2a.netlify.app/index.html) to see preview of our project.
 
-Geekbyuing.com is leading E-Commerce website for smart electronics gadgets.
+Sephora.com is leading E-Commerce website for all type of cosmetic products such as makeup, skin care, hair, fragrance's and tools and brush.
 
 ## Credits
 
-- Images : [Geekbyuing.com](https://www.geekbuying.com/)
-- Content : [Geekbyuing.com](https://www.geekbuying.com/)
+- Images : [Sephora.com](https://www.sephora.com/)
+- Content : [Sephora.com](https://www.sephora.com/)
 - Icons : [Font Awesome](https://fontawesome.com/)
 - References : [MDN Docs](https://developer.mozilla.org/en-US/) | [W3School](https://www.w3schools.com/)
 
@@ -24,17 +24,17 @@ Geekbyuing.com is leading E-Commerce website for smart electronics gadgets.
 
 ## Features
 
-- Login and Signin page
-- Carouse for product pictures
+- Login and Signin
+- Product slider for different categorise
+- Product page for different categorise
 - Detailed product preview page
-- Filters for coustom price
 - Sort functions for Higher to Lower price,Lower to Higher price and Search bar for finding the product by it's name.
-- Manual slider for product card.
-- Add to cart opt for buying products.
+- Wishlist.
+- Add to cart option for buying products and wishlist option to add product to wishlist.
 
 ## Demo
 
-[Click here](https://drive.google.com/file/d/1-kuWbPpRxf_hCHESnUfWqlrbqgwa-XOp/view?usp=sharing) to watch our project preview in a video format.
+[Click here](https://drive.google.com/file/d/1GBhy4iQslNoZDKAfl5hGiMu9tf2Eb4A6/view?usp=sharing) to watch our project preview in a video format.
 
 ## Screenshots
 
